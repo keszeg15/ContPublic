@@ -32,3 +32,13 @@ blockquote.callout[data-callout="caption"] .callout-title {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
+
+/* Hide caption callout titles */
+
+blockquote.callout[data-callout="caption"] .callout-title {
+  display: none;
+}
+
+blockquote.callout[data-callout="caption"] {
+  padding-top: 0.5rem;
+}
