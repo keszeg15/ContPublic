@@ -1,3 +1,34 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+/* Cont Wiki - floating images */
+
+blockquote.callout[data-callout="caption"][data-callout-metadata="right"] {
+  float: right;
+  width: 260px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+blockquote.callout[data-callout="caption"][data-callout-metadata="left"] {
+  float: left;
+  width: 260px;
+  margin: 0 1.5rem 1rem 0;
+}
+
+blockquote.callout[data-callout="caption"] img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+blockquote.callout[data-callout="caption"] .callout-title {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* Stop floating images before new sections */
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
