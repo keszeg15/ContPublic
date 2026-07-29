@@ -1,6 +1,65 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+
+
+
+/* Cont Wiki typography */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+article {
+  line-height: 1.65;
+}
+
+article p {
+  margin-bottom: 1.1rem;
+}
+
+article {
+  font-size: 1.05rem;
+}
+
+article h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+article h2 {
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.25rem;
+}
+
+
+/* Cont Wiki callouts */
+
+.callout {
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+.callout-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.callout-icon {
+  display: none;
+}
+
+/* Hide caption callout titles */
+
+blockquote.callout[data-callout="caption"] .callout-title {
+  display: none;
+}
+
+blockquote.callout[data-callout="caption"] {
+  padding-top: 0.5rem;
+}
 
 /* Cont Wiki - floating images */
 
@@ -31,14 +90,4 @@ blockquote.callout[data-callout="caption"] .callout-title {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-}
-
-/* Hide caption callout titles */
-
-blockquote.callout[data-callout="caption"] .callout-title {
-  display: none;
-}
-
-blockquote.callout[data-callout="caption"] {
-  padding-top: 0.5rem;
 }
