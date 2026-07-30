@@ -5,6 +5,7 @@ aliases:
 tags:
   - Category/Region--Geographical
   - G5eC
+Category: Community
 ---
 ## Tags
 #Political-Region/City-state
