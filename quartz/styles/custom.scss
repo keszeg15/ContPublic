@@ -197,3 +197,35 @@ a.tag:hover {
   color: #2563a8;
 }
 
+/* =========================
+   Note properties styling
+   ========================= */
+
+.note-properties {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid #b59b5a;
+  padding-left: 1rem;
+}
+
+.note-properties table {
+  background: transparent;
+}
+
+.note-properties-key {
+  color: #6b6255;
+  font-weight: 600;
+  padding-right: 1.5rem;
+}
+
+.note-properties-value {
+  color: #2f5f8f;
+}
+
+.metadata-property {
+  border: none;
+}
+
+.note-properties-text {
+  font-style: italic;
+}
