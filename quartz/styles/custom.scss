@@ -91,3 +91,53 @@ blockquote.callout[data-callout="caption"] .callout-title {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
+
+
+
+/* =========================
+   Wiki-style links
+   ========================= */
+
+/* Normal internal links */
+a.internal {
+  color: #2563a8;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a.internal:hover {
+  color: #1d4f85;
+}
+
+/* Broken internal links */
+a.internal.broken {
+  color: #b42318;
+  text-decoration: underline;
+  text-decoration-color: #b42318;
+  text-decoration-style: wavy;
+}
+
+a.internal.broken:hover {
+  color: #8a1c14;
+}
+
+
+/* =========================
+   Tags
+   ========================= */
+
+/* Remove "button/pill" feeling from tags */
+a.tag {
+  color: #5b6b7a;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a.tag:hover {
+  color: #2563a8;
+}
