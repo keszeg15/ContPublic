@@ -1,6 +1,26 @@
 @use "./variables.scss" as *;
 
 
+/* =========================
+   Cont parchment style
+   ========================= */
+
+:root {
+  --light: #f4f0e6;
+  --lightgray: #ded8ca;
+  --gray: #8a8175;
+  --darkgray: #514a42;
+  --dark: #2c2722;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+code, pre {
+  font-family: "JetBrains Mono", monospace;
+}
+
 
 
 /* Cont Wiki typography */
@@ -10,6 +30,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: -0.02em;
 }
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+h1 {
+  border-bottom: 2px solid #b59b5a;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  border-bottom: 1px solid #d0c5aa;
+  padding-bottom: 0.2em;
+}
+
+
+
 
 article {
   line-height: 1.65;
@@ -50,6 +88,22 @@ article h2 {
 .callout-icon {
   display: none;
 }
+
+
+.callout {
+  background: rgba(255,255,255,0.25);
+  border-left: 3px solid #b59b5a;
+}
+
+img {
+  border-radius: 4px;
+}
+
+img {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
 
 /* Hide caption callout titles */
 
@@ -142,3 +196,4 @@ a.tag {
 a.tag:hover {
   color: #2563a8;
 }
+
