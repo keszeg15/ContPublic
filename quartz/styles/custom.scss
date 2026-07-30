@@ -95,32 +95,33 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* =========================
-   Wiki-style links
+   Wiki style internal links
    ========================= */
 
-/* Normal internal links */
-a.internal {
-  color: #2563a8;
+a.internal-link {
+  background-color: transparent !important;
+  color: #2563a8 !important;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
+  border-radius: 0;
+  padding: 0;
 }
 
-a.internal:hover {
-  color: #1d4f85;
+a.internal-link:hover {
+  background-color: transparent !important;
+  color: #1d4f85 !important;
 }
 
-/* Broken internal links */
-a.internal.broken {
-  color: #b42318;
-  text-decoration: underline;
+
+/* Broken links */
+
+a.internal-link.broken {
+  color: #b42318 !important;
   text-decoration-color: #b42318;
   text-decoration-style: wavy;
 }
 
-a.internal.broken:hover {
-  color: #8a1c14;
-}
 
 
 /* =========================
