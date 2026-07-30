@@ -254,7 +254,7 @@ plugins:
     options:
       includeAll: false
       includedProperties:
-		- Category
+        - Category
         - description
         - tags
         - aliases
