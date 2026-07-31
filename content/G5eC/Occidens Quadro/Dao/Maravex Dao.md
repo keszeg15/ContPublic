@@ -1,4 +1,6 @@
-
+---
+Category: Realm
+---
  > [!caption|right] Floats to the left
 > ![[MaravexHeralr.png]]
 > Címerük: A Hamuvirág 
@@ -7,9 +9,9 @@ Jelkép: arany virág, fekete vulkáni kőből nő ki. Jelentése: élet a hamub
 # **Maravex, Dao szigetének városa**
 
 Maravex egy dús, párás szigeten fekszik, ahol a dzsungel szinte ráfolyik a város falaira. Egykor tengeri hatalom volt, uralma alatt tartotta a környező szigeteket, de ez az idő elmúlt — ma már inkább **kereskedelmi és kulturális csomópont**, amely azonban nem felejtette el, hogyan kell uralkodni.
-**Maravex:** teraszok, udvarok, rituálék, kimondatlan szabályok
+A teraszok, udvarok, rituálék, és a kimondatlan szabályok városa.
+Népessége közel eléri a 30,000-et.
 
-- Population: 29,000 ?
 ##### **Illatok és színek városa**
 - **Színek:**  fekete, arany, mély vörös
 - Fűszerek, gyümölcsök, füstölők mindenhol.
