@@ -25,8 +25,7 @@ p {
   margin: 0.4rem 0;
 }
 
-ul,
-ol {
+ul, ol {
   margin-top: 0.3rem;
   margin-bottom: 0.6rem;
 }
@@ -72,19 +71,6 @@ h4, h5, h6 {
   margin-bottom: 0.25rem;
 }
 
-
-
-article {
-  line-height: 1.65;
-}
-
-article p {
-  margin-bottom: 1.1rem;
-}
-
-article {
-  font-size: 1.05rem;
-}
 
 
 
@@ -272,4 +258,188 @@ a.tag:hover {
 
 .note-properties-text {
   font-style: italic;
+}
+
+
+
+
+/* ==========================================================
+   CONT TYPOGRAPHY
+   ========================================================== */
+
+/* ---------- General ---------- */
+
+/*
+article {
+  line-height: 1.55;
+}
+*/
+
+article {
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+
+/* ---------- Paragraphs ---------- */
+
+article p {
+  margin: 0.45rem 0;
+  margin-bottom: 1.1rem;
+}
+
+
+/* Empty paragraph safety */
+article p:empty {
+  display: none;
+}
+
+/* ---------- Lists ---------- */
+
+article ul,
+article ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0.7rem;
+  padding-left: 1.4rem;
+}
+
+article li {
+  margin: 0.15rem 0;
+  line-height: 1.5;
+}
+
+article li > ul,
+article li > ol {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+/* ---------- Headings ---------- */
+
+article h1 {
+  margin-top: 1rem;
+  margin-bottom: 0.9rem;
+
+  padding-bottom: .35rem;
+  border-bottom: 2px solid #b59b5a;
+
+  letter-spacing: .03em;
+}
+
+article h2 {
+  margin-top: 1.8rem;
+  margin-bottom: .6rem;
+
+  padding-bottom: .2rem;
+  border-bottom: 1px solid rgba(181,155,90,.45);
+
+  letter-spacing: .02em;
+}
+
+article h3 {
+  margin-top: 1.4rem;
+  margin-bottom: .45rem;
+}
+
+article h4 {
+  margin-top: 1.2rem;
+  margin-bottom: .35rem;
+}
+
+article h5,
+article h6 {
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+}
+
+/* ---------- Heading + paragraph ---------- */
+
+article h1 + p,
+article h2 + p,
+article h3 + p,
+article h4 + p,
+article h5 + p,
+article h6 + p {
+  margin-top: 0;
+}
+
+/* ---------- Italic subtitle ---------- */
+
+article h1 + p em:only-child,
+article h2 + p em:only-child,
+article h3 + p em:only-child,
+article h4 + p em:only-child,
+article h5 + p em:only-child,
+article h6 + p em:only-child {
+  color: var(--gray);
+  font-size: .96em;
+}
+
+/* ---------- Blockquotes ---------- */
+
+article blockquote {
+  margin: .8rem 0;
+
+  padding: .2rem 1rem;
+
+  border-left: 3px solid #b59b5a;
+
+  background: rgba(181,155,90,.06);
+
+  font-style: italic;
+}
+
+article blockquote p {
+  margin: .35rem 0;
+}
+
+/* ---------- Horizontal rule ---------- */
+
+article hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid rgba(181,155,90,.45);
+}
+
+/* ---------- Tables ---------- */
+
+article table {
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+article th {
+  border-bottom: 2px solid #b59b5a;
+}
+
+article th,
+article td {
+  padding: .45rem .8rem;
+}
+
+/* ---------- Images ---------- */
+
+article img {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+/* ---------- Figure captions ---------- */
+
+article figcaption {
+  font-size: .9rem;
+  color: var(--gray);
+  text-align: center;
+}
+
+/* ---------- Code ---------- */
+
+article code {
+  font-size: .92em;
+}
+
+/* ---------- Selection ---------- */
+
+::selection {
+  background: rgba(181,155,90,.25);
 }
