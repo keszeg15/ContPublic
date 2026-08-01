@@ -21,31 +21,56 @@ code, pre {
   font-family: "JetBrains Mono", monospace;
 }
 
+p {
+  margin: 0.4rem 0;
+}
+
+ul,
+ol {
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+li {
+  margin: 0.15rem 0;
+}
 
 
 /* Cont Wiki typography */
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
 h1, h2, h3 {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 h1 {
   border-bottom: 2px solid #b59b5a;
   padding-bottom: 0.3em;
+  margin-top: 1.4rem;
+  margin-bottom: 0.8rem;
 }
 
 h2 {
   border-bottom: 1px solid #d0c5aa;
   padding-bottom: 0.2em;
+  margin-top: 1.3rem;
+  margin-bottom: 0.6rem;
 }
 
+h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
 
 
 

@@ -43,14 +43,14 @@ Category: Community
 
 ### Fogadók
 ##### A Hetedik Versszak
-_Kocsma szónokoknak, hivatalnokoknak és ügyeskedőknek_
+> _Kocsma szónokoknak, hivatalnokoknak és ügyeskedőknek_  
 - Furcsán csendes hely
 - Boroshordók között kis emelvény áll vitákhoz és felolvasásokhoz. Gyakori, hogy régi törvényverseket idéznek itt. 
 - Vendégkör:  ügyvédek, tanácssegédek, ambiciózus fiatal nemesek
 - Tulajdonos: **Selvo Theren** — nyugdíjas jegyző, aki állítólag Narthea törvényeinek felét fejből tudja
 
 ##### A Mély Harang
-_Régi tengerészfogadó a kikötő peremén_
+_Régi tengerészfogadó a kikötő peremén_  
 - Egy régi őrtoronyból alakították ki
 - Hangulat: Nyugodtabb, melankolikusabb hely,  Öreg kapitányok és térképészek járnak ide
 - Állítólag viharos éjszakákon mély haranghang hallatszik odalentről. A pletyka szerint a torony alatt régi vízi alagutak vannak
