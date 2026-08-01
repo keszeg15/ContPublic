@@ -3,7 +3,7 @@ Category: Community
 ---
 ## **Narthea**
 
- > [!caption|right] Floats to the left
+ > [!caption|right] 
 ![[NartheaHeraldry.png]]
 > Címerük: Felkelő Nap a tenger felett, körülötte lánc
 - **Narthea** egy önálló, kikötőváros-állam egy közepes szigeten: középkori jellegű világ, de különös, ókorihoz hajazó társadalmi vagy politikai berendezkedéssel. Kicsit „anakronisztikus”, modern a maga módján, de nem ipari értelemben  
@@ -23,7 +23,7 @@ Category: Community
 	> *nekik vendégjog és só adatik,* 
 	> *míg hűségük meg nem szegik.* 
 	> *ex lege maris*
-> A 9100-as években született törvény, amelynek nagy hatása lett zsoldosokra         
+> Egy fontos 9100-as években született törvény        
 - **Államrend**:
     - **Kettős vezetés**: a Földhős (belügyek, piacok, törvények őre) és a Tengerhős (kereskedelem és flotta irányítója) között állandó rivalizálás van.
     - Mindkettejük négy helyettessel rendelekezik, ezek tagjainak elnevezése a Tenger Második Hangja, ...a Tenger Ötödik Hangja. Hasonlóképp a Föld Második Hangja, ... a Föld Ötödik Hangja. 
@@ -38,11 +38,22 @@ Category: Community
 # Helyek
 
 ##### Histórikai es Jogi Kollégium
-- **Atroxon Piredes**, ismert nartheai tudós történész, fő területe a környező szigetvilág történelme, mítoszai, legendái.
+
+ > [!caption|left] 
+![[Atroxon Piredes.png]]
+> ...
+
+
+ **Atroxon Piredes**, ismert nartheai tudós történész, fő területe a környező szigetvilág történelme, mítoszai, legendái.
+
+
+
+
+
 
 ### Fogadók
 ##### A Hetedik Versszak
-> _Kocsma szónokoknak, hivatalnokoknak és ügyeskedőknek_  
+_Kocsma szónokoknak, hivatalnokoknak és ügyeskedőknek_  
 - Furcsán csendes hely
 - Boroshordók között kis emelvény áll vitákhoz és felolvasásokhoz. Gyakori, hogy régi törvényverseket idéznek itt. 
 - Vendégkör:  ügyvédek, tanácssegédek, ambiciózus fiatal nemesek
