@@ -267,6 +267,12 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: "./quartz/components/PhotoSwipe"
+    enabled: true
+    order: 100
+    layout:
+      position: afterBody
+      priority: 100
   - source: "@quartz-community/obsidian-plugin-excalidraw"
     enabled: true
     options:
