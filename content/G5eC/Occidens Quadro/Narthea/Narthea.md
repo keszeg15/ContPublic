@@ -14,15 +14,15 @@ Category: Community
 	- **Zsoldosok**: Ők a valódi erő, főleg tengeren. Sok köztük az idegen, akik így kapnak „vendégjogot”. 
 
 
- > [!aside| right] 
-	> *Ki láncot vág az öböl száján,*  
-	> *vám nélkül fut be éjnek árnyán,*  
-	> *attól hajó, s arany elvétetik;*  
-	> *de ki a várost vészben óvja,*  
-	> *bár idegen kardját bérbe hordja,*  
-	> *nekik vendégjog és só adatik,* 
-	> *míg hűségük meg nem szegik.* 
-	> *ex lege maris*  
+ > [!caption|right] 
+> *Ki láncot vág az öböl száján,*  
+> *vám nélkül fut be éjnek árnyán,*  
+> *attól hajó, s arany elvétetik;*  
+> *de ki a várost vészben óvja,*  
+> *bár idegen kardját bérbe hordja,*  
+> *nekik vendégjog és só adatik,* 
+> *míg hűségük meg nem szegik.* 
+> *ex lege maris*  
 > Egy fontos 9100-as években született törvény        
 - **Államrend**:
     - **Kettős vezetés**: a Földhős (belügyek, piacok, törvények őre) és a Tengerhős (kereskedelem és flotta irányítója) között állandó rivalizálás van.
@@ -41,7 +41,7 @@ Category: Community
 
  > [!caption|left] 
 ![[Atroxon Piredes.png]]
-> ... Atroxon Piredes tanítványai körében
+> Atroxon Piredes tanítványai körében
 
 
  **Atroxon Piredes**, ismert nartheai tudós történész, fő területe a környező szigetvilág történelme, mítoszai, legendái.

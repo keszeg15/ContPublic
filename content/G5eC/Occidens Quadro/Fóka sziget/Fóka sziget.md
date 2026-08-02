@@ -31,7 +31,7 @@ A sziget uralkodói az **Omathyr család**. Oldalágon rokonok a Shareni Morton 
 
 
 ##### Orsal Omathyr + Bonafir Bonas Omathyr
- > [!aside|clean right] 
+ > [!caption|clean right] 
 ![[Orsal Omathyr + Bonafir_Bonas_ Omathyr.png]]
 > Orsal Omathyr + Bonafir "Bonas" Omathyr
 
@@ -55,7 +55,7 @@ A sziget uralkodói az **Omathyr család**. Oldalágon rokonok a Shareni Morton 
 
 ##### Sunjeetha
 
- > [!aside|clean right] 
+ > [!caption|clean right] 
 ![[Sunjeetha.png]]
 > Sunjeetha
 
@@ -79,7 +79,7 @@ A sziget uralkodói az **Omathyr család**. Oldalágon rokonok a Shareni Morton 
 
 
 ##### Durell Varios + Janice Omathyr
- > [!aside|clean right] 
+ > [!caption|clean right] 
 ![[Durell Varios + Janice Omathyr.png]]
 > Durell Varios + Janice Omathyr
 
