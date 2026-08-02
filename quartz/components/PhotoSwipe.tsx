@@ -4,26 +4,16 @@ const PhotoSwipe: QuartzComponent = () => {
   return null
 }
 
+
 PhotoSwipe.afterDOMLoaded = `
+  console.log("PHOTOSWIPE COMPONENT LOADED")
+
   document.querySelectorAll("article img").forEach((img) => {
-    const link = img.closest("a")
-
-    if (!link) {
-      const wrapper = document.createElement("a")
-      wrapper.href = img.src
-      img.parentNode?.insertBefore(wrapper, img)
-      wrapper.appendChild(img)
-    }
-
-    img.parentElement?.classList.add("pswp-gallery")
-  })
-
-  document.querySelectorAll(".pswp-gallery img").forEach((img) => {
-    img.setAttribute("data-pswp-width", img.naturalWidth)
-    img.setAttribute("data-pswp-height", img.naturalHeight)
+    console.log("FOUND IMAGE", img)
   })
 
   import("./scripts/photoswipe.inline.ts")
 `
+
 
 export default (() => PhotoSwipe) satisfies QuartzComponentConstructor
