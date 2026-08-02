@@ -1,7 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor } from "./types"
 
 const PhotoSwipe: QuartzComponent = () => {
-  return <div id="photoswipe-test">PHOTOSWIPE HERE</div>
+  return null
 }
 
 PhotoSwipe.afterDOMLoaded = `
