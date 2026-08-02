@@ -1,15 +1,42 @@
-# Template - Group: Commerce
 
-## Overview
 
-**Type**: Commerce
 
-**Alignment**: Chaotic Evil, Chaotic Good, Chaotic Neutral, Lawful Evil, Lawful Good, Lawful Neutral, Neutral, Neutral Evil, Neutral Good, Unaligned
+##### Histórikai es Jogi Kollégium
 
-**Commerce Activities**: Exploration, Transportation, Trade, Banking, Distribution, Investment, Manufacturing, Other, Raw Materials, Sales
+ > [!caption|right] 
+![[Atroxon Piredes.png]]
+> ...
 
-**Commerce Organization**: Company, Conglomerate, Corporation, Guild, Other, Union
 
+ **Atroxon Piredes**, ismert nartheai tudós történész, fő területe a környező szigetvilág történelme, mítoszai, legendái.
+
+
+
+
+
+
+### Fogadók
+
+
+
+
+
+
+##### Histórikai es Jogi Kollégium
+
+ > [!caption|left] 
+![[Atroxon Piredes.png]]
+> ...
+
+
+ **Atroxon Piredes**, ismert nartheai tudós történész, fő területe a környező szigetvilág történelme, mítoszai, legendái.
+
+
+
+
+
+
+### Fogadók
 ### Placeholder Iconography
 
 ![Placeholder Iconography](https://publish-01.obsidian.md/access/36b98e212e9d73fe1bd4813f96b0fd71/z_Assets/Misc/ImagePlaceholder.png)  
