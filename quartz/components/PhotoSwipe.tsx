@@ -5,7 +5,6 @@ const PhotoSwipe: QuartzComponent = () => {
 }
 
 PhotoSwipe.afterDOMLoaded = `
-  import("./scripts/photoswipe.inline.ts")
+  import("./components/scripts/photoswipe.inline.ts")
 `
-
 export default (() => PhotoSwipe) satisfies QuartzComponentConstructor
