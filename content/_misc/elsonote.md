@@ -56,9 +56,30 @@ https://www.5esrd.com/gamemastering/monsters-foes/monsters-by-type/humanoids/hob
 
 callouts its?
 
+> [!aside|clean right] jobbos
+> ![[NartheaHeraldry.png]]
+> Címerük: Felkelő Nap a tenger felett, körülötte lánc
+
 
 > [!aside|tufte right] jobbos
 > jobbo smondom
+
+
+
+
+
+
+ > [!aside|clean right] jobbos
+	> *Ki láncot vág az öböl száján,*  
+	> *vám nélkül fut be éjnek árnyán,*  
+	> *attól hajó, s arany elvétetik;*  
+	> *de ki a várost vészben óvja,*  
+	> *bár idegen kardját bérbe hordja,*  
+	> *nekik vendégjog és só adatik,* 
+	> *míg hűségük meg nem szegik.* 
+	> *ex lege maris*  
+> Egy fontos 9100-as években született törvény        
+
 
 
 > [!aside|left] akarmi

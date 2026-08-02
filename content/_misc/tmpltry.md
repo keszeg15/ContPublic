@@ -27,8 +27,7 @@
 
 
 ##### Histórikai es Jogi Kollégium
-
- > [!caption|left] 
+ > [!aside|clean left] 
 ![[Atroxon Piredes.png]]
 > ...
 
