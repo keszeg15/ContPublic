@@ -18,9 +18,7 @@ A sziget uralkodói az **Omathyr család**. Oldalágon rokonok a Shareni Morton 
 	 - **Janice Omathyr**,  a középső lány, a Panorea Hercegnő első udvarhölgye
 		 - **Durell Varios**,  a férje
 	- **Aurenna**
-- **Soun-Jeetha**, a Főkonzul testőrségének vezetője.
-- .
-- 
+- **Soun-Jeetha**, a Főkonzul testőrségének vezetője
 
 # Térkép
 
