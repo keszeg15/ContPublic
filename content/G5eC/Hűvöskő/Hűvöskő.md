@@ -43,11 +43,13 @@ Category: Realm
 
 
 ### Helyek a szigeten és környékén
-- Pelikén szirt
+- Pelikán szirt
 - Hasumi Zátony
+	- Az Álmos Macska
 
 
 ### Szigetek
+- Taribio
 - Toluga
 - Kailano
 - Holtlélek Menedék

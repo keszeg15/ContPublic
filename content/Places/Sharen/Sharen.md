@@ -2,7 +2,7 @@
 tags:
   - Category/Region--Political
   - G5eC
-Political-Region: City-state
+Category: Realm
 ---
 # Sharen
 ## Overview
@@ -80,8 +80,3 @@ Hattér: a családok azért nem írtják ki az ellenállást, mert jórészt az 
 
 Sharen alapköveit ma már nem tudni, kik rakták le. A hajdani (főleg Nagy Császársági) feljegyzések szerint régen egy igen gazdag királyság volt ott, ahol ma Sharen húzódik meg. Harcias nép élt itt, akik harcoltak a Nagy Császársággal is a.u. 3000 körül. Aztán valószínűleg alulmaradtak velük szemben, és a [[Nagy Császárság]] bevonult a déli részekre, magáévá téve városaikat, és gyarmattá téve az országot. Ma már semmi sem maradt meg az ősi királyságból, csak egy-két kétes eredetű rom, és néhány elsárgult feljegyzés. Szóval Sharen, és a mögötte fekvő területek a Császárság birtokai voltak egészen addig, amíg erős volt a latinok hatalma.
 
-## Notes
-shareni \~= latin. Megértik egymást mint a csehek meg a szlovákok, néhány szó különbözik, kiejtés kicsit más. legyen igy, ez most megtetszett. a shareni az 70-80% latin
-
-
-- kraken kapcsolat vmelyik csaladnak?
