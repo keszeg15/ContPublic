@@ -1,3 +1,8 @@
+---
+Category: Community
+tags:
+  - G5eC
+---
 Aradia a Sziget nyugati partjai fekszik, par ezres kisvaros kis kikotovel - ami azert forgalmas, metr a nyugati parton nem sok jo kikotohely akad. Az Oebrigok fennahtosaga ala tartozik, akik a sziget kozepen fekvo huvosko banyak nagy reszet birtokoljak (de a kozpontjuk nem itt van). Ki tudnad dolgozni kicsit? Par fogado, kocsma, stb, helyi nevezetessegek, fontosabb szemelyisegek, stb.
 
 ---
