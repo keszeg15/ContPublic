@@ -53,39 +53,6 @@ Category: Realm
 - Holtlélek Menedék
 - Üvöltőszirt
 
-# Jegyzetek
-### Elovilag
-
-- halaszt / rak-halaszat. a kornyezo kisebb szigeteken foleg ez van, hozzak ide (a varos kornyeken mar nyilvan nincs olyan jo fogas)
-- nagyobb meretu rakok, iszap-rakok? [mudcrab](app://obsidian.md/Mudcrab%20\(1_8\))
-- pelikanok
-- voroses-barnas novenyzet? (lasd terkep) - ez is a huvos miatt? csak itt el meg?
-- huvospalma? stb.
-- huvosplatan?
-
-###### Huvoskovek
-- Szel-atfuvos, vizcsepegtetos/atfolyos hutes (mindketto kamrajaban kis kaviccsal)
-- Meret / suruseg is szamit
-- Osztalyozasuk van, nevesitett kategoriakkal: kiralyko, pettyezett, siraly (?) / szarka (?), tavaszko, szalka, …
-- Szinte minden otthonban van egy-ket apro darab, amit hutesre hasznalnak
-
-| 01 - 10 |            |
-| ------- | ---------- |
-| 11 - 30 |            |
-| 31 - 50 | 4d4 * 10   |
-| 51 - 70 | 5d6 * 10   |
-| 71 - 90 | 10d10 * 10 |
-| 91 - 97 | 6d8 * 100  |
-
-
-### Egyeb
- - Nem fekszik aramlatok utjaban, a nagy kereskedelmi utak elkerulik. Vannak veszelyes sziklazatonyok a kornyeken, nem trivialis a megkozelites
- - Demonhat oleleseben
- - De azert van forgalom, a kovek exportja miatt mindenkepp
-
-
-- nem nyilvánvaló, hogy a Hüvöskőt körbeölelő zátonyokon hol lehet keresztül menni. Vagy ezt egyszerűen úgy kell elképzelni, hogy sok helyen át lehet menni (ahol látszik hogy van rés), csak tudni kell navigálni köztük, és vannak köztük olyanok amit kevesen ismernek? Vannak a fejedben/jegyzeteidben átjárók köztudottak és forgalmasak?
-- a zatonyok: tobb helyen at lehet menni ahogy irod, de ismerni kell nagyon hozza (kell navigator) de inkabb eszakra, eszak-nyugat fele van tobb atjaro delrol-keletrol ugy gondoltam, hogy eleg zart (legalabbis nagyobb hajoknak), a Portal felol van bejarat, de ahhoz is kell tapasztalat vagy navigator
 
 ## NPCs
 
