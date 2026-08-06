@@ -8,8 +8,6 @@ Category: Terrain
 *Occidens Qadro, Occidens Öv, Occidens Archipelago*
 
 
-
-
 ##### [[Dao]]
 
 ##### [[Fóka sziget]]
