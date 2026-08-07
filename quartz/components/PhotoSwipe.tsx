@@ -1,8 +1,10 @@
 import { QuartzComponent, QuartzComponentConstructor } from "./types"
 // @ts-ignore
 import photoswipeScript from "./scripts/photoswipe.inline"
-// @ts-ignore
-import photoswipeStyles from "photoswipe/style.css"
+// Vendored from photoswipe 5.4.4. Importing the package's own stylesheet does not
+// work: the main build marks node_modules as external, so Node resolves it at
+// runtime and cannot load a .css file.
+import photoswipeStyles from "./styles/photoswipe.scss"
 
 const PhotoSwipe: QuartzComponent = () => {
   return null

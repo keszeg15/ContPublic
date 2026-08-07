@@ -1,3 +1,6 @@
 public
 node_modules
 .quartz-cache
+
+# vendored third-party stylesheet
+quartz/components/styles/photoswipe.scss
