@@ -393,6 +393,26 @@ article figcaption {
 }
 
 /* ==========================================================
+   Site logo (top of the left sidebar)
+   ========================================================== */
+
+/* Styled here rather than in the component, because component CSS is wrapped
+   in @layer quartz-base and would lose to the unlayered image rules above. */
+.site-logo {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.site-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* ==========================================================
    Callouts
    ========================================================== */
 

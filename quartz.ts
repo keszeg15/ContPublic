@@ -2,6 +2,7 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import { componentRegistry } from "./quartz/components/registry"
 import CategoryBadge from "./quartz/components/CategoryBadge"
 import PhotoSwipe from "./quartz/components/PhotoSwipe"
+import SiteLogo from "./quartz/components/SiteLogo"
 
 // Components living in this repo rather than in an installed plugin package.
 // The plugin loader only knows how to install directory-based packages, so the
@@ -9,6 +10,7 @@ import PhotoSwipe from "./quartz/components/PhotoSwipe"
 // The registry key must match the last path segment of that source.
 componentRegistry.register("CategoryBadge", CategoryBadge, "local")
 componentRegistry.register("PhotoSwipe", PhotoSwipe, "local")
+componentRegistry.register("SiteLogo", SiteLogo, "local")
 
 const config = await loadQuartzConfig()
 export default config

@@ -195,6 +195,12 @@ plugins:
     layout:
       position: beforeBody
       priority: 30
+  - source: "./quartz/components/SiteLogo"
+    enabled: true
+    layout:
+      position: left
+      priority: 5
+      display: all
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
