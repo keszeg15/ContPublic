@@ -75,6 +75,18 @@ body {
   font-family: $serif;
 }
 
+/* The theme targets `p` directly with its own sans stack, and a direct rule
+   always beats a value inherited from `body`, so the typeface has to be
+   restated here. Lists are included because markdown wraps loose list items in
+   a <p>: without this a bullet with a blank line before it renders sans while a
+   tight one renders serif. */
+p,
+ul,
+ol,
+li {
+  font-family: $serif;
+}
+
 code,
 pre {
   font-family: $mono;
@@ -92,12 +104,6 @@ ol {
 
 li {
   margin: 0.15rem 0;
-}
-
-ul,
-ol,
-li {
-  font-family: inherit;
 }
 
 /* ---------- Headings ---------- */
