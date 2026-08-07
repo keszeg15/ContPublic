@@ -12,7 +12,7 @@ Szűkebb értelemben az a szigettenger, amelynek határai nagyjából Narh, Dao 
 
 
 # Szűkebb Occidens
-*Kassádiai Tenger, Nartheai tenger, a Láncok Tengere, a Kalózok Tengere*
+*Occidens Tenger, Kassádiai Tenger, Nartheai tenger, a Láncok Tengere, a Kalózok Tengere*
 ##### [[Dao]]
 
 ##### [[Fóka sziget]]
