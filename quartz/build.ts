@@ -9,7 +9,7 @@ import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
 import { emitContent } from "./processors/emit"
 import cfg from "../quartz"
-import { FilePath, joinSegments, slugifyFilePath } from "./util/path"
+import { FilePath, FullSlug, joinSegments, slugifyFilePath } from "./util/path"
 import { detectSlugCollisions, formatCollisionWarning } from "./util/slugCollisions"
 import chokidar from "chokidar"
 import { ProcessedContent } from "./plugins/vfile"
@@ -27,6 +27,39 @@ function reportSlugCollisions(content: ProcessedContent[]): void {
   const collisions = detectSlugCollisions(content)
   if (collisions.length === 0) return
   console.warn(styleText("yellow", formatCollisionWarning(collisions)))
+}
+
+// Obsidian's folder-note plugin keeps a folder's own note at `Folder/Folder.md`, which
+// slugifyFilePath collapses to `folder/index`. The `shortest` link strategy matches a wikilink
+// against the last segment of each slug, so `[[Folder]]` only ever sees `index` and falls back to
+// a vault-root path that does not exist. Registering the folder path as an extra slug makes those
+// links resolve. A name is skipped when it is already claimed, so an existing match is never
+// hijacked and an ambiguous one is never guessed.
+function withFolderNoteSlugs(slugs: FullSlug[]): FullSlug[] {
+  const claimedNames = new Set(slugs.map((slug) => slug.split("/").at(-1)))
+  const folderNotes = new Map<string, FullSlug>()
+  const ambiguousNames = new Set<string>()
+
+  for (const slug of slugs) {
+    if (!slug.includes("/") || !slug.endsWith("/index")) continue
+
+    const folderSlug = slug.slice(0, -"/index".length) as FullSlug
+    const name = folderSlug.split("/").at(-1)!
+    if (claimedNames.has(name)) continue
+
+    if (folderNotes.has(name)) {
+      ambiguousNames.add(name)
+      continue
+    }
+
+    folderNotes.set(name, folderSlug)
+  }
+
+  for (const name of ambiguousNames) {
+    folderNotes.delete(name)
+  }
+
+  return [...slugs, ...folderNotes.values()]
 }
 
 type ContentMap = Map<
@@ -88,7 +121,7 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   const filePaths = markdownPaths.map((fp) => joinSegments(argv.directory, fp) as FilePath)
   ctx.allFiles = allFiles
-  ctx.allSlugs = allFiles.map((fp) => slugifyFilePath(fp as FilePath))
+  ctx.allSlugs = withFolderNoteSlugs(allFiles.map((fp) => slugifyFilePath(fp as FilePath)))
 
   const parsedFiles = await parseMarkdown(ctx, filePaths)
   reportSlugCollisions(parsedFiles)
@@ -283,7 +316,7 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
 
     // update allFiles and then allSlugs with the consistent view of content map
     ctx.allFiles = Array.from(contentMap.keys())
-    ctx.allSlugs = ctx.allFiles.map((fp) => slugifyFilePath(fp as FilePath))
+    ctx.allSlugs = withFolderNoteSlugs(ctx.allFiles.map((fp) => slugifyFilePath(fp as FilePath)))
 
     const markdownContent = Array.from(contentMap.values())
       .filter((file) => file.type === "markdown")
