@@ -27,8 +27,23 @@ $ink: #2c2722; // article title
 $prop-key: #6b6255;
 $prop-value: #2f5f8f;
 
-$serif: Georgia, "Times New Roman", serif;
+$serif: Georgia, "Times New Roman", serif; // headings
 $mono: "JetBrains Mono", monospace;
+
+// Body text. Mirrors the stack the theme applies to paragraphs, so the running
+// text keeps the look it had before the typeface was made consistent.
+$sans:
+  ui-sans-serif,
+  -apple-system,
+  BlinkMacSystemFont,
+  system-ui,
+  "Segoe UI",
+  Roboto,
+  Inter,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  sans-serif;
 
 /* Parchment tones. These override the theme colours from
    quartz.config.yaml for both light and dark mode, because
@@ -72,19 +87,18 @@ body:has(.category-badge[data-category="Community"]) {
    ========================================================== */
 
 body {
-  font-family: $serif;
+  font-family: $sans;
 }
 
-/* The theme targets `p` directly with its own sans stack, and a direct rule
-   always beats a value inherited from `body`, so the typeface has to be
-   restated here. Lists are included because markdown wraps loose list items in
-   a <p>: without this a bullet with a blank line before it renders sans while a
-   tight one renders serif. */
+/* Restated rather than left to inherit from `body`: the theme targets `p`
+   directly, and a direct rule always beats an inherited value. Lists are
+   included because markdown wraps loose list items in a <p>, so without this a
+   bullet with a blank line before it would not match a tight one. */
 p,
 ul,
 ol,
 li {
-  font-family: $serif;
+  font-family: $sans;
 }
 
 code,
