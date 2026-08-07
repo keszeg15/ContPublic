@@ -8,7 +8,7 @@ Category: Terrain
 # Arany Út
 
 **1. Elhelyezkedése**
-Az Arany Út a Kontinens legnagyobb forgalmú útja. Az Arany Út köti össze Északot Nagyvárossal. A Shír Királyságban ugyan kettéágazik [[Grún Városállamok|Grún]] és [[Kőtorok]] felé, ezután az előbbit hívják Arany Útnak, míg az utóbbit inkább Nagy Északi Út néven emlegetik. A Shírtől délre fekvő útrészt azonban vita nélkül mindenki Arany Útnak nevezi. 
+Az Arany Út a Kontinens legnagyobb forgalmú útja. Az Arany Út köti össze Északot Nagyvárossal. A Shír Királyságban ugyan kettéágazik [[Grún Városállamok|Grún]] és [[Kőtorok]] illetve az [[Ezüsthegyek]] felé, ezután az előbbit hívják Arany Útnak, míg az utóbbit inkább [[Ezüst Út]] néven emlegetik. A Shírtől délre fekvő útrészt azonban vita nélkül mindenki Arany Útnak nevezi. 
 
 **2. Történelme**
 ...

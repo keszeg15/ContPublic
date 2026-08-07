@@ -1,31 +1,17 @@
 ---
-ImportedOn: "Thursday, April 24, 2025 20:58:05"
 Aliases:
-  - "Ezust Ut"
-Category: "Region: Geographical"
+  - Ezust Ut
 Tags:
-  - "Category/Region--Geographical"
-Geographical-Region: "Travel Route"
-Climate: "Temperate"
-parent:
-  - "Region_ Geographical"
-up:
-  - "Region_ Geographical"
-prev:
-  - "00 Campaign Master"
-next:
-  - "Genral Campaign_quest ideas"
-RWtopicId: "Topic_400"
+  - Category/Region--Geographical
+Category: Terrain
 ---
 # Ezüst Út
-## Overview
-**Geographical Region**: Travel Route
-#Geographical-Region/Travel-Route
 
-## Description
-**Climate**: Temperate
-#Climate/Temperate
+Az Arany Út köti össze Északot Nagyvárossal. A Shír Királyságban ugyan kettéágazik [[Grún Városállamok|Grún]] és [[Kőtorok]] illetve az [[Ezüsthegyek]] felé, ezután az előbbit hívják Arany Útnak, míg az utóbbit [[Ezüst Út]] néven emlegetik.
 
-## Profile
-A Hegyi Fogadó \[jegyzetek mappa]
+- A Hegyi Fogadó \[jegyzetek mappa]
+
+# Tags
+**Geographical Region**: Travel Route #Geographical-Region/Travel-Route
+**Climate**: Temperate #Climate/Temperate
 

@@ -6,6 +6,8 @@ aliases:
 Category: Terrain
 ---
 *Occidens Qadro, Occidens Öv, Occidens Archipelago*
+ > [!caption|right] 
+> ![[HKEnvironment.png]]
 
 Tágabb értelemben a Quadro Szigettenger nyugati része, Corsina (néha beleértve) és a Démonhát által közrefogott terület. Keleti határai az egykori Kassád Birodalom környékén húzódnak, a Tizenkét Királyságot már nem szokás idesorolni.
 Szűkebb értelemben az a szigettenger, amelynek határai nagyjából Narh, Dao és Kassádia szigetei. Az idők során hívták már ezt a részt Kassádiai Tengernek vagy Birodalomnak, Nartheai tengernek, a Láncok Tengerének vagy a Kalózok Tengerének. Egyes részein a mai napig ragaszkodnak egyik-másik elnevezéshez.
