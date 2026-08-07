@@ -17,7 +17,8 @@ article img {
   cursor: zoom-in;
 }
 
-article a img {
+/* Images that link somewhere else keep navigating, so they keep the link cursor. */
+article a:not([href$=".avif"]):not([href$=".gif"]):not([href$=".jpg"]):not([href$=".jpeg"]):not([href$=".png"]):not([href$=".svg"]):not([href$=".webp"]) img {
   cursor: pointer;
 }
 `,
