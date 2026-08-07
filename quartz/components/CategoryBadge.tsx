@@ -37,7 +37,7 @@ CategoryBadge.css = `
   display: inline-block;
   margin-bottom: 1rem;
   padding: 0.3rem 0.8rem;
-  border-left: 3px solid var(--cont-gold, #b59b5a);
+  border-left: 3px solid var(--cont-accent, #b59b5a);
   color: var(--darkgray);
   font-size: 0.9rem;
   font-weight: 600;

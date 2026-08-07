@@ -16,6 +16,8 @@ $gold-wash: rgba($gold, 0.06); // blockquote background
 $gold-select: rgba($gold, 0.25); // text selection
 $rule-light: #d0c5aa; // h2 rule outside article bodies
 
+$sea: #4f7a86; // Community accent, in place of the default gold
+
 $link: #2563a8;
 $link-hover: #1d4f85;
 $link-broken: #b42318;
@@ -38,11 +40,31 @@ $mono: "JetBrains Mono", monospace;
   --darkgray: #514a42;
   --dark: #2c2722;
 
-  /* Mirrored as custom properties so component CSS can reuse them */
-  --cont-gold: #{$gold};
-  --cont-gold-rule: #{$gold-rule};
+  /* The accent goes through custom properties rather than the Sass variables
+     directly so a page can retint itself per Category further down. Gold is
+     the default, which is also what Realm pages keep. */
+  --cont-accent: #{$gold};
+  --cont-accent-rule: #{$gold-rule};
+  --cont-accent-wash: #{$gold-wash};
+  --cont-accent-select: #{$gold-select};
+
   --cont-link: #{$link};
   --cont-link-hover: #{$link-hover};
+}
+
+/* ---------- Per-Category accent ----------
+
+   The Category badge carries a data-category attribute, so a page can be
+   recognised from its own content with no change to any note's front matter.
+   Only the accent colour changes: spacing, type and layout stay identical.
+   Realm keeps the default gold. Legacy Category values render no badge and
+   so keep the default too. */
+
+body:has(.category-badge[data-category="Community"]) {
+  --cont-accent: #{$sea};
+  --cont-accent-rule: #{rgba($sea, 0.45)};
+  --cont-accent-wash: #{rgba($sea, 0.06)};
+  --cont-accent-select: #{rgba($sea, 0.25)};
 }
 
 /* ==========================================================
@@ -99,7 +121,7 @@ h6 {
 }
 
 h1 {
-  border-bottom: 2px solid $gold;
+  border-bottom: 2px solid var(--cont-accent);
   padding-bottom: 0.3em;
   margin-top: 1.4rem;
   margin-bottom: 0.8rem;
@@ -168,7 +190,7 @@ article {
   font-weight: 700;
   color: $ink;
 
-  border-bottom: 2px solid $gold;
+  border-bottom: 2px solid var(--cont-accent);
 
   padding-bottom: 0.4rem;
   margin-bottom: 1rem;
@@ -211,13 +233,13 @@ article h1 {
   margin-bottom: 0.9rem;
 
   padding-bottom: 0.35rem;
-  border-bottom: 2px solid $gold;
+  border-bottom: 2px solid var(--cont-accent);
 
   letter-spacing: 0.03em;
 }
 
 article h1:first-of-type {
-  border-bottom: 2px solid $gold;
+  border-bottom: 2px solid var(--cont-accent);
   padding-bottom: 0.35rem;
   margin-bottom: 1rem;
 }
@@ -227,7 +249,7 @@ article h2 {
   margin-bottom: 0.6rem;
 
   padding-bottom: 0.2rem;
-  border-bottom: 1px solid $gold-rule;
+  border-bottom: 1px solid var(--cont-accent-rule);
 
   letter-spacing: 0.02em;
 }
@@ -276,9 +298,9 @@ article blockquote {
 
   padding: 0.2rem 1rem;
 
-  border-left: 3px solid $gold;
+  border-left: 3px solid var(--cont-accent);
 
-  background: $gold-wash;
+  background: var(--cont-accent-wash);
 
   font-style: italic;
 }
@@ -292,7 +314,7 @@ article blockquote p {
 article hr {
   margin: 2rem 0;
   border: none;
-  border-top: 1px solid $gold-rule;
+  border-top: 1px solid var(--cont-accent-rule);
 }
 
 article table {
@@ -301,7 +323,7 @@ article table {
 }
 
 article th {
-  border-bottom: 2px solid $gold;
+  border-bottom: 2px solid var(--cont-accent);
 }
 
 article th,
@@ -358,7 +380,7 @@ article figcaption {
   border-radius: 4px;
   border-width: 1px;
   background: rgba(255, 255, 255, 0.25);
-  border-left: 3px solid $gold;
+  border-left: 3px solid var(--cont-accent);
 }
 
 .callout-title {
@@ -447,7 +469,7 @@ a.tag:hover {
 .note-properties {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
-  border-left: 3px solid $gold;
+  border-left: 3px solid var(--cont-accent);
   padding-left: 1rem;
 }
 
@@ -478,5 +500,5 @@ a.tag:hover {
    ========================================================== */
 
 ::selection {
-  background: $gold-select;
+  background: var(--cont-accent-select);
 }
