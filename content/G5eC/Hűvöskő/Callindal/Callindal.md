@@ -3,7 +3,10 @@ tags:
   - G5eC
 Category: Community
 ---
+ > [!caption|right] 
+> ![[Callindal.jpg]]
 
+[[Hűvöskő]] szigete a [[Quadro-szigettenger]] északnyugati sarkánál fekszik. A sziget (és a környező kisebb szigetek) alkotják a **Hűvöskői Hercegség**et. Fővárosa a sziget délkeleti partjánál fekvő Callindal városa.
 
 # Védelmek
 
@@ -133,7 +136,7 @@ Ismertebbek: **Garasos, Lépcsős, Pelikán, Obbo Ivója, Részeges Sügér
 - Fehér terméskőből és nartheai márványból épült elegáns, drága bordély a Futárok utcájában. 
 - Madame Ramona 
 - Aznar, kidobó
-- Melanie Jade, fiatal kurtizán.
+- **Melanie Jade**, fiatal kurtizán.
 
 
 
