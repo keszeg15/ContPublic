@@ -14,9 +14,9 @@ A város színházzal bír és jellemző a művészet-pártolás.
 A hatalom birtokosai a Lord Konzul, városi tanács, papok és kereskedők.
 
 # **Razzidoc városnegyedei**
+### A Kikötőnegyed
  > [!caption|right] 
 > ![[Razzidoc.jpg]]
-### A Kikötőnegyed
 - A város szíve, ahol a halászhajók, rákcsapdák és kisebb kereskedőhajók fordulnak meg. Zajos, halszagú, mindig nedves a kövezete.
 - **Az Árnyékutcák** : Félig rejtett, félig ismert sikátorok a kikötő és a piac között. A város **fél-alvilágának** otthona: csempészek, szerencsejáték-barlangok, illegális piachelyek.
 - ###### A Sós Kagyló (kikötőnegyed)
