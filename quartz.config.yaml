@@ -267,6 +267,12 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: "./quartz/components/CategoryBadge"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 12
+      display: all
   - source: "./quartz/components/PhotoSwipe"
     enabled: true
     order: 100
