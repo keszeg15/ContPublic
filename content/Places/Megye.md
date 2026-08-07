@@ -1,35 +1,18 @@
 ---
-ImportedOn: "Thursday, April 24, 2025 20:58:05"
-Category: "Region: Political"
 Tags:
-  - "Category/Region--Political"
-Political-Region: "Country"
-parent:
-  - "Region_ Political"
-up:
-  - "Region_ Political"
-prev:
-  - "Kőtorok"
-next:
-  - "Grún Városállamok"
-RWtopicId: "Topic_71"
+  - Category/Region--Political
+Category: Realm
 ---
 # Megye
-## Overview
-**Political Region**: Country
-#Political-Region/Country
+**Political Region**: Country #Political-Region/Country
 
-## Description
+
 “Sütőtöki” Valejjo Orackson Fimanoll Ursulla: Egy kis gnóm kalandozásai a Megyében, és beszámolója az ott tapasztaltakról a nyájas olvasók táborának...
-
-(Az itt olvashatókat egy kicsit megszűrtük, mivel túl soknak találtuk a benne található fölösleges szócséplést, ami a gnómokra általában jellemző, és ezért nem kívánatos azok számára, akiknek nincs ideje a hosszadalmas szóvirágokat elolvasni, és egyébként sincs kedvük ehhez az egészhez, és...)
-
-- Ustijuf, a [[HT - Nagyvárosi Nagykönyvtár (T30)|Nagykönyvtár]] egyik gnóm könyvtárosa
-
+*(Az itt olvashatókat egy kicsit megszűrtük, mivel túl soknak találtuk a benne található fölösleges szócséplést, ami a gnómokra általában jellemző, és ezért nem kívánatos azok számára, akiknek nincs ideje a hosszadalmas szóvirágokat elolvasni, és egyébként sincs kedvük ehhez az egészhez, és...)*
+<p align="right"> Ustijuf, a Nagyvárosi Nagykönyvtár egyik gnóm könyvtárosa </p>
 (Sajnos a megszűrés is egy kicsit megszűrésre szorult...)
-
-- Boris Mornstone, a [[HT - Nagyvárosi Nagykönyvtár (T30)|Nagykönyvtár]] egy ember tudósa
-
+<p align="right">Boris Mornstone, a Nagyvárosi Nagykönyvtár egy ember tudósa
+</p>
 **1. Elhelyezkedés**
 
 A Megye a Kontinens keleti tengerpartján helyezkedik el, szomszédai: Felföld (északkelet), „[[Bastardia|Keleti provinciák]]” (észak és nyugat), [[Zultoria]] (dél), [[Hagal]] (dél).
@@ -63,81 +46,4 @@ A megalakulás után a Megye vezetői úgy vélték, hogy egy ideig mindenképp 
 (Innentől a történeti hűség miatt átveszem a szót, és egy jelentős részt kihagyok az eredeti műből, ami rendkívül speciális részeivel foglalkozik a történelemnek, külön kiemelve a szerző egykori őseinek szerepét és tetteit.)
 
 A Felföldiek hamar abbahagyták a Megyében a rendszeres portyázást, mivel ezek rájuk nézve elég megalázóak voltak, hiszen egy hobbit falu megtámadásakor hiába rontottak be a támadók vérre szomjazva, a hobbitok gyorsan és fürgén elbújtak, így sem dicső harcra, sem pedig izgalmas üldözésre, vagy egyéb szórakozásra (mint amilyen a nők megerőszakolása) nem jutott lehetőség. Az egyetlen értelme az ilyen portyáknak a zsákmány volt. A Hagaliak is hasonló okokból nem támadtak ki. Terjeszkedni nem nagyon tudtak, mert a *menhír* határt szabott ennek, rabszolgát pedig szintén nem volt értelme innen szerezniük, hisz a hobbitok és gnómok híresen rossz rabszolgák. A [[Bastardia|Keleti provinciák]] urai pedig egyenlőre el voltak foglalva egymással és állítólag az aprók istenei is védték a Megyét (ez állítólag hatalmas és elrettentő illúziókban, továbbá szörnyekben nyilvánult meg, amik közül sokkal még ma is találkozhatunk arrafelé). Persze minden illúzió előbb-utóbb lelepleződik, és eljött az az idő, mikor az egyik úr rádöbbent, hogy milyen könnyű préda is a Megye...
-
-**4.5**
-
-## Resources
-@LRGG - Alternate Paths Prestige Classes.pdf
-
-Jabberwocky Scout Leader
-
-NG small humanoid (halfling)
-
-Halfling Dragon Scout 5/ fighter 3
-
-Init +7; Perception +12;
-
-Defense
-
-AC 21 (+7 Armor, +3 Dex, +1 size)
-
-hp 60 (5d10 + 3d10 + 24)
-
-Fort +10; Ref +9; Will +6 (+2 vs fear);
-
-Offense
-
-Speed 25 ft. (20 ft. in armor)
-
-Melee longsword +11/+6 (1d6 + 3/ 19-20 x2)
-
-Ranged composite longbow +12/+7 (1d6 + 3/ x3)
-
-Space 5 ft.; Reach 5 ft
-
-Special Abilities first aid 2/day (8 hp)
-
-Tactics
-
-During Combat
-
-The scout leader begins combat wielding her longbow,
-
-peppering foes from a distance. If forced into melee
-
-range, she quickdraws her longsword, but returns to
-
-using her longbow when it is safe to do so. If any allies
-
-become seriously injured, she heals them using her
-
-first aid ability.
-
-Statistics
-
-STR 14, DEX 16, CON 14, INT 10, WIS 10, CHA 12
-
-BAB +8; CMB +10; CMD 23
-
-Skills Climb +9, Perception +12, Survival +10, Swim +9
-
-Feats Deadly Aim, Dodge, Fleet, Improved Initiative,
-
-Point Blank Shot, Precise Strike, Quick Draw,
-
-Toughness
-
-Special Qualities armor training 2, bravery +2,
-
-fearless, halfling luck, keen senses, sure footed,
-
-weapon familiarity, wyrmling, merit badges (athletics,
-
-bullseye, community, first aid, squire), wyrm scout
-
-Gear +1 breastplate, +1 longsword, +1 composite
-
-longbow (+2), 40 arrows
-
-GP 215
 
