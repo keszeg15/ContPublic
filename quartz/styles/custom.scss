@@ -334,6 +334,23 @@ article figcaption {
 }
 
 /* ==========================================================
+   Lightbox (PhotoSwipe)
+   ========================================================== */
+
+/* PhotoSwipe sizes each slide with an inline width and height, but base.scss
+   caps images at max-width: 100% and the zoom wrapper it measures against is
+   0px wide, which collapses the slide to nothing. PhotoSwipe ships this same
+   reset, and it loses because component stylesheets are wrapped in
+   @layer quartz-base while this file is unlayered. Restating it here wins.
+   The image rules above would otherwise round and shadow the full-size image. */
+.pswp img {
+  max-width: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+}
+
+/* ==========================================================
    Callouts
    ========================================================== */
 

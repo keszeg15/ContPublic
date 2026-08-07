@@ -3,6 +3,8 @@ import PhotoSwipeLightbox from "photoswipe/lightbox"
 
 type Slide = {
   src: string
+  /** Already-loaded page image, shown while the full-size file decodes. */
+  msrc: string
   width: number
   height: number
   alt: string
@@ -39,6 +41,7 @@ function zoomableImages(root: HTMLElement): HTMLImageElement[] {
 function toSlide(img: HTMLImageElement): Slide {
   return {
     src: fullSizeSrc(img)!,
+    msrc: img.currentSrc || img.src,
     width: img.naturalWidth || img.width,
     height: img.naturalHeight || img.height,
     alt: img.alt,
@@ -69,25 +72,16 @@ document.addEventListener("click", (ev) => {
   if (ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey) return
 
   const root = contentRoot(target)
-  if (!root) {
-    console.debug("photoswipe: image is outside the content area, ignoring click")
-    return
-  }
+  if (!root) return
 
   const images = zoomableImages(root)
   const index = images.indexOf(target)
-  if (index < 0) {
-    console.debug("photoswipe: image is not zoomable (linked elsewhere), ignoring click")
-    return
-  }
+  if (index < 0) return
 
   const slides = images.map(toSlide)
 
   // PhotoSwipe cannot size a slide without dimensions, so leave broken images be.
-  if (!slides[index].width || !slides[index].height) {
-    console.debug("photoswipe: image has no dimensions yet, ignoring click")
-    return
-  }
+  if (!slides[index].width || !slides[index].height) return
 
   ev.preventDefault()
   getLightbox().loadAndOpen(index, slides)
