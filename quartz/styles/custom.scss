@@ -1,31 +1,69 @@
 @use "./variables.scss" as *;
 
+/* ==========================================================
+   Cont wiki — parchment style
 
-/* =========================
-   Cont parchment style
-   ========================= */
+   Palette and typography live at the top; everything below
+   is grouped by what it styles. Colours are defined once as
+   Sass variables so a hue change is a one-line edit.
+   ========================================================== */
 
+/* ---------- Palette ---------- */
+
+$gold: #b59b5a; // headings rules, callout and blockquote edges
+$gold-rule: rgba($gold, 0.45); // softer rule for h2 and hr
+$gold-wash: rgba($gold, 0.06); // blockquote background
+$gold-select: rgba($gold, 0.25); // text selection
+$rule-light: #d0c5aa; // h2 rule outside article bodies
+
+$link: #2563a8;
+$link-hover: #1d4f85;
+$link-broken: #b42318;
+$tag: #5b6b7a;
+
+$ink: #2c2722; // article title
+$prop-key: #6b6255;
+$prop-value: #2f5f8f;
+
+$serif: Georgia, "Times New Roman", serif;
+$mono: "JetBrains Mono", monospace;
+
+/* Parchment tones. These override the theme colours from
+   quartz.config.yaml for both light and dark mode, because
+   custom.scss sits outside the quartz-base cascade layer. */
 :root {
   --light: #f4f0e6;
   --lightgray: #ded8ca;
   --gray: #8a8175;
   --darkgray: #514a42;
   --dark: #2c2722;
+
+  /* Mirrored as custom properties so component CSS can reuse them */
+  --cont-gold: #{$gold};
+  --cont-gold-rule: #{$gold-rule};
+  --cont-link: #{$link};
+  --cont-link-hover: #{$link-hover};
 }
+
+/* ==========================================================
+   Global typography
+   ========================================================== */
 
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: $serif;
 }
 
-code, pre {
-  font-family: "JetBrains Mono", monospace;
+code,
+pre {
+  font-family: $mono;
 }
 
 p {
   margin: 0.4rem 0;
 }
 
-ul, ol {
+ul,
+ol {
   margin-top: 0.3rem;
   margin-bottom: 0.6rem;
 }
@@ -34,24 +72,41 @@ li {
   margin: 0.15rem 0;
 }
 
+ul,
+ol,
+li {
+  font-family: inherit;
+}
 
-/* Cont Wiki typography */
+/* ---------- Headings ---------- */
 
-h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
+h1,
+h2,
+h3 {
+  font-family: $serif;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
+h4,
+h5,
+h6 {
+  font-family: $serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
 h1 {
-  border-bottom: 2px solid #b59b5a;
+  border-bottom: 2px solid $gold;
   padding-bottom: 0.3em;
   margin-top: 1.4rem;
   margin-bottom: 0.8rem;
 }
 
 h2 {
-  border-bottom: 1px solid #d0c5aa;
+  border-bottom: 1px solid $rule-light;
   padding-bottom: 0.2em;
   margin-top: 1.3rem;
   margin-bottom: 0.6rem;
@@ -62,248 +117,69 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-
-h4, h5, h6 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
+/* Stop floated images from spilling into the next section */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
 }
 
-
-/* A headerekben lévő linkek örököljék a header stílusát */
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+/* Links inside headings keep the heading's own type */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
   font: inherit;
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
   letter-spacing: inherit;
 
-  color: #2563a8(--secondary);   // vagy amelyik kék színt használod
+  color: $link;
   text-decoration: underline;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-  color: #2563a8(--tertiary);
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: $link-hover;
 }
-
-/* =========================
-   Article titles
-   ========================= */
-
-article h1:first-of-type {
-  border-bottom: 2px solid #b59b5a;
-  padding-bottom: .35rem;
-  margin-bottom: 1rem;
-}
-
-article h2 {
-  border-bottom: 1px solid rgba(181,155,90,.45);
-  padding-bottom: .15rem;
-  margin-top: 2rem;
-}
-
-.article-title {
-    font-size: 2.2rem;
-    letter-spacing: .03em;
-    font-weight: 700;
-    color: #2c2722;
-
-    border-bottom: 2px solid #b59b5a;
-
-    padding-bottom: .4rem;
-    margin-bottom: 1rem;
-}
-
-/* Cont Wiki callouts */
-
-.callout {
-  border-radius: 4px;
-  border-width: 1px;
-}
-
-.callout-title {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.callout-icon {
-  display: none;
-}
-
-
-.callout {
-  background: rgba(255,255,255,0.25);
-  border-left: 3px solid #b59b5a;
-}
-
-img {
-  border-radius: 4px;
-}
-
-img {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-
-
-/* Hide caption callout titles */
-
-blockquote.callout[data-callout="caption"] .callout-title {
-  display: none;
-}
-
-blockquote.callout[data-callout="caption"] {
-  padding-top: 0.5rem;
-}
-
-/* Cont Wiki - floating images */
-
-blockquote.callout[data-callout="caption"][data-callout-metadata="right"] {
-  float: right;
-  width: 260px;
-  margin: 0 0 1rem 1.5rem;
-}
-
-blockquote.callout[data-callout="caption"][data-callout-metadata="left"] {
-  float: left;
-  width: 260px;
-  margin: 0 1.5rem 1rem 0;
-}
-
-blockquote.callout[data-callout="caption"] img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-blockquote.callout[data-callout="caption"] .callout-title {
-  font-size: 0.85rem;
-  font-style: italic;
-}
-
-/* Stop floating images before new sections */
-
-h1, h2, h3, h4, h5, h6 {
-  clear: both;
-}
-
-
-
-/* =========================
-   Wiki style internal links
-   ========================= */
-
-a.internal-link {
-  background-color: transparent !important;
-  color: #2563a8 !important;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-  border-radius: 0;
-  padding: 0;
-}
-
-a.internal-link:hover {
-  background-color: transparent !important;
-  color: #1d4f85 !important;
-}
-
-
-/* Broken links */
-
-a.internal-link.broken {
-  color: #b42318 !important;
-  text-decoration-color: #b42318;
-  text-decoration-style: wavy;
-}
-
-
-
-/* =========================
-   Tags
-   ========================= */
-
-/* Remove "button/pill" feeling from tags */
-a.tag {
-  color: #5b6b7a;
-  background: none;
-  border: none;
-  padding: 0;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-
-a.tag:hover {
-  color: #2563a8;
-}
-
-/* =========================
-   Note properties styling
-   ========================= */
-
-.note-properties {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  border-left: 3px solid #b59b5a;
-  padding-left: 1rem;
-}
-
-.note-properties table {
-  background: transparent;
-}
-
-.note-properties-key {
-  color: #6b6255;
-  font-weight: 600;
-  padding-right: 1.5rem;
-}
-
-.note-properties-value {
-  color: #2f5f8f;
-}
-
-.metadata-property {
-  border: none;
-}
-
-.note-properties-text {
-  font-style: italic;
-}
-
-
-
 
 /* ==========================================================
-   CONT TYPOGRAPHY
+   Article body
    ========================================================== */
-
-/* ---------- General ---------- */
-
-/*
-article {
-  line-height: 1.55;
-}
-*/
 
 article {
   line-height: 1.65;
   font-size: 1.05rem;
 }
 
+.article-title {
+  font-size: 2.2rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: $ink;
+
+  border-bottom: 2px solid $gold;
+
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
 
 /* ---------- Paragraphs ---------- */
 
 article p {
-  margin: 0.45rem 0;
-  margin-bottom: 1.1rem;
+  margin: 0.45rem 0 1.1rem;
 }
 
-
-/* Empty paragraph safety */
 article p:empty {
   display: none;
 }
@@ -334,40 +210,45 @@ article h1 {
   margin-top: 1rem;
   margin-bottom: 0.9rem;
 
-  padding-bottom: .35rem;
-  border-bottom: 2px solid #b59b5a;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid $gold;
 
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
+}
+
+article h1:first-of-type {
+  border-bottom: 2px solid $gold;
+  padding-bottom: 0.35rem;
+  margin-bottom: 1rem;
 }
 
 article h2 {
   margin-top: 1.8rem;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 
-  padding-bottom: .2rem;
-  border-bottom: 1px solid rgba(181,155,90,.45);
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid $gold-rule;
 
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
 
 article h3 {
   margin-top: 1.4rem;
-  margin-bottom: .45rem;
+  margin-bottom: 0.45rem;
 }
 
 article h4 {
   margin-top: 1.2rem;
-  margin-bottom: .35rem;
+  margin-bottom: 0.35rem;
 }
 
 article h5,
 article h6 {
   margin-top: 1rem;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
-/* ---------- Heading + paragraph ---------- */
-
+/* A paragraph directly under a heading sits tight against it */
 article h1 + p,
 article h2 + p,
 article h3 + p,
@@ -377,8 +258,7 @@ article h6 + p {
   margin-top: 0;
 }
 
-/* ---------- Italic subtitle ---------- */
-
+/* An italic-only paragraph under a heading reads as a subtitle */
 article h1 + p em:only-child,
 article h2 + p em:only-child,
 article h3 + p em:only-child,
@@ -386,36 +266,34 @@ article h4 + p em:only-child,
 article h5 + p em:only-child,
 article h6 + p em:only-child {
   color: var(--gray);
-  font-size: .96em;
+  font-size: 0.96em;
 }
 
 /* ---------- Blockquotes ---------- */
 
 article blockquote {
-  margin: .8rem 0;
+  margin: 0.8rem 0;
 
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
 
-  border-left: 3px solid #b59b5a;
+  border-left: 3px solid $gold;
 
-  background: rgba(181,155,90,.06);
+  background: $gold-wash;
 
   font-style: italic;
 }
 
 article blockquote p {
-  margin: .35rem 0;
+  margin: 0.35rem 0;
 }
 
-/* ---------- Horizontal rule ---------- */
+/* ---------- Rules, tables, code ---------- */
 
 article hr {
   margin: 2rem 0;
   border: none;
-  border-top: 1px solid rgba(181,155,90,.45);
+  border-top: 1px solid $gold-rule;
 }
-
-/* ---------- Tables ---------- */
 
 article table {
   margin: 1rem 0;
@@ -423,45 +301,165 @@ article table {
 }
 
 article th {
-  border-bottom: 2px solid #b59b5a;
+  border-bottom: 2px solid $gold;
 }
 
 article th,
 article td {
-  padding: .45rem .8rem;
+  padding: 0.45rem 0.8rem;
 }
 
-/* ---------- Images ---------- */
+article code {
+  font-size: 0.92em;
+}
+
+/* ==========================================================
+   Images
+   ========================================================== */
+
+img {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
 article img {
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
-/* ---------- Figure captions ---------- */
-
 article figcaption {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--gray);
   text-align: center;
 }
 
-/* ---------- Code ---------- */
+/* ==========================================================
+   Callouts
+   ========================================================== */
 
-article code {
-  font-size: .92em;
+.callout {
+  border-radius: 4px;
+  border-width: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  border-left: 3px solid $gold;
 }
 
-/* ---------- Selection ---------- */
+.callout-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.callout-icon {
+  display: none;
+}
+
+/* ---------- Caption callouts wrap images ---------- */
+
+blockquote.callout[data-callout="caption"] {
+  padding-top: 0.5rem;
+}
+
+/* The caption callout's own title is noise; the body is the caption */
+blockquote.callout[data-callout="caption"] .callout-title {
+  display: none;
+}
+
+blockquote.callout[data-callout="caption"] img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* > [!caption|right] floats the image alongside the text */
+blockquote.callout[data-callout="caption"][data-callout-metadata="right"] {
+  float: right;
+  width: 260px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+blockquote.callout[data-callout="caption"][data-callout-metadata="left"] {
+  float: left;
+  width: 260px;
+  margin: 0 1.5rem 1rem 0;
+}
+
+/* ==========================================================
+   Links and tags — wiki styling, not buttons
+   ========================================================== */
+
+a.internal-link {
+  background-color: transparent !important;
+  color: $link !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  border-radius: 0;
+  padding: 0;
+}
+
+a.internal-link:hover {
+  background-color: transparent !important;
+  color: $link-hover !important;
+}
+
+a.internal-link.broken {
+  color: $link-broken !important;
+  text-decoration-color: $link-broken;
+  text-decoration-style: wavy;
+}
+
+a.tag {
+  color: $tag;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a.tag:hover {
+  color: $link;
+}
+
+/* ==========================================================
+   Note properties
+   ========================================================== */
+
+.note-properties {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid $gold;
+  padding-left: 1rem;
+}
+
+.note-properties table {
+  background: transparent;
+}
+
+.note-properties-key {
+  color: $prop-key;
+  font-weight: 600;
+  padding-right: 1.5rem;
+}
+
+.note-properties-value {
+  color: $prop-value;
+}
+
+.note-properties-text {
+  font-style: italic;
+}
+
+.metadata-property {
+  border: none;
+}
+
+/* ==========================================================
+   Selection
+   ========================================================== */
 
 ::selection {
-  background: rgba(181,155,90,.25);
-}
-
-
-
-ul,
-ol,
-li {
-  font-family: inherit;
+  background: $gold-select;
 }
