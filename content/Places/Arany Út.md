@@ -1,36 +1,18 @@
 ---
-ImportedOn: "Thursday, April 24, 2025 20:58:05"
 Aliases:
-  - "Arany Ut"
-Category: "Region: Geographical"
+  - Arany Ut
 Tags:
-  - "Category/Region--Geographical"
-Geographical-Region: "Travel Route"
-Terrain: "Grasslands"
-Climate: "Temperate"
-parent:
-  - "Region_ Geographical"
-up:
-  - "Region_ Geographical"
-prev:
-  - "NV Country"
-next:
-  - "Abelúzia"
-RWtopicId: "Topic_53"
+  - Category/Region--Geographical
+Category: Terrain
 ---
 # Arany Út
-## Overview
-**Geographical Region**: Travel Route
-#Geographical-Region/Travel-Route
-
-
-**Arany Út**
 
 **1. Elhelyezkedése**
-
 Az Arany Út a Kontinens legnagyobb forgalmú útja. Az Arany Út köti össze Északot Nagyvárossal. A Shír Királyságban ugyan kettéágazik [[Grún Városállamok|Grún]] és [[Kőtorok]] felé, ezután az előbbit hívják Arany Útnak, míg az utóbbit inkább Nagy Északi Út néven emlegetik. A Shírtől délre fekvő útrészt azonban vita nélkül mindenki Arany Útnak nevezi. 
 
 **2. Történelme**
+...
+
 
 **8. Helyek az Út mentén**
 
@@ -64,23 +46,9 @@ Lobogó
 
 Bokros
 
-## Description
+## Tags
+**Geographical Region**: Travel Route #Geographical-Region/Travel-Route
 **Terrain**: Grasslands, Hills, Mountains, Other, Urban
 #Terrain/Grasslands #Terrain/Hills #Terrain/Mountains #Terrain/Other #Terrain/Urban
 
-**Climate**: Temperate
-#Climate/Temperate
-
-## Profile
-Kis telepules - fogado, uzlet, istallo, stb. Elelemlord is?
-
-Itt szekelo karavan-kisero (+nyomozo-kereso?) tarsasag, ami hires.
-
-De van egy masik tarsasag is, akik ezekbol valt ki. Nem felhotlen a viszonyuk.
-
-karvankisero csapat, Arany Ut:
-
-  master summoner
-
-  [[Azzuroy|azzuroy]] battlepriest-je
-
+**Climate**: Temperate #Climate/Temperate
