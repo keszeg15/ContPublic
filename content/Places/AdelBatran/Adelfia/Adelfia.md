@@ -310,38 +310,38 @@ A város nagy részén uralkodó alvilági szervezet.
 - X, a Királynő Barátai Fogadó tulajdonosa
 
 
-# **Küldöttek, diplomaták, kereskedök**
-#### [[Aranyhajósok]]** (** [[Ezerhajó]]** )**
+# Küldöttek, diplomaták, kereskedök
+#### [[Aranyhajósok]] ( [[Ezerhajó]] )
 - A **Zhemmam** helyi családon keresztül vannak jelen.
 - A [[DKSZ]] keleti végének, [[Ezerhajó]] városának családja. Igen gazdagok, valamint van egy nagy előnyük a többiekkel szemben, az ő vezetőjük - titokban - [[Szirtszelô Ryath|Szirtszelő Ryath]], aki a maga tapasztalatával, földrajzi ismereteivel, kapcsolataival valahogy mindig odavezeti őket a busás haszonhoz...
 - **Terület:** tea, mágikus tárgyak és komponensek, mechanikus szerkezetek
 
-#### [[Ezüsthajhászok]]** (**[[DKSZ]]**)**
+#### [[Ezüsthajhászok]] ([[DKSZ]])
 - Meldairnak, a Kereskedőállamok legkisebbikének egyik családja. Vezetőjük [[Anthelos B'Anguire|Anthelos B’Anguire]], aki remek kereskedelmi érzékkel fejlesztette a családot, nemegyszer támogatót, illetve szövetségest váltva. Befolyásuk Meldairon kívül nem túl nagy. Fő profiljuk a fűszerkereskedelem.
 - **Terület:** fűszerek, tea
 
-#### [[Feketefog család|Feketefog]]** klán (**[[Grún Városállamok|Grún]]**)**
+#### [[Feketefog család|Feketefog]] klán ([[Grún Városállamok|Grún]])
 - nemesfémek, , fegyverek. Esetleg néha, alkalomadtán varázstárgyak is, meg minden, ami nagy haszonnal kecsegtet.
 - **Terület:** lapis lazuli, ékszerek, fűszerek, nemes fák, mágikus tárgyak és komponensek, mechanikus szerkezetek
 
-#### **[[Golloe klán]] (**[[Grún Városállamok|Grún]]**, [[14 - Huyn|Huyn]])**
+#### [[Golloe klán]] ([[Grún Városállamok|Grún]], [[14 - Huyn|Huyn]])
 - **Aldim Hammemur** (LN h♂ F0), helyi kisnemes, afféle stróman.
 - Terület: fémek, fegyverek, használati eszközök, ékszerek, mágikus tárgyak és komponensek, mechanikus szerkezetek
 
-#### [[Görbekardúak]]** (** [[Mélyöböl]]** )**
+#### [[Görbekardúak]] ([[Mélyöböl]])
 - **Okomar** (CN h♂ F6), A helyi főnök, nem épp kifinomult modoráról híres.
 - fémek, fegyverek, ékszerek, mágikus tárgyak és komponensek,
 
-#### [[Hódítók]]** (** [[Sziklagát]]** )**
+#### [[Hódítók]] ([[Sziklagát]])
 - **Terol Flenn** (N he♂ F6/W5), 
 - Fő profiljuk a bor, az étel - ital kereskedelme. Állítólag egy senki más által nem ismert tartósítási módszert ismernek, melynek segítségével az élelmiszer hónapokig is eláll, füstölés nélkül. Ám hogy ez mi, arról természetesen hallgatnak.
 - Terület: gyümölcsök (almák, barackok, narancs, citrom, dwikka), dwikkabor és más szeszes italok, kókusz, -krém és –olaj, tea, fűszerek
 
-#### **Opáltenger Urai (** [[Meldair]]** )**
+#### Opáltenger Urai ([[Meldair]])
 - **Zenoob** (N h♂ T6\[Smuggler]), egykori csempész, ma a klán adelfiai megbízottja.
 - **Terület:** kókusz, -krém és –olaj, tea, cukornád, gyümölcsök
 
-#### [[Szelek Szolgái]]** (** [[Délkapu]]** )**
+#### [[Szelek Szolgái]] ([[Délkapu]])
 - **Id’ereol** (LN h♂ T8\[Merchant]), Mesterkereskedő, a klán helyi irányítója.
 - **Terület:** lapis lazuli, ékszerek, mágikus tárgyak és komponensek, mechanikus szerkezetek, dwikkabor és más szeszes italok, műtárgyak, 
 
@@ -349,5 +349,4 @@ A város nagy részén uralkodó alvilági szervezet.
 
 ## Tags
 #Political-Region/City-state
-
 **Community Size**: Metropolis #Community-Size/Metropolis
