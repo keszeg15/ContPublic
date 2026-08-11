@@ -20,9 +20,10 @@ A szigettenger nyugati széle szinte mind civilizált.
 
 ## Szigetek
 
+
+- [[A Sárkányorom kolostorerőd]]
 - Pirell (3 nap [[A Sárkányorom kolostorerőd|a Sárkányorom kolostorerőd]]-től)
-- Roseland (3 nap Pirelltől)
-- Tortuga 
+- Tortuga: Kalóz-sziget
 - Tobagu
 
 - Filmare-i Szigetkiralysag
@@ -30,13 +31,17 @@ A szigettenger nyugati széle szinte mind civilizált.
 - [[Warhal Szigete|Warhal]]
 - [[Ezüstszemű]] szigete
 
-- ###### Roseland
+- ##### Chetra
+	- Chetra egy kisebb sziget-állam a Rishemo Szigettenger északi-középső-keleti részén, (Mandanézia és Rye között). Mélyöböl gyarmata, a sorsát már sok évtizede a jelentős Déli Kereskedőállam, illetve annak rangos Házai határozzák meg.
+
+- ##### Roseland
 	- Allamforma: arisztokratikus demokracia
 	- Uralkodo: Johannes IIII, elso konzul (LNng hm B1) ea a Konzulok Tanacsa (8 fo)
 	- Valodi uralkodok:
 		- Anger Lassam Saam (N hem F8/M8): egykori kalandozo, o szedte ossze a sziget rendorseget es jo kis befolyast szerzett maganak. A kereskedok elobb vele targyalnak, csak aztan a konzulokkal. Hivjak Admiralisnak is.
 		- Lord Sawa
 	- rozsafak, magikus vedelem, elkenyelmesedett (elbodult a rozsaktol?) lakok...
+	- ~3 nap hajózás Pirelltől
 
 
 
