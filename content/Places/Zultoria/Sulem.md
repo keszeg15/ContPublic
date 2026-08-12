@@ -42,5 +42,5 @@ Figyelmet érdemel még Laaydi (CN hm W16), egy igen célratörő, és széprem�
 - Mustahid abu Sulem
 
 # Tags
-**Community Size**: Metropolis ; Sulem, a Kapuk Városa Zultoria legnagyobb városa
+**Community Size**: Metropolis ; 
 #Community-Size/Metropolis
