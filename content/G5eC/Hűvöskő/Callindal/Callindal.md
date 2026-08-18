@@ -136,7 +136,15 @@ Ismertebbek: **Garasos, Lépcsős, Pelikán, Obbo Ivója, Részeges Sügér
 - Fehér terméskőből és nartheai márványból épült elegáns, drága bordély a Futárok utcájában. 
 - Madame Ramona 
 - Aznar, kidobó
-- **Melanie Jade**, fiatal kurtizán.
+- **Melanie Jade**, fiatal kurtizán. (Alex alkalmi kísérője)
+- **Rebenna**, fiatal kurtizán (Rogen egykori barátnője)
+> [!caption|right] 
+> ![[Rebenna2.png|100]]
+
+
+
+
+
 
 
 
