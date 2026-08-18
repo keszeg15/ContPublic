@@ -95,7 +95,7 @@ A hatalom birtokosai a Lord Konzul, városi tanács, papok és kereskedők.
  > [!caption|right] 
 > ![[Lady Morgania Grulios.png]]
 
-
+> A Grulios családba házasodott be, a férje a családfő. Alex a Razzidoci bál alatt flörtölt vele, meg is beszélt egy találkozót a szobájában, de odafelé találkozik a kémmel és némi hezitálás és egy nagy sóhaj után “Bassza meg” mondta és megindult a lépcsőn felfelé (a kém után).
 
 
 
