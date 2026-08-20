@@ -1,7 +1,7 @@
 ---
 Category: Community
 ---
-## **Narthea**
+# **Narthea**
 
  > [!caption|right] 
 ![[NartheaHeraldry.png]]
@@ -38,11 +38,9 @@ Category: Community
 # Helyek
 
 ##### Histórikai es Jogi Kollégium
-
- > [!caption|left] 
+ > [!caption|right] 
 ![[Atroxon Piredes.png]]
 > Atroxon Piredes tanítványai körében
-
 
  **Atroxon Piredes**, ismert nartheai tudós történész, fő területe a környező szigetvilág történelme, mítoszai, legendái.
 
@@ -51,21 +49,26 @@ Category: Community
 
 
 
-### Fogadók
-##### A Hetedik Versszak
+
+
+
+
+
+## Fogadók
+### A Hetedik Versszak
 _Kocsma szónokoknak, hivatalnokoknak és ügyeskedőknek_  
 - Furcsán csendes hely
 - Boroshordók között kis emelvény áll vitákhoz és felolvasásokhoz. Gyakori, hogy régi törvényverseket idéznek itt. 
 - Vendégkör:  ügyvédek, tanácssegédek, ambiciózus fiatal nemesek
 - Tulajdonos: **Selvo Theren** — nyugdíjas jegyző, aki állítólag Narthea törvényeinek felét fejből tudja
 
-##### A Mély Harang
+### A Mély Harang
 _Régi tengerészfogadó a kikötő peremén_  
 - Egy régi őrtoronyból alakították ki
 - Hangulat: Nyugodtabb, melankolikusabb hely,  Öreg kapitányok és térképészek járnak ide
 - Állítólag viharos éjszakákon mély haranghang hallatszik odalentről. A pletyka szerint a torony alatt régi vízi alagutak vannak
 
-##### A Törött Evező
+#### A Törött Evező
 _Zsoldosok és tengerészek kocsmája_
 - Kőpadló, vastag tölgyasztalok, A mennyezetről régi hajóorr-díszek lógnak
 - Gyakoriak a verekedések, de ritkán halálosak 
