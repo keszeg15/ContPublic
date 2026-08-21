@@ -1,11 +1,12 @@
 ---
 Category: Community
 ---
-# **Narthea**
+# **Áttekintés**
 
  > [!caption|right] 
 ![[NartheaHeraldry.png]]
 > Címerük: Felkelő Nap a tenger felett, körülötte lánc
+
 - **Narthea** egy önálló, kikötőváros-állam Narh szigetén: középkori jellegű világ, de különös, ókorihoz hajazó társadalmi vagy politikai berendezkedéssel. Kicsit „anakronisztikus”, modern a maga módján, de nem ipari értelemben  
 - Természetes öbölben fekszik. A természetes kikötő védett, ezért régóta a tengeri kereskedelem központja. 
 - **Gazdaság**: Hajóépítés, sózott hal, bor, olívaolaj, marvany (fogyoban) exportja. A kereskedelem tartja életben a várost.
