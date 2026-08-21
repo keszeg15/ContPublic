@@ -89,3 +89,9 @@ belso link:
 
 
 ## na
+
+
+
+![[Rebenna2.png|100]]
+
+
