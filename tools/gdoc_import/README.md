@@ -38,8 +38,28 @@ Useful flags:
 | --- | --- |
 | `--doc-id` | Document id or full Google Docs URL. Defaults to the G5EC party log. |
 | `--slug` | Base name for the generated files. Defaults to `partylog`. |
-| `--skip-download` | Reuse the cached exports instead of hitting the network. |
+| `--skip-download` | Reuse the cached export instead of hitting the network. |
+| `--google-md` | Also fetch Google's own Markdown export, to compare against. |
 | `--work-dir` | Where to stage the output. Defaults to `build/`. |
+
+## Splitting into notes
+
+`split_notes.py` turns the converted document into one note per Google Docs
+tab, adds the front matter and tightens the spacing:
+
+```bash
+uv run split_notes.py
+```
+
+Each note gets `Category: Log` and `tags: [G5eC]`, and the tab title becomes the
+file name. A tab tends to restate its own name at the top of the page, sometimes
+twice over, so any `Title` styled line the tab opens with is dropped rather than
+duplicating the file name in the body.
+
+A blank line between two ordinary lines is also removed. Headings, quotes,
+tables, raw HTML, image embeds and indented blocks keep their spacing, so the
+structure is never altered. This suits Quartz, where the `hard-line-breaks`
+plugin renders a single newline as a line break.
 
 ## Output
 
@@ -48,7 +68,10 @@ build/
   raw/partylog.docx        downloaded source
   raw/partylog.google.md   Google's own export, used as a structure reference
   out/partylog.md          converted Markdown
+  out/partylog.tabs.json   the tab titles, consumed by split_notes.py
   out/pics/*.png|jpg       extracted images
+  notes/*.md               one note per tab
+  notes/pics/              the same images, alongside the notes
 ```
 
 Nothing is written into `content/` — that happens in the splitting step, so the
@@ -61,13 +84,18 @@ export endpoint work without authentication. If sharing is revoked, Google
 answers with an HTML login page under a 200 status, which the script detects by
 checking the `.docx` magic bytes.
 
-Both exports are downloaded because neither is complete on its own. The `.docx`
-has the better body structure and keeps images at their original resolution,
-but it flattens Google Docs tab titles into ordinary paragraphs. Google's own
-Markdown export renders those titles as level 1 headings, so it is used purely
-as a reference to promote them back into headings. The `tab=` URL parameter is
-not a way around this: the export endpoint ignores it and always returns the
-whole document.
+The document is split into Google Docs tabs, and the export concatenates them
+all into one file — the `tab=` URL parameter is ignored, so a tab cannot be
+fetched on its own. pandoc renders each tab title as an ordinary paragraph,
+which is why the tabs have to be found in the `.docx` itself: Google gives a
+tab title a `Title` styled paragraph that also starts a new page and a new
+section, whereas a `Title` used as a heading inside a tab has neither. Style
+alone is not enough to tell them apart, and neither is font size, since both
+vary between tabs.
+
+Google's own Markdown export can be fetched with `--google-md`. It is not used
+for anything, but it renders the structure differently and is handy for
+double-checking the conversion by hand.
 
 Images are renamed after the section they appear in and referenced as Obsidian
 embeds (`![[name.png]]`), matching the convention used elsewhere in `content/`.

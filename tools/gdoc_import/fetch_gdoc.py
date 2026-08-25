@@ -17,12 +17,14 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import re
 import shutil
 import sys
 import unicodedata
 import urllib.error
 import urllib.request
+import zipfile
 from pathlib import Path
 
 import pypandoc
@@ -39,6 +41,12 @@ IMG_TAG = re.compile(r'<img src="(?P<src>[^"]+)"(?P<rest>[^>]*?)/?>')
 HTML_TABLE = re.compile(r"<table>.*?</table>", re.S)
 EMPTY_HEADING = re.compile(r"^#{1,6}[ \t]*$\n?", re.M)
 EXTRA_BLANKS = re.compile(r"\n{4,}")
+
+# Word paragraphs, their style, and their text. `<w:t` needs the trailing
+# whitespace guard so it does not also match `<w:top>` and friends.
+WORD_PARAGRAPH = re.compile(r"<w:p [^>]*>.*?</w:p>", re.S)
+WORD_STYLE = re.compile(r'<w:pStyle w:val="([^"]+)"')
+WORD_TEXT = re.compile(r"<w:t(?:\s[^>]*)?>(.*?)</w:t>", re.S)
 
 
 def parse_doc_id(value: str) -> str:
@@ -104,34 +112,52 @@ def normalise_title(text: str) -> str:
     return " ".join(text.split())
 
 
-def promote_tab_titles(markdown: str, google_markdown: str) -> tuple[str, list[str]]:
-    """Restore section titles that the .docx export flattened into plain text.
+def read_docx_titles(docx: Path) -> tuple[list[str], list[str]]:
+    """Find the Google Docs tab boundaries inside the .docx.
 
-    The document is split into Google Docs tabs. The .docx export concatenates
-    every tab but leaves each tab title as an ordinary paragraph, whereas
-    Google's own Markdown export renders it as a level 1 heading. Comparing the
-    two exports recovers the structure that would otherwise be lost.
+    Google gives every tab title a `Title` styled paragraph that also starts a
+    new page and a new section, while a `Title` used as an ordinary heading
+    within a tab has neither. That is the only dependable difference: the
+    style, the font size and even the text can be identical between the two.
+
+    Returns the tab titles in document order plus every `Title` text, the
+    latter so the splitter can drop headings that merely restate a tab name.
     """
-    existing = {
-        normalise_title(m.group(1))
-        for m in re.finditer(r"^#{1,6}[ \t]+(.*)$", markdown, re.M)
-    }
-    missing = [
-        title
-        for m in re.finditer(r"^# (.+)$", google_markdown, re.M)
-        if (title := normalise_title(m.group(1))) and title not in existing
-    ]
+    xml = zipfile.ZipFile(docx).read("word/document.xml").decode("utf-8")
+    tabs: list[str] = []
+    titles: list[str] = []
+    for paragraph in WORD_PARAGRAPH.findall(xml):
+        style = WORD_STYLE.search(paragraph)
+        if not style or style.group(1) != "Title":
+            continue
+        text = " ".join("".join(WORD_TEXT.findall(paragraph)).split())
+        if not text:
+            continue
+        titles.append(text)
+        if "<w:pageBreakBefore" in paragraph and "<w:sectPr" in paragraph:
+            tabs.append(text)
+    return tabs, titles
 
+
+def promote_tab_titles(markdown: str, tab_titles: list[str]) -> tuple[str, list[str]]:
+    """Turn the flattened tab titles back into level 1 headings.
+
+    pandoc renders a `Title` paragraph as ordinary text, so each tab boundary
+    arrives as a bare line and has to be marked up again before the document
+    can be split on it. The very first tab is the exception: pandoc consumes it
+    as the document title, so it never appears in the body at all.
+    """
+    pending = list(tab_titles)
     promoted: list[str] = []
     lines = markdown.split("\n")
     for index, line in enumerate(lines):
         if line.startswith("#"):
             continue
         title = normalise_title(line)
-        if title in missing:
+        if title in pending:
             lines[index] = f"# {title}"
             promoted.append(title)
-            missing.remove(title)
+            pending.remove(title)
     return "\n".join(lines), promoted
 
 
@@ -198,7 +224,8 @@ def main() -> int:
     parser.add_argument("--slug", default=DEFAULT_SLUG, help="base name for the generated files")
     parser.add_argument("--image-prefix", default=None, help="image name prefix (defaults to --slug)")
     parser.add_argument("--work-dir", type=Path, default=script_dir / "build", help="staging directory")
-    parser.add_argument("--skip-download", action="store_true", help="reuse the previously downloaded exports")
+    parser.add_argument("--skip-download", action="store_true", help="reuse the previously downloaded export")
+    parser.add_argument("--google-md", action="store_true", help="also fetch Google's own Markdown export, to compare against")
     args = parser.parse_args()
 
     doc_id = parse_doc_id(args.doc_id)
@@ -209,23 +236,25 @@ def main() -> int:
     google_md = raw_dir / f"{args.slug}.google.md"
 
     if args.skip_download:
-        absent = [path for path in (docx, google_md) if not path.exists()]
-        if absent:
-            listing = ", ".join(path.name for path in absent)
-            raise SystemExit(f"Missing cached export(s): {listing}. Run without --skip-download first.")
-        print(f"Reusing the exports in {raw_dir}")
+        if not docx.exists():
+            raise SystemExit(f"No cached export at {docx}. Run without --skip-download first.")
+        print(f"Reusing {docx}")
     else:
         print(f"Downloading document {doc_id} ...")
         payload = download(doc_id, "docx", docx)
         digest = hashlib.sha256(payload).hexdigest()[:12]
         print(f"  {docx.name}: {len(payload) / 1e6:.1f} MB (sha256 {digest})")
-        reference = download(doc_id, "md", google_md)
-        print(f"  {google_md.name}: {len(reference) / 1e6:.1f} MB (structure reference)")
+        if args.google_md:
+            reference = download(doc_id, "md", google_md)
+            print(f"  {google_md.name}: {len(reference) / 1e6:.1f} MB")
+
+    tab_titles, all_titles = read_docx_titles(docx)
+    print(f"Found {len(tab_titles)} tabs among {len(all_titles)} Title paragraphs")
 
     print("Converting with pandoc ...")
     media_root = args.work_dir / "media"
     markdown = convert(docx, media_root)
-    markdown, promoted = promote_tab_titles(markdown, google_md.read_text(encoding="utf-8"))
+    markdown, promoted = promote_tab_titles(markdown, tab_titles)
 
     pics_dir = out_dir / "pics"
     if pics_dir.exists():
@@ -236,6 +265,12 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     target = out_dir / f"{args.slug}.md"
     target.write_text(markdown, encoding="utf-8", newline="\n")
+    tabs_file = out_dir / f"{args.slug}.tabs.json"
+    tabs_file.write_text(
+        json.dumps({"tabs": tab_titles, "titles": all_titles}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
     shutil.rmtree(media_root, ignore_errors=True)
 
     levels: dict[int, int] = {}
@@ -248,6 +283,7 @@ def main() -> int:
     print(f"  images: {embeds} embedded, {html_refs} kept as <img> inside tables -> {pics_dir}")
     if promoted:
         print(f"  tab titles restored as headings: {', '.join(promoted)}")
+    print(f"  {len(tab_titles)} tabs recorded in {tabs_file.name}")
     if HTML_TABLE.search(markdown):
         print(f"  note: {len(HTML_TABLE.findall(markdown))} tables remain as raw HTML (too complex for GFM)")
     return 0
