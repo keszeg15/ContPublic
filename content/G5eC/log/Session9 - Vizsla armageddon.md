@@ -1,0 +1,13 @@
+---
+Category: Log
+tags:
+  - G5eC
+alias:
+  - session9
+Chapter: Chapter 1
+---
+# Session \#9: Vizsla armageddon
+
+Beszélgetés a hajón: ez most egy kisebb megbízás, 200 arany a jutalom, ezt egyenlően osztjuk el egymás között. Óvatosan navigál a Szárny a szirtek között, de biztonságban odaérünk és lehorgonyozzuk a hajót. Csónakba szállunk, Kozma és Rogen maradnak a hajón. Az egyik csónakba Hans megy a veteránokkal, a másikba a party. Még mielőtt kikötnénk az egyik szirtről egy madár raj száll fel… egy részük a veteránok felé indul, három madár meg felénk. Jobban megnézve nem is madarak, hanem denevér szárnyas emberi fejek 😱 Sikító hangjuk megbénítja Arachist és Harmot is, de szerencsésen legyőzzük őket sebesülés nélkül. Harm mantrája (de közben elcsuklik a hangja): *“O supreme lord, free me from unreal and lead me to reality, keep me away from darkness and lead me to light, lead me away from fear to enlightenment, may there be peace, peace, peace.”* (commonul mondja, csak magyarul bénán hangzik).
+Veteránok is legyőzik a démoni teremtményeket, Hans megsebesül, de nem vészesen. Elmondják, hogy ezek ismert démoni lények, veszélyes a sikolyuk, ami megbéníthat és utána a “csókjuk” halálos tud lenni, és az áldozatot hasonló lénnyé alakítja át.
+Kikötünk a csónakokkal, látjuk is a barlang bejáratát. A veteránok elmondják, hogy ők bemennek a barlangba, mi meg maradjunk kint őrködni. Bemennek. Alex azonban nem bír maradni, elindul a barlang felé, hogy jobban megismerhesse mi is történt vele. Ulrich megy vele. Némi vitatkozás és habozás után némileg lemaradva Harm is elindul. Hans és Arachis marad a csónaknál. Ryel és Joli feljebb másznak hogy jobban belássák a környéket. Meg is látják a hajóról feléjük integető Kozmát, aki aztán beugrik a vízbe és elkezd a part felé úszni. Joli meglátja, hogy ekkor **Rogen** éppen kiszáll a vízből a parton. Valamiért kiúszott… Vajon milyen hátsó szándéka volt eddig? Harm elindul, hogy eléje vágjon. Alex visszafordul és csatlakozik Joliékhoz. Ulrich csatlakozik Arachishez. Ekkor az egész sziget megremeg, csontvázak másznak ki a föld alól Arachis mellett és támadnak! Meg is lepik a csapatot, Arachis és Hans azonnal elesnek. Nehezen bár, de legyőzzük őket. Ulrich és Harm is sérüléseket szenved. Ryel meggyógyítja annyira Arachist, hogy talpra tudjon állni. Hansot bekötözi Ulrich. Közben Kozma is kiúszik a partra, Joli küld neki egy message-et kérdezve mi történik. Kozma azt mondja **Rogen** egyszer csak beugrott a vízbe. Áruló lenne? Ekkor újra megremeg a sziget, de most még sokkal erősebben. A két hegycsúcs leomlik, a sziget közepe pedig beomlik! És … cliffhanger.

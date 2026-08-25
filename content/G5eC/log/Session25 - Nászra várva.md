@@ -1,0 +1,44 @@
+---
+Category: Log
+tags:
+  - G5eC
+alias:
+  - session25
+Chapter: Chapter 2
+---
+# Session \#25: Nászra várva
+
+**június 26-28**
+🙏 *Ezír útján*
+**Ryel** június 26-án elmegy Ezír templomába és beszélget **Notas** főpappal. Együtt készülnek az egy éves felszentelési szertartásra. A felszentelés után Ryelnek nem lesznek kötelezettségei egyetlen egyházközség felé sem. Ő egyébként is a hittérítők útját járná szíve s hite szerint és ez jellemzően úgysem templomi szolgálattal jár.
+A templomi teendők ellátása közben Ryel futólag találkozik **Sir Bartolo**-val, egy nyugalmazott Ezír paladinnal. Sir Bartolo kötelességtudó, talán kicsit atyáskodó személyiség. Szellemi adottságain már kezd megmutatkozni a kora. Nagyon precízen és körültekintően látja el a templom körüli feladatait. Felesége korábban meghalt már, fia elutazott, lánya valahol a városban él.
+**Notas** egy a lovag királyságokból érkezett levelet is mutat Ryelnek, amelyben arról értesítik a főpapot, hogy egy újabb Ezír tanítvány érkezik majd a szigetre.
+📿*A talizmánok*
+Megbeszélik a korábban a templomra bízott talizmánokat is. A gyermek képét ábrázoló medálról megállapították, hogy valóban egy elátkozott tárgy. A korábban benne lakozó lélek már elhagyta a talizmánt, de rajta hagyta a lenyomatát. Majd a szertartáson felajánlják Ezírnek, hogy tisztítsa meg.
+A másik medálon található rúnáról kiderül, hogy abbysi, tehát démoni írásjel. Egy másik főpap ismerte ezt fel és egy kiselőadást is tartott róla. Démoni lévén rendszertelen a jel. Bár, ránézésre szimmetrikus vonalak alkotják, de jobban megvizsgálva látható, hogy a vonalak valójában elég kaotikusak. Nehezen lefordítható emberi nyelvre, de a jelentése talán a gondoskodáshoz, odafigyeléshez áll a legközelebb. Persze mivel démoni jel, nem az emberi értelemben vett gondoskodásra kell gondolni. Ryel ezt a talizmánt visszakéri.
+🪄 *A mágia útján*
+Június 26-án üzenet érkezik **Joli**nak es **Arachis**nak a varázsló kamarából. Brentulis munkásságának és hagyatékának feldolgozása közben meglelték a hercegnőnek szánt nászajándékot. Még nincs kész, de a mágusok segítenek befejezni. Valamint 28-án délután 4 órára várják a mágiahasználóinkat egy felvételire.
+A felvételin 5+1 díszes ruhába öltözött, trónszerű székeken ülő mágus fogadja egy - a kamara kertjéhez hasonlóan színpompás - teremben Jolit és Arachist. A városban nyolc mágus tevékenykedik összesen, ebből ketten, **Verack** es **Arawa** most nincsenek jelen. **Ishemyr**, a főmágus vezeti a felvételi elbeszélgetést. Isemyr még Arachis számára is nagyon drágának tűnő, lenyűgöző kidolgozottságú köpenyt visel. Lerí róla, hogy nagyon szigorú, számonkérő stílusú személyiség. Kevesen vennék a bátorságot, hogy a szemébe is mondják, de az a hír járja, hogy törtető és hajlamos az ellenfeleit besározni és fúrni. Tanítványokat nem vállal.
+A még jelenlévő 5 mágus közt van **Cretai** is, akivel korábban Joli és Arachis már találkoztak. Ő általában a kamara nyilvános szóvivője és külkapcsolati megbízottja. A mágusok mind emberek és egyetlen nő van köztük.
+Arachist és Jolit megkérik, hogy mutassanak be valamilyen varázslatot (bár, ez talán parancsnak, de mindenképp kisebb próbatételnek érződik). Arachis megjelenésében, viselkedésében és a varászlatával is inkább visszafogott, de meggyőző szeretne lenni, így egy *misty step*-et mutat be. Szóban hozzáteszi, hogy hogyan használta ezt egy kaland során és hogy a mágia gyakorlatias, az egyén és a társadalom számára is hasznos oldala érdekli. Joli egy jóval lenyűgözőbb familiáris illúziót mutat be. Bár, illúziót természetesen már láttak a kamara tagjai, de ilyen neműt még keveset, így visszafogott elismerést vált ki a familiáris.
+Összességében nem volt lehengerlő mágiahasználóink szereplése, de jól helyt álltak mindketten. Néhányan a mágusok közül még visszafogottan gratulálnak is. Joli és Arachis felvételt nyernek a kamarába. Mostantól hivatalosan is használhatnak mágiát, akár bérmágiát is. Hozzáférést kapnak a kamarai tudástárhoz, (később) lehetőségük lesz akár mágikus tárgyakat is készíteni. A kamarai tagsági díj évi 10 arany. Ezt kalandozóink be is fizetik az első évre. Kapnak egy kamarai tagságot jelképező láncot is.
+Arachis naponta be-beugrik a kamarai könyvtárba. Próbál beleszokni a tagságba, kicsit ismerős arccá válni a varázslótorony folyosóin és kiismerni magát a rengeteg fellelhető tudás között. Később még jól jöhetnek ezek.
+👑 *A nászajándék*
+A mágusok átadják a hercegnőnek szánt nászajándékot is, egy magic protection női hajpántot. Ennek elkészítéséért majd később kérnek egy szívességet.
+📚 *A krónikák titkai*
+**Ulrich** olvas és olvas, rendületlenül kutat három napon keresztül a Griff ház krónikáiban. Bár, Orion minden kötetet segített kihozni a lezárt, de számára még elérhető termekből, a hiányzó tagokról csak elejtett megjegyzéseket találni itt-ott.
+Említik **Feng** és **Soun-jeetha** nevét, ők a ház egy-egy férfi és női tagja voltak. Volt valamiféle összegabalyodás is köztük. De "a \[10 évvel ezelőtti\] sajnálatos incidens óta nincsenek itt".
+A fentiektől függetlenül felbukkan még egy név: **Adamo**. Ő 15-20 évvel ezelőtt volt tag, majd a kontinensen csatlakozott egy neves kalandozó csapathoz.
+Éppen azok a krónikás kötetek, amelyekben vélhetően több információ is található, hiányoznak… valószínűleg a még jobban elzárt termekben találhatóak. De vajon miért?
+📬 *Meghívó vendégségbe*
+Az **Elcior** háztól kapunk egy köszönő levelet, amiben kifejezik hálájukat, amiért visszajuttattuk az elrabolt árujukat és az ünnepségek után szeretnének vendégül látni minket.
+🍻 *“Eljárunk kocsmázni, hátha valakinek eljár a szája is”*
+**Joli** és **Alex** ellátogatnak a gnóm kocsmákba, hátha valaki elkottyint valamit az Orion által említett hercegnő elleni merényletről. Joli ismerősen mozog ezekben a körökben. Alex esetleges kezdeti félszegsége is hamar, alkoholban oldódik.
+Nem célirányosan, inkább terelve a szót próbálnak az esküvőről érdeklődni. Politikailag megoszlanak a vélemények. A vőlegény a Fóka szigetről jön, ez a Morton-ok gyarmata, a shareniek outpostja. Hogy ez Hűvöskőnek jó lesz-e vagy sem, az véleményes. A gnómok eleve kicsit kívülállóként tekintenek az egészre. Vannak, akik gyakorlatiasan néznek rá és hasznosnak tartják, mert jó politikai-kereskedelmi kapcsolatokat hozhat létre a frigy. Mások nem tartják túl jó iránynak: lehet, hogy Hűvöskő ezzel elköteleződik Sharen felé. Ez utóbbi véleményt többen osztják a szigeten és rosszallóan tekintenek az esküvőre. Nyílt tiltakozásról nem hallani, de például a Sharen ellenes falfirkák megszaporodtak a városban.
+Ezután átmennek a Sügérbe. Közben a környéken falfirkákat keresnek és találnak is. Látszik, hogy a városi őrség már helyszínelt ezeknél. Annyi derül ki, hogy a festék ugyanolyan, mint amivel a Griff háznál található falfestmény készült.
+A Sügérben megnőtt a közönség, az esküvőre sok idegen érkezett. Drágább (és vizezettebb) is lett az ital. Kalandozóink a pletykákról lassan, nem feltűnően átterelik a témát az esküvőre. Itt felületesebbek, kicsit vegyesebbek, de nagyjából ugyanazok a vélemények, mint a gnóm közösségben.
+Alex mesteri húzással a lerészegedés taktikáját választja, de a szokványos kocsmai kiszólásoknál többet nem sikerül kiprovokálni a tisztes és tisztességtelen közönségből. Az általános közhangulat alapján itt többen vannak talán a Sharen pártiak, de szélsőséges, tettrekész utálattal nem találkozni.
+Két nap távollét után felbukkan **Harm** is. Alex elég feltűnően terelve kérdezi meg tőle, honnan vette a festéket. Harm könnyedén leleplezi a hazugságát. Így Alexnek muszáj elmondania az érdeklődés tényleges okát. Harm végül elmondja, hogy egy ismerőse keveri a festékeket és, hogy “mi festettük fel a falfirkákat”, majd "valamit tennünk kell! nem hagyhatjuk, hogy ugyanaz játszódjon le itt is, mint a Fóka szigeten!" - bukik ki belőle. Alex lerészegedési taktikája remekül megakadályozza, hogy bármi értelmeset levonjon a beszélgetésből.
+🐲 *A tündöklő királynő*
+Városszerte kiabálásokat hallani az utcáról. Nyugati irányból a lenyugvó napot eltakarva egy smaragd színű elegáns sárkány leír néhány kört a levegőben, majd valahol a távolban leszáll.
+Harm és Arachis mindketten hallottak már róla, Arachis gyerekkorában rajongott is érte. Ő **Esmerandanna**, a tündöklő királynő. A környék sárkánya (környék = a környező szigetcsoport, de nem tudni, mekkora is a területe pontosan). A mi életünkben nem járt még erre egészen mostanáig. Arachis tudja, hogy ez egy smaragd ékkő sárkány. Több száz, akár ezer éve is itt élhet a környéken. Introvertált személyiség, visszavonult életet él, nem keres az emberekkel kapcsolatot, nem avatkozik a helyiek ügyeibe. Sok a mítosz, a legenda és mendemonda körülötte persze. Sokakban felmerül a kérdés, hogy miért is bukkanhatott fel most. Arachis azt is tudja, hogy a smaragd sárkányok érdeklődő, tudásvágyó lények.
