@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.9"
+# dependencies = ["pypandoc-binary==1.17"]
+# ///
 """Download a Google Doc and convert it to Quartz-flavoured Markdown.
 
 This covers the fetch + convert stage only. It produces one large Markdown file

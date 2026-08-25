@@ -6,19 +6,31 @@ split into individual wiki notes.
 Everything except the pandoc wrapper comes from the standard library, and
 `pypandoc-binary` ships pandoc itself, so no system packages are required.
 
-## Setup
+## Running it
+
+The script declares its dependency inline (PEP 723), so with
+[uv](https://docs.astral.sh/uv/) there is no setup step at all:
 
 ```bash
-python -m venv .venv
-.venv/Scripts/python -m pip install -r requirements.txt   # Windows
-# .venv/bin/python -m pip install -r requirements.txt     # macOS / Linux
+uv run fetch_gdoc.py
 ```
 
-## Usage
+uv fetches a suitable Python and the pandoc-bearing wheel on first run. Install
+uv itself with `curl -LsSf https://astral.sh/uv/install.sh | sh`.
+
+### Without uv
+
+Debian and Ubuntu ship `python3` without pip and refuse system-wide installs
+(PEP 668), so go through a virtual environment, which brings its own pip:
 
 ```bash
-.venv/Scripts/python fetch_gdoc.py
+sudo apt install python3-venv        # only if `python3 -m venv` fails
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python fetch_gdoc.py
 ```
+
+On Windows the interpreter is at `.venv/Scripts/python` instead.
 
 Useful flags:
 
