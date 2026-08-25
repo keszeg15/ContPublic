@@ -49,6 +49,30 @@ tables, raw HTML, image embeds and indented blocks keep their spacing, so the
 structure is never altered. This suits Quartz, where the `hard-line-breaks`
 plugin renders a single newline as a line break.
 
+## Splitting into sessions
+
+The party log tab is one long note of its own, so `split_sessions.py` cuts it
+again, this time at every `Session #N` heading:
+
+```bash
+python3 split_sessions.py
+```
+
+The heading becomes the file name, minus the characters that would break a
+wikilink or a Windows path — `#`, `:` and `?` among them, plus the odd emoji —
+so `Session #4: Mezuppi nyomában` is written to `Session4 - Mezuppi
+nyomában.md`. The heading itself stays at the top of the note as an `h1`.
+
+Sessions that were played in one sitting share a heading, and stay in a single
+note. Such a note gets an alias per session (`session1`, `session2`), which is
+also how the spinoffs keep their `session22.5` form. A heading below the session
+level, like the verses in the log, belongs to the session it sits in and is left
+alone.
+
+Alongside `Category` and `tags`, each note records the `Chapter` it belongs to.
+The `# Prológus` and `# Chapter N` headings are dropped from the body, since
+they carried no text of their own — they only marked where a chapter began.
+
 ## Output
 
 ```
@@ -60,6 +84,8 @@ build/
   out/pics/*.png|jpg       extracted images
   notes/*.md               one note per tab
   notes/pics/              the same images, alongside the notes
+  sessions/*.md            the party log tab, one note per session
+  sessions/pics/           the images those sessions embed
 ```
 
 Nothing is written into `content/` — that happens in the splitting step, so the
