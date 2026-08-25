@@ -3,34 +3,26 @@
 Fetches a Google Doc and converts it into Quartz-flavoured Markdown, ready to be
 split into individual wiki notes.
 
-Everything except the pandoc wrapper comes from the standard library, and
-`pypandoc-binary` ships pandoc itself, so no system packages are required.
-
-## Running it
-
-The script declares its dependency inline (PEP 723), so with
-[uv](https://docs.astral.sh/uv/) there is no setup step at all:
+Both scripts use nothing but the standard library, so there is no virtual
+environment and no pip to deal with:
 
 ```bash
-uv run fetch_gdoc.py
+python3 fetch_gdoc.py
+python3 split_notes.py
 ```
 
-uv fetches a suitable Python and the pandoc-bearing wheel on first run. Install
-uv itself with `curl -LsSf https://astral.sh/uv/install.sh | sh`.
-
-### Without uv
-
-Debian and Ubuntu ship `python3` without pip and refuse system-wide installs
-(PEP 668), so go through a virtual environment, which brings its own pip:
+The one thing that has to be installed is pandoc itself, which does the docx to
+Markdown conversion:
 
 ```bash
-sudo apt install python3-venv        # only if `python3 -m venv` fails
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python fetch_gdoc.py
+sudo apt install pandoc              # or: brew install pandoc
 ```
 
-On Windows the interpreter is at `.venv/Scripts/python` instead.
+Calling the `pandoc` command rather than a wrapper library is what keeps the
+dependency list empty. A wrapper such as `pypandoc-binary` would carry the
+pandoc binary along, but then the script could no longer be started with a
+plain `python3`, which is awkward on Debian and Ubuntu: they ship `python3`
+without pip and refuse system-wide installs (PEP 668).
 
 Useful flags:
 
@@ -45,11 +37,7 @@ Useful flags:
 ## Splitting into notes
 
 `split_notes.py` turns the converted document into one note per Google Docs
-tab, adds the front matter and tightens the spacing:
-
-```bash
-uv run split_notes.py
-```
+tab, adds the front matter and tightens the spacing.
 
 Each note gets `Category: Log` and `tags: [G5eC]`, and the tab title becomes the
 file name. A tab tends to restate its own name at the top of the page, sometimes

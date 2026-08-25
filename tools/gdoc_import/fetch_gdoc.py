@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.9"
-# dependencies = ["pypandoc-binary==1.17"]
+# dependencies = []
 # ///
 """Download a Google Doc and convert it to Quartz-flavoured Markdown.
 
@@ -11,6 +11,9 @@ separate step.
 
 The document must be shared as "anyone with the link", which is what allows the
 export endpoint to be called without any authentication.
+
+Only the standard library is used, so the script runs under a bare `python3`.
+pandoc has to be on PATH.
 """
 
 from __future__ import annotations
@@ -20,14 +23,13 @@ import hashlib
 import json
 import re
 import shutil
+import subprocess
 import sys
 import unicodedata
 import urllib.error
 import urllib.request
 import zipfile
 from pathlib import Path
-
-import pypandoc
 
 DEFAULT_DOC_ID = "1kqRKCE7SC9ZBxYFklRfUqybh3DkJ0xFwTo11AxCJ3Lg"
 DEFAULT_SLUG = "partylog"
@@ -93,14 +95,28 @@ def convert(docx: Path, media_root: Path) -> str:
         shutil.rmtree(media_root)
     media_root.mkdir(parents=True)
 
-    markdown = pypandoc.convert_file(
+    command = [
+        "pandoc",
+        "--from=docx",
+        "--to=gfm",
+        "--wrap=none",
+        f"--extract-media={media_root}",
         str(docx),
-        to="gfm",
-        format="docx",
-        extra_args=["--wrap=none", f"--extract-media={media_root}"],
-    )
-    # pandoc emits CRLF on Windows, which would stop the cleanup patterns below
-    # from ever matching an end of line.
+    ]
+    try:
+        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+    except FileNotFoundError:
+        raise SystemExit(
+            "pandoc was not found on PATH. Install it with `sudo apt install pandoc`, "
+            "`brew install pandoc`, or from https://pandoc.org/installing.html"
+        ) from None
+    except subprocess.CalledProcessError as error:
+        detail = error.stderr.decode("utf-8", errors="replace").strip()
+        raise SystemExit(f"pandoc exited with {error.returncode}: {detail}") from None
+
+    # pandoc writes UTF-8 whatever the locale says, and emits CRLF on Windows,
+    # which would stop the cleanup patterns below from ever matching an end of line.
+    markdown = result.stdout.decode("utf-8")
     return markdown.replace("\r\n", "\n").replace("\r", "\n")
 
 
