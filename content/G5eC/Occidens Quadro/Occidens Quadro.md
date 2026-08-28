@@ -23,9 +23,10 @@ Szűkebb értelemben az a szigettenger, amelynek határai nagyjából Narh, Dao 
 ##### Kqarg'se
 - goblinoidok és óriásfattyak (küklopszok) által lakott sziget.
 
-##### Kortax
+##### Kortax, [[Piskaro]]
 > [!quote] Log
 >Piscaro egy város a Kortax-szigeten. Itt bűnözők is kiköthetnek, kalózok, csempészek menedéke (egy hét hajózás délre Callindaltól). A navigációs könyvben van egy útmutató az ottani zátonyokról.
+
 
 ##### [[Narthea]]
 ##### Szent Melvio szigete
@@ -36,6 +37,15 @@ Szűkebb értelemben az a szigettenger, amelynek határai nagyjából Narh, Dao 
 ##### Sulaen
 
 ##### Torego
+- Nem túl nagy méretű sziget, de több településsel is bír, amit viszonylag jó kikötőhelyeinek és fekvésének köszönhet.
+- **Nermau**: a legnagyobb település a szigeten, 5200 körüli lélekszámmal.
+	- Nyüzsgő kereskedelmi központ, főként a rabszolga-kereskedelem szempontjából számít jelentősnek. Így nem véletlen az erős shareni jelenlét.
+	- Az uralkodó **Cousotta Shald** egy shareni származású félork nő, aki elég mlyről küzdötte fel magát idáig és vaskézzel irányítja a várost, jelentős sápot húzva a rabszolgakereskedelemből.
+	- A város híres látványossága a rákviadal: óriás méretű rákok elleni gladiátorharc
+- **Egyezség-fok** (1225)
+- **Osztrigazátony** (1,110)
+- **Colvaas Bitója** (425)
+- A sziget folyója a **Terwa**
 
 ##### Torrmyno
 
