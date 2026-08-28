@@ -137,6 +137,13 @@ Ismertebbek: **Garasos, Lépcsős, Pelikán, Obbo Ivója, Részeges Sügér
 - Madame Ramona 
 - Aznar, kidobó
 - **Melanie Jade**, fiatal kurtizán. (Alex alkalmi kísérője)
+> [!caption|right] 
+> ![[MelanieJade.jpg|100]]
+
+
+
+
+
 - **Rebenna**, fiatal kurtizán (Rogen egykori barátnője)
 > [!caption|right] 
 > ![[Rebenna2.png|100]]
