@@ -1,0 +1,34 @@
+---
+description: Always rebase onto origin before creating a git bundle in this repo
+alwaysApply: true
+---
+
+# Bundles are made on top of origin, never beside it
+
+Work moves between the office machine and the home machine by bundle, and the
+home machine pushes to `origin`. So the local branch is usually behind by the
+time a bundle is asked for, and a bundle built on a stale base will not apply.
+
+Before creating any bundle, in this order:
+
+1. `git fetch origin` and compare with `git status -sb`.
+2. If the branch is behind, `git pull --rebase origin main`. Do this even when
+   the user only asked for a bundle; it is part of making one.
+3. Build the range from the remote, never from a remembered commit:
+   `git bundle create <path> origin/main..main`.
+4. `git bundle verify <path>` and state which commit the bundle requires, so the
+   user can tell whether their other machine has it.
+
+## After a rebase, check what upstream did to the links
+
+Copying a fresh `build/sessions/` over `content/G5eC/log/` throws away every
+wikilink, and the commit that does it reads as ordinary text edits. It has
+happened twice. After rebasing, run `python tools/autolink/autolink.py`; if the
+preview wants to write links that were already there, upstream dropped them, so
+say so and re-apply before bundling.
+
+## Housekeeping
+
+Delete the previous bundle file only once its commits are on `origin`. If the
+user says an older bundle was already applied, that is the signal to fetch,
+because `origin` has almost certainly moved.
