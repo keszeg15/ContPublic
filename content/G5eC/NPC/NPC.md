@@ -1,3 +1,8 @@
+---
+Category: Collection
+tags:
+  - G5eC
+---
 # Griff-ház
 ### Tori Sandro (ezüst)
 harcos, ő az “alfa”, szigorú

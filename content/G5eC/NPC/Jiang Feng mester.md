@@ -1,3 +1,8 @@
+---
+tags:
+  - G5eC
+Category: Individual
+---
 ![[feng_jiang_mester.jpg]]
 
 Első találkozása a csapattal, amikor Harm száműzése alatt amikor a csapat úgy dönt megpróbálják megtalálni a csomagot amit Harm elrejtett, de amikor lemennek a alagsorba azt látják, hogy egy idősebb keleties vonású szakállas férfi jön le a lépcsőn a belső részből kezében egy palackkal. Természetesen Feng Jiang mester az. Kezdetben a csapat nem túl barátságos, Arachis oda is veti, hogy Feng már nem a céh tagja. De kialakul egy beszélgetés. A mester három krónikás könyvet hozott ki a belső részből direkt a csapat számára. Ryel megkérdezi tőle miért vállalta el Harm tanítását, amire azt feleli, hogy a lány volt az utolsó esélye, hogy higgyen az emberiségben.
