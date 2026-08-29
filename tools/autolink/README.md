@@ -17,6 +17,25 @@ Only the standard library is used, and only the notes matched by `[scope]` are
 ever written to. Running it twice changes nothing, because a link that is
 already there is left alone.
 
+## The two roots
+
+What can be linked and what gets written are looked up separately. The first is
+always the whole wiki under `--content`; the second is `[scope]` under
+`--scope-root`, which is the same place unless told otherwise:
+
+```bash
+python3 autolink.py --apply --scope-root ../gdoc_import/build/sessions
+```
+
+That links a freshly split log while it is still in `build/`, so the copy into
+`content/` brings the links with it instead of flattening the ones already
+there. The notes being written need not be part of the wiki yet; they only need
+the wiki to point at.
+
+Because the two roots hold the sessions at different depths, `[scope]` lists
+both spellings — `G5eC/log/Session*.md` and `Session*.md`. Only one can match
+under a given root, and a pattern matching nothing costs nothing.
+
 ## Where the links come from
 
 Three sources, folded into one `phrase -> target` table:
@@ -66,7 +85,7 @@ mentions of the guild to the ten line roster instead of the guild's own page.
 
 | section | meaning |
 | --- | --- |
-| `[scope]` | which notes get links written into them, as patterns under the content root |
+| `[scope]` | which notes get links written into them, as patterns under the scope root |
 | `[collectors]` | further notes that only gather what really lives elsewhere |
 | `[exclude]` | phrases that never become links, whoever claims them |
 | `[headings]` | the headings chosen above |

@@ -22,10 +22,11 @@ Before creating any bundle, in this order:
 ## After a rebase, check what upstream did to the links
 
 Copying a fresh `build/sessions/` over `content/G5eC/log/` throws away every
-wikilink, and the commit that does it reads as ordinary text edits. It has
-happened twice. After rebasing, run `python tools/autolink/autolink.py`; if the
-preview wants to write links that were already there, upstream dropped them, so
-say so and re-apply before bundling.
+wikilink unless the split was linked first, and the commit that does it reads as
+ordinary text edits. It has happened twice. After rebasing, run
+`python tools/autolink/autolink.py`; if the preview wants to write links that
+were already there, upstream dropped them, so say so and re-apply before
+bundling.
 
 ## Housekeeping
 

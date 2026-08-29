@@ -27,9 +27,10 @@ from pathlib import Path
 
 DEFAULT_CONFIG = """\
 # Which notes get links written into them, one pattern per line, relative to
-# the content root.
+# the scope root, which is the content root unless --scope-root says otherwise.
 [scope]
 G5eC/log/Session*.md
+Session*.md
 
 # Notes that only gather what really lives elsewhere. When a name is claimed
 # both by a collector and by an ordinary note, the ordinary note wins. A note
@@ -381,6 +382,12 @@ def main() -> int:
     script_dir = Path(__file__).resolve().parent
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--content", type=Path, default=script_dir.parents[1] / "content", help="content root")
+    parser.add_argument(
+        "--scope-root",
+        type=Path,
+        default=None,
+        help="where the [scope] patterns are looked up; defaults to the content root",
+    )
     parser.add_argument("--config", type=Path, default=script_dir / "autolink.ini", help="configuration file")
     parser.add_argument("--apply", action="store_true", help="write the links, instead of only reporting them")
     parser.add_argument("--scan", action="store_true", help="propose headings worth linking")
@@ -391,16 +398,23 @@ def main() -> int:
     if not args.content.is_dir():
         raise SystemExit(f"No content directory at {args.content}")
 
+    # What can be linked is always learnt from the wiki, but what gets written
+    # need not live there yet: pointing this at a fresh split lets the notes be
+    # linked before they are copied over content/, so the copy cannot undo them.
+    scope_root = args.scope_root or args.content
+    if not scope_root.is_dir():
+        raise SystemExit(f"No scope directory at {scope_root}")
+
     config = read_config(args.config)
     raw = args.config.read_text(encoding="utf-8-sig") if args.config.exists() else ""
 
     notes = {path.stem: path.read_text(encoding="utf-8-sig", errors="replace") for path in args.content.rglob("*.md")}
     scope_paths: list[Path] = []
     for pattern in section_keys(config, "scope"):
-        scope_paths += sorted(args.content.glob(pattern))
-    scope = {path.stem: notes[path.stem] for path in scope_paths}
+        scope_paths += sorted(scope_root.glob(pattern))
+    scope = {path.stem: path.read_text(encoding="utf-8-sig", errors="replace") for path in scope_paths}
 
-    print(f"{len(notes)} notes, {len(scope)} of them in scope")
+    print(f"{len(notes)} notes, {len(scope)} of them in scope, from {scope_root}")
     if not scope:
         raise SystemExit("The [scope] patterns matched nothing.")
 
@@ -433,7 +447,7 @@ def main() -> int:
     changed = 0
     mended = 0
     for path in scope_paths:
-        text = notes[path.stem]
+        text = scope[path.stem]
         linked, counts, fixed = linkify(text, pattern, targets, path.stem)
         if linked == text:
             continue

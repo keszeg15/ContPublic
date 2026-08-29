@@ -40,28 +40,35 @@ build/notes/pics/
 build/sessions/Session<n> - <title>.md  (69)
 build/sessions/pics/
       |
+      |  autolink/autolink.py --apply --scope-root build/sessions
+      |                                 names become wikilinks
+      v
+build/sessions/ with links
+      |
       |  (moved into content/ by hand, after review)
       v
 content/G5eC/log/
-      |
-      |  autolink/autolink.py --apply   names become wikilinks
-      v
-content/G5eC/log/ with links
 ```
 
 The steps are separate programs rather than one command because each one is
 worth looking at before the next runs. The conversion is the only step that
 touches the network, the two splitting steps are where the document structure
-gets interpreted, and the linking step is the only one that changes notes that
-are already published. Re-running any of them is safe: `build/` is rebuilt from
-scratch, and linking is idempotent.
+gets interpreted, and the linking step is the only one that can change notes
+that are already published. Re-running any of them is safe: `build/` is rebuilt
+from scratch, and linking is idempotent.
 
-**The last step has to be last, every time.** A fresh split knows nothing about
-the links, so copying `build/sessions/` over `content/G5eC/log/` silently throws
-away every wikilink written there before. Run `autolink.py --apply` after each
-such copy. Nothing is lost when you forget — the links are generated, so the
-rerun puts all of them back — but the wiki goes flat in the meantime, and the
-commit that does it looks like ordinary text edits.
+**Linking always follows the split, whichever way round the copy goes.** A fresh
+split knows nothing about the links, so copying `build/sessions/` over
+`content/G5eC/log/` throws away every wikilink written there before. Linking the
+split first, as the diagram does, keeps that from arising at all: what lands in
+the wiki arrives already linked, and the copy has nothing to undo.
+
+The other order works too. With no `--scope-root`, the run links
+`content/G5eC/log/` in place, and that is the form to reach for whenever links
+have gone missing after the fact — a copy done the other way round, or a rebase
+that brought an older text back. Nothing is lost when you forget, since the
+links are generated and a rerun puts all of them back, but the wiki goes flat in
+the meantime and the commit that does it looks like ordinary text edits.
 
 ## What each step hands over
 
@@ -88,7 +95,10 @@ restates a name.
 copying only the images those sessions actually embed.
 
 **`autolink.py`** reads all of `content/` to learn what can be linked, and
-writes only into the notes matched by `[scope]` in `autolink.ini`.
+writes only into the notes matched by `[scope]` in `autolink.ini`. Those two
+roots are separate: `--scope-root` moves what gets written, while what can be
+linked is still learnt from the wiki, which is what lets a split be linked in
+`build/` before it is copied.
 
 ## Conventions
 
