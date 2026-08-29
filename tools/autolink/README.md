@@ -3,6 +3,9 @@
 Writes Obsidian wikilinks into a chosen set of notes, so that a name already
 covered elsewhere in the wiki becomes a link wherever it is mentioned.
 
+[../README.md](../README.md) covers how this fits into the wider pipeline, and
+why the awkward parts work the way they do.
+
 ## Running it
 
 ```bash
@@ -77,6 +80,22 @@ exactly such blocks.
 python3 autolink.py --missing
 ```
 
-lists the names the logs set in bold that no note and no heading claims. Since
-the log bolds what it considers notable, this doubles as a worklist of the
-notes still to be written.
+writes [missing.md](missing.md) next to this file and prints the same thing, so
+the worklist can be read in the repository without running anything. It lists
+the names the logs set in bold that no note and no heading claims, and since the
+log bolds what it considers notable, this doubles as a worklist of the notes
+still to be written. The report carries no timestamp, so a rerun only shows up
+as a change when the logs or the wiki did.
+
+The report answers in two parts. The first is the cheap half: names that do have
+a note and are only spelt differently, where an alias on the existing note is
+the whole fix. `Nartheá` is Narthea with a suffix, `Hüvöskő` is a typo for
+Hűvöskő, and the report finds both by ignoring case and vowel length. The second
+part is the names that genuinely have nothing behind them, most frequent first,
+with the one-off names gathered into a single line at the end.
+
+Bold is not used for names only, so three kinds of entry are dropped before
+counting: dates, which the log sets in bold on every session heading; anything
+longer than five words or starting with a lower-case letter, which is an
+emphasised sentence rather than a name; and the phrases under `[exclude]`, which
+are not missing, only deliberately unlinked.

@@ -3,6 +3,9 @@
 Fetches a Google Doc and converts it into Quartz-flavoured Markdown, ready to be
 split into individual wiki notes.
 
+[../README.md](../README.md) covers how this fits into the wider pipeline, and
+why the awkward parts work the way they do.
+
 Both scripts use nothing but the standard library, so there is no virtual
 environment and no pip to deal with:
 

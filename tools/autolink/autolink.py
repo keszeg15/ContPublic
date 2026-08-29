@@ -66,6 +66,17 @@ HTML_OPEN = re.compile(r"^[ \t]*<(table|div|details|blockquote)\b", re.I)
 HTML_CLOSE = re.compile(r"^[ \t]*</(table|div|details|blockquote)\b", re.I)
 BOLD = re.compile(r"\*\*(.+?)\*\*")
 
+# Bold marks dates and whole emphasised sentences as well as names, and neither
+# of those will ever become a note, so the missing-name report leaves them out.
+MONTHS = "január|február|március|április|május|június|július|augusztus|szeptember|október|november|december"
+DATED = re.compile(rf"(?:{MONTHS})|^\d", re.I)
+TRIM = " \t*_\"'“”„.,:;!?"
+MAX_NAME_WORDS = 5
+
+# Folding away case and vowel length lets `Nartheá` and `Hüvöskő` meet the
+# `Narthea` and `Hűvöskő` notes they are really inflections and typos of.
+LONG_VOWELS = str.maketrans("áéíóúőű", "aeiouöü")
+
 # Spans a link must never be written into: code, links and embeds that are
 # already there, HTML tags, and bare URLs.
 PROTECTED = re.compile(
@@ -237,6 +248,73 @@ def scan_headings(
     return rows
 
 
+def fold(phrase: str) -> str:
+    return phrase.casefold().translate(LONG_VOWELS)
+
+
+def looks_like_a_name(phrase: str) -> bool:
+    if not phrase or DATED.search(phrase):
+        return False
+    return len(phrase.split()) <= MAX_NAME_WORDS and phrase[0].isupper()
+
+
+def collect_missing(
+    scope: dict[str, str], targets: dict[str, str], config: configparser.ConfigParser
+) -> tuple[list[tuple], list[tuple]]:
+    """Gather the bold names that want a note, apart from those that want an alias."""
+    excluded = {fold(phrase) for phrase in section_keys(config, "exclude")}
+    known = {fold(phrase): target for phrase, target in targets.items()}
+
+    groups: dict[str, Counter] = {}
+    for text in scope.values():
+        for span in BOLD.findall(linkable_text(text)):
+            phrase = re.sub(r"\s+", " ", span).strip(TRIM)
+            if len(phrase) <= MIN_LENGTH or phrase in targets or "[[" in phrase:
+                continue
+            if fold(phrase) in excluded or not looks_like_a_name(phrase):
+                continue
+            groups.setdefault(fold(phrase), Counter())[phrase] += 1
+
+    spelt, unknown = [], []
+    for key, variants in groups.items():
+        row = (sum(variants.values()), variants.most_common(1)[0][0], sorted(variants), known.get(key))
+        (spelt if key in known else unknown).append(row)
+    spelt.sort(key=lambda row: (-row[0], row[1]))
+    unknown.sort(key=lambda row: (-row[0], row[1]))
+    return spelt, unknown
+
+
+def format_missing(spelt: list[tuple], unknown: list[tuple]) -> list[str]:
+    """Write the worklist as Markdown, without a timestamp, so a rerun only
+    changes the file when the logs changed."""
+    lines = [
+        "# Bold names the wiki does not cover",
+        "",
+        "The party log sets in bold what it holds notable, so this is a worklist of",
+        "notes still to be written. Regenerate it with `python3 autolink.py --missing`.",
+        "",
+        "Dates, emphasised sentences and the party members under `[exclude]` are left",
+        "out, and spellings that differ only in case or vowel length are counted as one",
+        "name, with the rarer forms in brackets.",
+        "",
+        f"## {len(spelt)} already have a note and are only spelt differently",
+        "",
+        "An alias on the note listed here is the whole fix.",
+        "",
+    ]
+    lines += [f"- **{' / '.join(variants)}** — {total}× — alias on `{target}`" for total, _, variants, target in spelt]
+
+    repeated = [row for row in unknown if row[0] > 1]
+    once = [row for row in unknown if row[0] == 1]
+    lines += ["", f"## {len(unknown)} have nothing behind them, {sum(row[0] for row in unknown)} occurrences", ""]
+    for total, surface, variants, _ in repeated:
+        others = [variant for variant in variants if variant != surface]
+        lines.append(f"- **{surface}** — {total}×" + (f" ({', '.join(others)})" if others else ""))
+    if once:
+        lines += ["", f"### {len(once)} of them turn up once", "", ", ".join(row[1] for row in once)]
+    return lines
+
+
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -247,6 +325,7 @@ def main() -> int:
     parser.add_argument("--apply", action="store_true", help="write the links, instead of only reporting them")
     parser.add_argument("--scan", action="store_true", help="propose headings worth linking")
     parser.add_argument("--missing", action="store_true", help="list bold names that no note or heading claims")
+    parser.add_argument("--report", type=Path, default=script_dir / "missing.md", help="where --missing is written")
     args = parser.parse_args()
 
     if not args.content.is_dir():
@@ -307,16 +386,10 @@ def main() -> int:
         print(f"{phrase[:33]:<34} {count:>6}  {targets[phrase][:40]}")
 
     if args.missing:
-        known = set(targets)
-        missing: Counter = Counter()
-        for text in scope.values():
-            for span in BOLD.findall(linkable_text(text)):
-                span = re.sub(r"\s+", " ", span).strip(" .,:;!?")
-                if len(span) > MIN_LENGTH and span not in known and "[[" not in span:
-                    missing[span] += 1
-        print(f"\n{len(missing)} bold names have no note or heading behind them:")
-        for phrase, count in missing.most_common(30):
-            print(f"  {count:>4}  {phrase}")
+        report = format_missing(*collect_missing(scope, targets, config))
+        args.report.write_text("\n".join(report) + "\n", encoding="utf-8", newline="\n")
+        print("\n" + "\n".join(report))
+        print(f"\nWritten to {args.report}")
 
     if not args.apply:
         print("\nThis was a preview. Add --apply to write the links.")
