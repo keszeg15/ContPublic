@@ -57,12 +57,33 @@ The heading is the link anchor, but the phrase searched for is the bare name:
 | section | meaning |
 | --- | --- |
 | `[scope]` | which notes get links written into them, as patterns under the content root |
-| `[collectors]` | notes that only gather what really lives elsewhere; when a name is claimed both by a collector and by an ordinary note, the ordinary note wins |
+| `[collectors]` | further notes that only gather what really lives elsewhere |
 | `[exclude]` | phrases that never become links, whoever claims them |
 | `[headings]` | the headings chosen above |
 
 A name claimed by two ordinary notes is reported and skipped rather than linked
 to an arbitrary one of them.
+
+## Collectors
+
+Some notes only gather what really lives elsewhere — a roster, an index, a list
+of guilds. When a name is claimed both by such a note and by an ordinary one,
+the ordinary note wins, so a mention of a guild lands on the guild's own page
+rather than on the line about it in a roster.
+
+A note says it is one itself:
+
+```yaml
+---
+Category: Collection
+---
+```
+
+That keeps the fact on the page rather than in a list that has to be kept in
+step with the wiki, and a new collector is handled the moment it is written.
+`[collectors]` in the config is for the notes with no front matter to say it in,
+and for overruling a page whose own claim you disagree with. Every run prints
+how many collectors it found and how many of them said so themselves.
 
 ## What is left alone
 

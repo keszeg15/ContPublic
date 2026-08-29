@@ -32,7 +32,9 @@ DEFAULT_CONFIG = """\
 G5eC/log/Session*.md
 
 # Notes that only gather what really lives elsewhere. When a name is claimed
-# both by a collector and by an ordinary note, the ordinary note wins.
+# both by a collector and by an ordinary note, the ordinary note wins. A note
+# saying `Category: Collection` in its front matter counts as one without being
+# listed here; this section is for the ones that cannot say it themselves.
 [collectors]
 NPC
 
@@ -55,6 +57,8 @@ Joli
 FRONT_MATTER = re.compile(r"\A---\n.*?\n---\n", re.S)
 ALIAS_BLOCK = re.compile(r"^(?:alias|aliases):[ \t]*\n((?:[ \t]+-[ \t]*.+\n?)+)", re.M)
 ALIAS_ITEM = re.compile(r"^[ \t]+-[ \t]*(.+?)[ \t]*$", re.M)
+CATEGORY = re.compile(r"^Category:[ \t]*(.+?)[ \t]*$", re.M)
+COLLECTION = "Collection"
 HEADING = re.compile(r"^(#{2,4})[ \t]+(.+?)[ \t]*$", re.M)
 FENCE = re.compile(r"^[ \t]*(```|~~~)")
 
@@ -97,7 +101,9 @@ def read_config(path: Path) -> configparser.ConfigParser:
     parser.optionxform = str
     parser.read_string(DEFAULT_CONFIG)
     if path.exists():
-        parser.read_string(path.read_text(encoding="utf-8"))
+        # utf-8-sig, because a Windows editor may leave a byte order mark, and a
+        # mark in front of `[scope]` or of `---` hides the whole file's meaning.
+        parser.read_string(path.read_text(encoding="utf-8-sig"))
     return parser
 
 
@@ -115,11 +121,30 @@ def aliases_of(text: str) -> list[str]:
     return [alias for alias in found if alias]
 
 
+def category_of(text: str) -> str:
+    matter = FRONT_MATTER.match(text)
+    if not matter:
+        return ""
+    found = CATEGORY.search(matter.group(0))
+    return found.group(1).strip().strip('"').strip("'") if found else ""
+
+
+def collectors_of(notes: dict[str, str], config: configparser.ConfigParser) -> set[str]:
+    """Notes that only gather what really lives elsewhere.
+
+    A note says so itself with `Category: Collection`, which keeps the fact where
+    the page is rather than in a list that has to be kept in step with the wiki.
+    The config still names the ones that carry no front matter to say it in.
+    """
+    named = set(section_keys(config, "collectors"))
+    return named | {stem for stem, text in notes.items() if category_of(text) == COLLECTION}
+
+
 def collect_targets(
     notes: dict[str, str], config: configparser.ConfigParser
 ) -> tuple[dict[str, str], list[str]]:
     """Map every linkable phrase to the note, or note#heading, it points at."""
-    collectors = set(section_keys(config, "collectors"))
+    collectors = collectors_of(notes, config)
     excluded = set(section_keys(config, "exclude"))
 
     claims: dict[str, list[str]] = {}
@@ -217,7 +242,7 @@ def scan_headings(
     notes: dict[str, str], scope: dict[str, str], config: configparser.ConfigParser, raw: str
 ) -> list[tuple[str, str, int, int]]:
     """Propose headings that the notes in scope actually mention."""
-    collectors = set(section_keys(config, "collectors"))
+    collectors = collectors_of(notes, config)
     excluded = set(section_keys(config, "exclude"))
     bodies = [linkable_text(text) for text in scope.values()]
 
@@ -332,9 +357,9 @@ def main() -> int:
         raise SystemExit(f"No content directory at {args.content}")
 
     config = read_config(args.config)
-    raw = args.config.read_text(encoding="utf-8") if args.config.exists() else ""
+    raw = args.config.read_text(encoding="utf-8-sig") if args.config.exists() else ""
 
-    notes = {path.stem: path.read_text(encoding="utf-8", errors="replace") for path in args.content.rglob("*.md")}
+    notes = {path.stem: path.read_text(encoding="utf-8-sig", errors="replace") for path in args.content.rglob("*.md")}
     scope_paths: list[Path] = []
     for pattern in section_keys(config, "scope"):
         scope_paths += sorted(args.content.glob(pattern))
@@ -360,6 +385,9 @@ def main() -> int:
 
     targets, ambiguous = collect_targets(notes, config)
     print(f"{len(targets)} phrases can be linked, from names, aliases and {len(config['headings'])} configured headings")
+    collectors = collectors_of(notes, config)
+    tagged = sum(1 for stem in collectors if category_of(notes.get(stem, "")) == COLLECTION)
+    print(f"  {len(collectors)} notes lose name ties as collectors, {tagged} of them by their own Category")
     if ambiguous:
         print(f"  {len(ambiguous)} phrases are claimed by several notes and are skipped:")
         for entry in ambiguous[:10]:

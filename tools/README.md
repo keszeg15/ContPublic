@@ -167,10 +167,16 @@ one is a deliberate act. The heading is the link anchor but the phrase searched
 for is the bare name, which is why an entry has two sides:
 `Tori Sandro = Griff-ház#Tori Sandro (ezüst)`.
 
-**Collector notes lose ties.** A note listed under `[collectors]` only gathers
-what really lives elsewhere, so when a name is claimed both by a collector and
-by an ordinary note, the ordinary note wins. A name claimed by two ordinary
-notes is reported and skipped rather than linked to an arbitrary one.
+**Collector notes lose ties.** A collector only gathers what really lives
+elsewhere, so when a name is claimed both by a collector and by an ordinary
+note, the ordinary note wins. A name claimed by two ordinary notes is reported
+and skipped rather than linked to an arbitrary one.
+
+A note declares itself one with `Category: Collection` in its front matter,
+which keeps the fact on the page instead of in a list that has to be kept in
+step with a growing wiki: a new collector is right by writing the property, and
+the reader sees it too. `[collectors]` in the config stays for the notes that
+carry no front matter to say it in, and for overruling a page you disagree with.
 
 **Links are never written into a raw HTML block.** Markdown is not processed
 inside one, so the brackets would show up literally. The verse tables in the
