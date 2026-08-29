@@ -1,6 +1,8 @@
 ---
 aliases:
   - Griff Haz
+  - Griff-ház
+  - Griff-haz
 tags:
   - G5eC
 Category: Group
