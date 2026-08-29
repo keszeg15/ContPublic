@@ -56,6 +56,13 @@ gets interpreted, and the linking step is the only one that changes notes that
 are already published. Re-running any of them is safe: `build/` is rebuilt from
 scratch, and linking is idempotent.
 
+**The last step has to be last, every time.** A fresh split knows nothing about
+the links, so copying `build/sessions/` over `content/G5eC/log/` silently throws
+away every wikilink written there before. Run `autolink.py --apply` after each
+such copy. Nothing is lost when you forget — the links are generated, so the
+rerun puts all of them back — but the wiki goes flat in the meantime, and the
+commit that does it looks like ordinary text edits.
+
 ## What each step hands over
 
 **`fetch_gdoc.py`** downloads the document as `.docx` and converts it with
