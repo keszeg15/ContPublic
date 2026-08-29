@@ -67,6 +67,24 @@ Ha csak a feldolgozáson állítasz és nem akarsz újra letölteni, a
 `fetch_gdoc.py --skip-download` a korábbi letöltést használja újra.
 
 Ha új jegyzetek vagy címsorok kerültek a wikibe, a `autolink.py --scan`
-felsorolja az új linkelhető címsorjelölteket az `autolink.ini`-be kikapcsolva, a
-`--missing` pedig frissíti a [missing.md](autolink/missing.md) munkalistát
-arról, mely kiemelt nevek mögött nincs még jegyzet.
+felsorolja az új linkelhető címsorjelölteket az `autolink.ini`-be kikapcsolva.
+
+## A munkalista
+
+Melyik kiemelt név mögött nincs még jegyzet:
+
+```bash
+python3 tools/autolink/autolink.py --missing
+```
+
+Ez írja a [missing.md](autolink/missing.md)-t — a fájl generált, nem kézzel
+karbantartott, és a `--report` mondja meg, hova kerül, alapból pont oda. A
+linkeket nem bántja, mert az írásukhoz `--apply` kell, a reportot viszont
+előnézetben is felülírja.
+
+Időbélyeg nincs benne, szándékosan: az újrafuttatás csak akkor jelenik meg
+változásként a gitben, ha tényleg változott a napló vagy a wiki. Ezért van
+commitolva is, így a munkalista futtatás nélkül olvasható a repóban.
+
+A report abból készül, ami épp hatókörben van, tehát `--scope-root`-tal a friss
+darabolásról szól, anélkül a wikiben lévő naplókról.
