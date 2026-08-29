@@ -29,11 +29,11 @@ Szűkebb értelemben az a szigettenger, amelynek határai nagyjából Narh, Dao 
 >Piscaro egy város a Kortax-szigeten. Itt bűnözők is kiköthetnek, kalózok, csempészek menedéke (egy hét hajózás délre Callindaltól). A navigációs könyvben van egy útmutató az ottani zátonyokról.
 
 - **Nermau**: a második legnagyobb település a szigeten, 5200 körüli lélekszámmal.
-	- Nyüzsgő kereskedelmi központ, főként a rabszolga-kereskedelem szempontjából számít jelentősnek. Így nem véletlen az erős shareni jelenlét.
+	- Nyüzsgő kereskedelmi központ, főként a rabszolga-kereskedelem miatt, ami hivatalosan ki van tiltva Piskaroból így főként itt bonyolítják a szigetre érkezők. 
 	- Az uralkodó **Cousotta Shald** egy shareni származású félork nő, aki elég mlyről küzdötte fel magát idáig és vaskézzel irányítja a várost, jelentős sápot húzva a rabszolgakereskedelemből.
-- **Egyezség-fok** (1225)
-- **Osztrigazátony** (1,110)
-- **Colvaas Bitója** (425)
+- **Egyezség-fok**: világítótornyáről ismert település, ezer körüli népességgel.
+- **Osztrigazátony**: ezer fő körüli település jó bár nem túl nagy kikötővel.
+- **Colvaas Bitója**: párszáz fős település, amely nevét az egykori kalózvezérről kapta, ki itt állította fel a főhadiszállását, és aztán később itt is akasztották fel ellenségei. 
 
 
 ##### [[Narthea]]
