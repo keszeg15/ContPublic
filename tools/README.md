@@ -5,7 +5,8 @@ and cuts it into wiki notes; `autolink` turns names that already have a note
 behind them into links. Each has its own README covering how to run it — this
 document covers what they are for, what they hand to each other, the
 conventions they all honour, and why the awkward decisions were made the way
-they were.
+they were. [usage.md](usage.md) is the short version: the commands of a whole
+run, in order, with nothing explained.
 
 Two rules hold across everything here:
 
