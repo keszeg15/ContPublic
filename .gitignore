@@ -13,3 +13,4 @@ replit.nix
 quartz/cli/tui/dist/
 tools/gdoc_import/.venv/
 tools/gdoc_import/build/
+__pycache__/
