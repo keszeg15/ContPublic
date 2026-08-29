@@ -9,17 +9,17 @@ Chapter: Chapter 3
 # Session \#60: Szárnyaló tudás
 
 🪆 *Downtime*
-Harm hazamegy, illetve terjeszti a hírt **[[Callindal]]**ban, hogy **Jiang** mester dojo-t fog nyitni.
-Arachis beszél **Claudius**szal, a család intézőjével, hogy adjon neki tanácsokat az úttal kapcsolatban. Kap. Arachis kérésére, hogy vigyenek-e **[[Narthea]]** felé árut azt a választ kapja, hogy pont most ment el egy hajó arrafelé. Az apjával is beszél, aki megint megkérdezi, hogy mikor vet már véget ennek a fiatalkori hóbortnak (a kalandozóságnak) és komolyodik meg. Ideje lenne belefolynia a családi bizniszbe. Arachis elmeséli a rákos történetet, amin fájdalmasan mosolyog az apja. Az sem tetszett neki, hogy a csapat mindenféle nemesi intrikákba keveredett bele. Azt is felrója, hogy a csizma számlák magasak mostanában, viszont bevétel nincs. Arachis meggyőzi, hogy van bevétel és ezentúl ő fizeti a saját költségeit. Ez kicsit megnyugtatja a papát, de lesz még ennek folytatása.
+Harm hazamegy, illetve terjeszti a hírt **Callindal**ban, hogy **Jiang** mester dojo-t fog nyitni.
+Arachis beszél **Claudius**szal, a család intézőjével, hogy adjon neki tanácsokat az úttal kapcsolatban. Kap. Arachis kérésére, hogy vigyenek-e **Narthea** felé árut azt a választ kapja, hogy pont most ment el egy hajó arrafelé. Az apjával is beszél, aki megint megkérdezi, hogy mikor vet már véget ennek a fiatalkori hóbortnak (a kalandozóságnak) és komolyodik meg. Ideje lenne belefolynia a családi bizniszbe. Arachis elmeséli a rákos történetet, amin fájdalmasan mosolyog az apja. Az sem tetszett neki, hogy a csapat mindenféle nemesi intrikákba keveredett bele. Azt is felrója, hogy a csizma számlák magasak mostanában, viszont bevétel nincs. Arachis meggyőzi, hogy van bevétel és ezentúl ő fizeti a saját költségeit. Ez kicsit megnyugtatja a papát, de lesz még ennek folytatása.
 A csapat úgy dönt, hogy a Taribio-szigeti kalandban elhúnyt matrózok családjának “özvegyi nyugdíjt” ad, 5 aranyat. Alexet kivéve mindenki egy-egy családhoz megy. Az átadás mindenesetre fájdalmas, a feleségek, gyerekek sírnak. Nem okolják a csapatot (ez egy munkával járó kockázat), és elfogadják a pénzt, de látszik a kétségbeesés (hogy fognak megélni így?).
-⛵*A [[Szárny]]*
+⛵*A Szárny*
 A hajót minimum 6 ember vezetheti el (de akkor lassabb megy, fordul, stb.). 10 ember kell a biztonságos elvezetéshez, 12 ahhoz, hogy fenntartható is legyen (legyen pihenőidő is, illetve ha valaki beteg lesz lehessen pótolni). Ki kell osztani a tiszti rangokat is. Némi vita után ezek a következők lesznek:
 - Kapitány: Alex, ő ért a legjobban a hajózáshoz.
 - Első tiszt: a kapitány helyettese, ez Arachis lesz
 - Fedélzetmester: karbantartásért, legénységnek utasításokat adja át, Ulrichot nevezi ki a csapat
 - Szállásmester: logisztikáért, fegyelmezésért felelős, ez Ryel lesz.
-Részletesen a <u>[[Hajós szerepek]]</u> fül alatt van leírva.
-A hajó és hajózási szabályok a <u>[[Háziszabályok]]</u> fül alatt van részletezve.
+Részletesen a <u>Hajós szerepek</u> fül alatt van leírva.
+A hajó és hajózási szabályok a <u>Háziszabályok</u> fül alatt van részletezve.
 A csapat átbeszéli mik a lehetőségek, és úgy dönt 6 matrózt próbálnak felvenni. Ez sikerül is, a következők lesznek ők:
 - **Alwin**: nagydarab, pocakos, lassú, harsány, de jó szándékú fickó
 - **Mejboom**: délkeletről származik, barna bőrű, keleties vonású, babonás fickó, akit emiatt szivatnak is a többiek
@@ -36,7 +36,7 @@ Egyre jobban összeáll neki amit olvasott a démoni könnyekről, és visszaeml
 - a könnyet ki lehet nyerni abból aki magába szívta, pl. ha meghal, de nem automatikus, kell hozzá valami rituálé (? ez nem derül ki)
 - bele tud kerülni a könny egy tárgyba. A tárgynak lesz valami minimális mágikus képessége. Aki ért hozzá, át tudja tenni a tárgyból egy személybe a könnyet. De ehhez is kell valami, nem automatikus.
 Amikor Alex épp nincs ott, akkor Harm felveti, hogy előbb-utóbb ki kell szedni ezt Alexből. A többiek bólogatnak.
-Az egyik könyv amit talált Ulrich az Abbysi Csomóban nagyon régi (~1000 éves), eléggé sérült. Hiányzik a fedőlapja és úgy a harmada. **“A. L. könyve”** derül ki róla. A szerzője [[Ezír]] követője volt, aki egy inkvizítor / varázsló lehetett. A könyv nagyon részletes, de a benne lévő tudás azért részben elavult. A könyv a démoni követőkről szól és három részből áll:
+Az egyik könyv amit talált Ulrich az Abbysi Csomóban nagyon régi (~1000 éves), eléggé sérült. Hiányzik a fedőlapja és úgy a harmada. **“A. L. könyve”** derül ki róla. A szerzője Ezír követője volt, aki egy inkvizítor / varázsló lehetett. A könyv nagyon részletes, de a benne lévő tudás azért részben elavult. A könyv a démoni követőkről szól és három részből áll:
 - a démonidézőkről szóló hiányzik
 - a warlock-okról szóló a legkisebb
 - a démoni szektákról van egy hosszabb rész
