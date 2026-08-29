@@ -59,7 +59,7 @@ ALIAS_BLOCK = re.compile(r"^(?:alias|aliases):[ \t]*\n((?:[ \t]+-[ \t]*.+\n?)+)"
 ALIAS_ITEM = re.compile(r"^[ \t]+-[ \t]*(.+?)[ \t]*$", re.M)
 CATEGORY = re.compile(r"^Category:[ \t]*(.+?)[ \t]*$", re.M)
 COLLECTION = "Collection"
-HEADING = re.compile(r"^(#{2,4})[ \t]+(.+?)[ \t]*$", re.M)
+HEADING = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*$", re.M)
 FENCE = re.compile(r"^[ \t]*(```|~~~)")
 
 # Markdown is not processed inside a raw HTML block, so a link written there
@@ -253,6 +253,18 @@ def linkify(text: str, pattern: re.Pattern, targets: dict[str, str], stem: str) 
     return head + "\n".join(rewritten), counts, mended
 
 
+def heading_phrase(bare: str) -> str:
+    """The name to look for inside a heading that also carries a description.
+
+    The heading stays the link anchor; this is only what is searched for in the
+    logs, which write `Tori Sandro`, never `Tori Sandro (ezüst)`, and `Ordo`,
+    never `Ordo, kikötőmester`.
+    """
+    phrase = re.sub(r"<[^>]+>", "", bare)
+    phrase = re.sub(r"\s*\([^)]*\)", "", phrase).split(",")[0]
+    return phrase.strip().rstrip(":;.")
+
+
 def scan_headings(
     notes: dict[str, str], scope: dict[str, str], config: configparser.ConfigParser, raw: str
 ) -> list[tuple[str, str, int, int]]:
@@ -261,16 +273,24 @@ def scan_headings(
     excluded = set(section_keys(config, "exclude"))
     bodies = [linkable_text(text) for text in scope.values()]
 
+    # A heading entry overrides a plain name, so proposing one for a phrase a
+    # note already answers to would quietly demote that note. `Griff-ház` is the
+    # cautionary case: it is an alias of the guild page and also a heading on the
+    # ten line roster, and enabling it would send all 36 mentions to the roster.
+    claimed = set(notes) | {alias for text in notes.values() for alias in aliases_of(text)}
+
     best: dict[str, tuple[str, int, int]] = {}
     for stem, text in notes.items():
         if stem in scope:
             continue
         for _, title in HEADING.findall(FRONT_MATTER.sub("", text)):
+            if "[[" in title:
+                # Already points somewhere, and the brackets would make the
+                # anchor unreachable anyway.
+                continue
             bare = re.sub(r"[*_`]", "", title).strip()
-            # The heading is the anchor, but the phrase to look for is the bare
-            # name: `Tori Sandro (ezüst)` is written as `Tori Sandro` in a log.
-            phrase = re.sub(r"\s*\([^)]*\)", "", bare).strip()
-            if len(phrase) < 4 or phrase in excluded:
+            phrase = heading_phrase(bare)
+            if len(phrase) < 4 or phrase in excluded or phrase in claimed:
                 continue
             if re.search(rf"^#?[ \t]*{re.escape(phrase)}[ \t]*=", raw, re.M):
                 continue

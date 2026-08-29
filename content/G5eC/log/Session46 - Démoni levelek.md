@@ -9,7 +9,7 @@ Chapter: Chapter 2
 # Session \#46: Démoni levelek
 
 **július 10.**
-Reggelre nyilvánvaló lesz, hogy valakik jártak itt bent és kutatott valami után. Nem nyilvánvaló, hogy megtalálta-e, látszólag nem tűnt el semmi. Próbálták a nyomaikat eltüntetni. Úgy tűnik a védett részre nem jutottak be. A szomszéd, **Peppo Bolton** nem látott semmit, viszont elújságolja, hogy óriás rákok megtámadtak egy hajót itt a fő szigeten, a rajta lévőknek el is kellett menekülniük. Úgyhogy a herceg azonnal lépett, és megbízást adott a **Hűvöskard Társaság**nak, akik elvitték a munkát.
+Reggelre nyilvánvaló lesz, hogy valakik jártak itt bent és kutatott valami után. Nem nyilvánvaló, hogy megtalálta-e, látszólag nem tűnt el semmi. Próbálták a nyomaikat eltüntetni. Úgy tűnik a védett részre nem jutottak be. A szomszéd, **Peppo Bolton** nem látott semmit, viszont elújságolja, hogy óriás rákok megtámadtak egy hajót itt a fő szigeten, a rajta lévőknek el is kellett menekülniük. Úgyhogy a herceg azonnal lépett, és megbízást adott a **[[Callindal#Hűvöskard Társaság|Hűvöskard Társaság]]nak**, akik elvitték a munkát.
 Többen elmentek boltba eladni, venni. Harm megint pénzzavarba került (csomó pénzért megjavítatta a báli ruhát), osztalék osztást kért és kapott (10 gp / fő).
 ✉️ *A levelezés*
 Mai napon főleg a levelezést olvasgatja a csapat, elsősorban Ulrich, mivel ő tud a legjobban latinul (és a levelezés shareni nyelven van, ami 80%-ban latin). A levelezés a majordomo, **Crosael Rasdovain** és a **Yanney** család egyik feje, **Syper Yanney** között bonyolódott le:

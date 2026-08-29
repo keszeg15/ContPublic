@@ -11,7 +11,7 @@ Chapter: Chapter 2
 Este még megosztjuk egymással az információkat. Harm azonosítja a **Soto** nevet **Soto Durant** hírhedt kalóz kapitánnyal, aki a démonokkal lepaktálva tett szert mágikus hatalomra, amit kalózkodásra használ. Félelmetes, gonosz figura.
 **június 15.**
 Ryel és Arachis megnézik hogy halad a **[[Szárny]]** javítása. Elkészült, minden rendben van. Harm még korán reggel elmegy, meglátogatja a mesterét, aki új fogásokat tanít neki.
-Rajta kívül mindenki más együtt elmegy **Borges Mattus**hoz. Szerzett nekünk embereket:
+Rajta kívül mindenki más együtt elmegy **[[Hűvöskő#Borges Mattus|Borges Mattus]]hoz**. Szerzett nekünk embereket:
 - **Alto Orec**: navigátor, [[Griff-ház#Kozma (bronz)|Kozma]] barátja. Láthatóan neheztel ránk.
 - **Niary**: palotaőr a szigeten, [[Griff-ház#Tori Sandro (ezüst)|Tori Sandro]] volt a mestere, azért is jött.
 - **Christer Hennix**: volt őr, most szabadúszó ács (de sok mindent elvállal). Van 2 kis gyereke, [[Griff-ház#Wilder (ezüst)|Wilder]] gyógyította meg őket egyszer, mikor nagyon megbetegedtek, azóta lekötelezettje. Azzor követő.

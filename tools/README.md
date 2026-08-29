@@ -165,7 +165,16 @@ hundred headings in the wiki, only a handful are ever mentioned by a session,
 so `--scan` finds those and writes them into the config switched off. Enabling
 one is a deliberate act. The heading is the link anchor but the phrase searched
 for is the bare name, which is why an entry has two sides:
-`Tori Sandro = Griff-ház#Tori Sandro (ezüst)`.
+`Tori Sandro = Griff-ház#Tori Sandro (ezüst)`. That split also has to survive a
+heading that carries a description, so the phrase drops HTML tags, anything past
+the first comma and a trailing `:` — `##### Ordo, kikötőmester` is looked for as
+the `Ordo` a log writes.
+
+**A heading is never proposed for a name a note already answers to.** A heading
+entry overrides a plain name, so the proposal would demote the note without
+saying so. `Griff-ház` is the case that proved it: an alias of the guild page and
+also a heading on the ten line roster, and enabling it would have sent all 36
+mentions to the roster — undoing a fix made two commits earlier.
 
 **Collector notes lose ties.** A collector only gathers what really lives
 elsewhere, so when a name is claimed both by a collector and by an ordinary
@@ -199,7 +208,7 @@ such blocks — and the first run did link into one before this rule existed.
 - `content/G5eC/NPC/NPC.md` and `content/G5eC/NPC/Griff-ház.md` carry the same
   roster. The second is where the veteran headings are linked, and both are
   marked as collectors so neither claims a plain name.
-- `tools/autolink/missing.md` lists 280 names the logs set in bold that no note
+- `tools/autolink/missing.md` lists 270 names the logs set in bold that no note
   claims — Orion, Arnulf, Mezuppi, Rogen and so on — plus 7 that a note already
   covers under a different spelling. That is a worklist, not a defect; regenerate
   it with `autolink.py --missing`.

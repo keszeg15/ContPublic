@@ -48,7 +48,17 @@ unnoticed.
 
 The heading is the link anchor, but the phrase searched for is the bare name:
 `### Tori Sandro (ezüst)` appears as `Tori Sandro` in a log, so the entry reads
-`Tori Sandro = Griff-ház#Tori Sandro (ezüst)`.
+`Tori Sandro = Griff-ház#Tori Sandro (ezüst)`. A heading often carries a
+description alongside the name, so the phrase also drops HTML tags, anything
+after the first comma and a trailing `:`, which is how `##### Ordo, kikötőmester`
+is found by the `Ordo` a log actually writes.
+
+Every level from `#` to `######` is read. Two kinds of heading are passed over:
+one that already contains a wikilink, since it points somewhere else and its
+brackets would make the anchor unreachable, and one whose name a note or an
+alias already answers to. The second matters because a heading entry overrides a
+plain name, so proposing `Griff-ház = NPC#Griff-ház` would quietly send all 36
+mentions of the guild to the ten line roster instead of the guild's own page.
 
 ## Configuration
 

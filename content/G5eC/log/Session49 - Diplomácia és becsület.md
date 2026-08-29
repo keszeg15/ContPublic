@@ -9,7 +9,7 @@ Chapter: Chapter 2
 # Session \#49: Diplomácia és becsület
 
 **július 15.**
-Alex és Arachis tengerészeket toboroz az utazáshoz. Némi vitatkozás után nem a kocsmákból a legalját, hanem a kikötőből a közepes tengerészeket toboroznak. Ötöt veszünk fel, 1gp / nap / tengerész a díj, szóval ez 50 arany, plusz 10 aranyat kell költeni a készletekre. Szerencsére a 200 arany díjat előre megkaptuk **Borges Mattus**tól. Ryel megkapja még a másnapi indulás előtt az új pajzsát. Arachis meglepetésére este egy ajándék várja a Mantill házban. Ulrich olvasna, de egyelőre még csak rendszerezi a könyveket és elkezdi a **[[Szigettenger]] legendái II.** kötetet. A kötet elég viseletes, ezért inkább nem viszi magával az útra.
+Alex és Arachis tengerészeket toboroz az utazáshoz. Némi vitatkozás után nem a kocsmákból a legalját, hanem a kikötőből a közepes tengerészeket toboroznak. Ötöt veszünk fel, 1gp / nap / tengerész a díj, szóval ez 50 arany, plusz 10 aranyat kell költeni a készletekre. Szerencsére a 200 arany díjat előre megkaptuk **[[Hűvöskő#Borges Mattus|Borges Mattus]]tól**. Ryel megkapja még a másnapi indulás előtt az új pajzsát. Arachis meglepetésére este egy ajándék várja a Mantill házban. Ulrich olvasna, de egyelőre még csak rendszerezi a könyveket és elkezdi a **[[Szigettenger]] legendái II.** kötetet. A kötet elég viseletes, ezért inkább nem viszi magával az útra.
 **július 16.**
 Az időjárás átlagos, nincs jó szél, de nem is rossz. 3,6 csomóval megyünk. Az út egyébként eseménytelen, néha a távolban feltűnik egy vitorla, de ennyi.
 **július 17.**
