@@ -7,7 +7,7 @@ Dates, emphasised sentences and the party members under `[exclude]` are left
 out, and spellings that differ only in case or vowel length are counted as one
 name, with the rarer forms in brackets.
 
-## 8 already have a note and are only spelt differently
+## 7 already have a note and are only spelt differently
 
 An alias on the note listed here is the whole fix.
 
@@ -18,7 +18,6 @@ An alias on the note listed here is the whole fix.
 - **Hüvöskő** — 3× — alias on `Hűvöskő`
 - **Aradiá** — 1× — alias on `Aradia`
 - **Kozmá** — 1× — alias on `Griff-ház#Kozma (bronz)`
-- **Éneklő hold** — 1× — alias on `Callindal#Éneklő Hold`
 
 ## 269 have nothing behind them, 703 occurrences
 
