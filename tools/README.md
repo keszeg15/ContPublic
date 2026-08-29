@@ -178,6 +178,15 @@ step with a growing wiki: a new collector is right by writing the property, and
 the reader sees it too. `[collectors]` in the config stays for the notes that
 carry no front matter to say it in, and for overruling a page you disagree with.
 
+**A link can break the bold around it, so emphasis is mended after linking.**
+The log writes `**Hűvöskő**n`, bolding the name and leaving the suffix outside.
+Markdown will not close emphasis on a `**` that is both preceded by punctuation
+and followed by a letter, so once the link makes it `**[[Hűvöskő]]**n` the mark
+stops closing and the bold runs on down the line. The closing mark is therefore
+moved past the suffix, giving `**[[Hűvöskő]]n**`. It is a separate pass rather
+than part of the substitution because the damage only exists once the link is
+in place, and because a rerun then also repairs what earlier runs wrote.
+
 **Links are never written into a raw HTML block.** Markdown is not processed
 inside one, so the brackets would show up literally. The verse tables in the
 party log, which were too complex for pandoc to render as Markdown, are exactly

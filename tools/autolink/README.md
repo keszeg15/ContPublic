@@ -95,6 +95,23 @@ one: a link written there would show up as literal brackets. The verse tables
 in the party log, which were too complex for pandoc to turn into Markdown, are
 exactly such blocks.
 
+## Bold with a suffix hanging off it
+
+The log often bolds a name and leaves the Hungarian suffix outside the mark, as
+in `**Hűvöskő**n`. That renders, but `**[[Hűvöskő]]**n` does not: Markdown
+refuses to close emphasis on a `**` that is both preceded by punctuation and
+followed by a letter, and the `]]` the link brings turns a working closing mark
+into a dead one, after which the bold bleeds into the rest of the line.
+
+So after linking a line, the closing mark is moved past the suffix and
+`**[[Hűvöskő]]n**` is written instead. Only the unambiguous shape is touched,
+where the opening `**` sits directly in front of the link, so a `**` that opens
+a span just after a link is never mistaken for one that closes. A suffix
+separated by a space or a hyphen needs no help and is left alone.
+
+The repair runs on every note in scope, not only the ones being linked, so a
+rerun also mends notes written before this existed.
+
 ## Notes that do not exist yet
 
 ```bash

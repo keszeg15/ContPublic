@@ -9,7 +9,7 @@ Chapter: Chapter 3
 # Session \#60: Szárnyaló tudás
 
 🪆 *Downtime*
-Harm hazamegy, illetve terjeszti a hírt **[[Callindal]]**ban, hogy **Jiang** mester dojo-t fog nyitni.
+Harm hazamegy, illetve terjeszti a hírt **[[Callindal]]ban**, hogy **Jiang** mester dojo-t fog nyitni.
 Arachis beszél **Claudius**szal, a család intézőjével, hogy adjon neki tanácsokat az úttal kapcsolatban. Kap. Arachis kérésére, hogy vigyenek-e **[[Narthea]]** felé árut azt a választ kapja, hogy pont most ment el egy hajó arrafelé. Az apjával is beszél, aki megint megkérdezi, hogy mikor vet már véget ennek a fiatalkori hóbortnak (a kalandozóságnak) és komolyodik meg. Ideje lenne belefolynia a családi bizniszbe. Arachis elmeséli a rákos történetet, amin fájdalmasan mosolyog az apja. Az sem tetszett neki, hogy a csapat mindenféle nemesi intrikákba keveredett bele. Azt is felrója, hogy a csizma számlák magasak mostanában, viszont bevétel nincs. Arachis meggyőzi, hogy van bevétel és ezentúl ő fizeti a saját költségeit. Ez kicsit megnyugtatja a papát, de lesz még ennek folytatása.
 A csapat úgy dönt, hogy a Taribio-szigeti kalandban elhúnyt matrózok családjának “özvegyi nyugdíjt” ad, 5 aranyat. Alexet kivéve mindenki egy-egy családhoz megy. Az átadás mindenesetre fájdalmas, a feleségek, gyerekek sírnak. Nem okolják a csapatot (ez egy munkával járó kockázat), és elfogadják a pénzt, de látszik a kétségbeesés (hogy fognak megélni így?).
 ⛵*A [[Szárny]]*

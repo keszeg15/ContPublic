@@ -70,6 +70,14 @@ HTML_OPEN = re.compile(r"^[ \t]*<(table|div|details|blockquote)\b", re.I)
 HTML_CLOSE = re.compile(r"^[ \t]*</(table|div|details|blockquote)\b", re.I)
 BOLD = re.compile(r"\*\*(.+?)\*\*")
 
+# `**Hűvöskő**n` renders, `**[[Hűvöskő]]**n` does not: CommonMark only lets a
+# `**` close when it is not both preceded by punctuation and followed by a
+# letter, and the `]]` the link adds turns a working closing mark into a dead
+# one, after which the bold bleeds into the rest of the line. Moving the mark
+# past the suffix gives back a legal closing mark, and reads as the log meant
+# it. A space before the suffix works too, which is why those cases look fine.
+SUFFIXED_BOLD = re.compile(r"\*\*(!?\[\[[^\]]*\]\])\*\*(\w+)")
+
 # Bold marks dates and whole emphasised sentences as well as names, and neither
 # of those will ever become a note, so the missing-name report leaves them out.
 MONTHS = "január|február|március|április|május|június|július|augusztus|szeptember|október|november|december"
@@ -213,8 +221,13 @@ def build_pattern(phrases: list[str]) -> re.Pattern:
     return re.compile(rf"(?<!\w)(?:{body})(?!\w)")
 
 
-def linkify(text: str, pattern: re.Pattern, targets: dict[str, str], stem: str) -> tuple[str, Counter]:
-    """Rewrite the body of one note, leaving its structure alone."""
+def linkify(text: str, pattern: re.Pattern, targets: dict[str, str], stem: str) -> tuple[str, Counter, int]:
+    """Rewrite the body of one note, leaving its structure alone.
+
+    Emphasis is mended afterwards rather than during the substitution, because
+    the damage is only visible once the link is in place, and this way a rerun
+    also repairs the notes written before the fix existed.
+    """
     counts: Counter = Counter()
 
     def replace(match: re.Match) -> str:
@@ -227,15 +240,17 @@ def linkify(text: str, pattern: re.Pattern, targets: dict[str, str], stem: str) 
 
     head, lines = walk_body(text)
     rewritten = []
+    mended = 0
     for line, is_linkable in lines:
         if is_linkable:
             parts = PROTECTED.split(line)
             for position in range(0, len(parts), 2):
                 parts[position] = pattern.sub(replace, parts[position])
-            line = "".join(parts)
+            line, fixed = SUFFIXED_BOLD.subn(r"**\1\2**", "".join(parts))
+            mended += fixed
         rewritten.append(line)
 
-    return head + "\n".join(rewritten), counts
+    return head + "\n".join(rewritten), counts, mended
 
 
 def scan_headings(
@@ -396,18 +411,23 @@ def main() -> int:
     pattern = build_pattern(list(targets))
     totals: Counter = Counter()
     changed = 0
+    mended = 0
     for path in scope_paths:
         text = notes[path.stem]
-        linked, counts = linkify(text, pattern, targets, path.stem)
-        if not counts:
+        linked, counts, fixed = linkify(text, pattern, targets, path.stem)
+        if linked == text:
             continue
         changed += 1
         totals.update(counts)
+        mended += fixed
         if args.apply:
             path.write_text(linked, encoding="utf-8", newline="\n")
 
     verb = "Wrote" if args.apply else "Would write"
     print(f"\n{verb} {sum(totals.values())} links across {changed} notes, {len(totals)} distinct phrases")
+    if mended:
+        moved = "Moved" if args.apply else "Would move"
+        print(f"{moved} {mended} closing ** past the suffix that follows a link, so the bold renders again")
     print(f"\n{'phrase':<34} {'links':>6}  target")
     print("-" * 84)
     for phrase, count in totals.most_common(25):

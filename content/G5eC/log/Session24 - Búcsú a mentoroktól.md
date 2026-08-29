@@ -30,10 +30,10 @@ Június 25-én egész nap festette a veteránok “graffitijét” a [[Griff Há
 A nap már lebukott a háztetők mögött, és a sikátor falán sápadtan dereng a frissen festett kép: öt alak áll egymás mellett, színek és árnyékok játékában, mintha még mindig együtt lennének. Alattuk gyertyák sora lobog – egyesek már leégtek, másokat most gyújtják meg halk pattanással. A levegőben füst, friss festékszag és viasz illata keveredik. Az emberek csendben állnak, némelyik kezében mécses, másoké ökölbe szorul. A falra szegezett tekintetekben van, aki csak emlékezik, van, aki bűntudattal gondol arra, hogy ő túlélte. Egy gyermek rászorít anyja kezére. Valaki egy régi, megtépett zászlót hozott, és a fal mellé támasztotta.
 Harm elővesz egy papírt, aztán mégis összegyűri és eldobja, majd beszélni kezd:
 “Ma itt a [[Griff Ház|Griff-ház]] veteránjaira emlékezünk, barátainkra, harcostársainkra és példaképeinkre.
-Emlékezzünk **[[Griff-ház#Brentulis (ezüst)|Brentulis]]**ra, Joli, Arachis és még sok ifjú varázsló mentorára. Ő volt a gondolat és az irány. Bölcsessége és türelme hidat vert még a forrófejűek felé is.
-Emlékezzünk **[[Griff-ház#Tori Sandro (ezüst)|Tori Sandro]]**ra, Niary és még sokak mesterére. Nem ismert félelmet, kardja mögé mindig befért még egy társ, akit megvéd.
-Emlékezzünk **[[Griff-ház#Wilder (ezüst)|Wilder]]**ra, Azzor papjára. Jobban hitt a cselekedetben, mint a prédikációban. Christer Hennix gyerekeit és még sokakat meggyógyító keze és a rekedt nevetése egyformán hiányozni fog.
-Emlékezzünk **[[Griff-ház#Aeden Haert (ezüst)|Aeden Haert]]**ra, “A Kocsma Kulcslyuka” és több más népszerű dal szerzőjére (apró mosoly Harmtól, szórványos nevetés a tömegből). Éneke nemcsak megnyugtatott, hanem csatákat is eldöntött.
+Emlékezzünk **[[Griff-ház#Brentulis (ezüst)|Brentulis]]ra**, Joli, Arachis és még sok ifjú varázsló mentorára. Ő volt a gondolat és az irány. Bölcsessége és türelme hidat vert még a forrófejűek felé is.
+Emlékezzünk **[[Griff-ház#Tori Sandro (ezüst)|Tori Sandro]]ra**, Niary és még sokak mesterére. Nem ismert félelmet, kardja mögé mindig befért még egy társ, akit megvéd.
+Emlékezzünk **[[Griff-ház#Wilder (ezüst)|Wilder]]ra**, Azzor papjára. Jobban hitt a cselekedetben, mint a prédikációban. Christer Hennix gyerekeit és még sokakat meggyógyító keze és a rekedt nevetése egyformán hiányozni fog.
+Emlékezzünk **[[Griff-ház#Aeden Haert (ezüst)|Aeden Haert]]ra**, “A Kocsma Kulcslyuka” és több más népszerű dal szerzőjére (apró mosoly Harmtól, szórványos nevetés a tömegből). Éneke nemcsak megnyugtatott, hanem csatákat is eldöntött.
 Emlékezzünk **Kozmá**ra… (elcsuklik a hangja) aki egy jó ember volt.
 (pár másodperc szünet, amíg összeszedi magát)
 Így álltak együtt szemben Shurnekával, a Féregnyelvű démonnal, aki vérrel írta át az álmot a valóságra. És együtt győzték le — nem erőből, hanem egymásba vetett hitből.
