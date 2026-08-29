@@ -208,8 +208,8 @@ such blocks — and the first run did link into one before this rule existed.
 - `content/G5eC/NPC/NPC.md` and `content/G5eC/NPC/Griff-ház.md` carry the same
   roster. The second is where the veteran headings are linked, and both are
   marked as collectors so neither claims a plain name.
-- `tools/autolink/missing.md` lists 270 names the logs set in bold that no note
-  claims — Orion, Arnulf, Mezuppi, Rogen and so on — plus 7 that a note already
+- `tools/autolink/missing.md` lists 269 names the logs set in bold that no note
+  claims — Orion, Arnulf, Mezuppi, Rogen and so on — plus 8 that a note already
   covers under a different spelling. That is a worklist, not a defect; regenerate
   it with `autolink.py --missing`.
 
