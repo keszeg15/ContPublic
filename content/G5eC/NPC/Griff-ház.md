@@ -6,6 +6,7 @@ tags:
 
 ## Veteránok
 A Griff-ház veteránjai évtizedek óta védték Hűvöskőt. Legnagyobb hőstetteik Hétkarú Marazonth és Shurneka, a féregnyelvű nevű démonok legyőzése. A Vizsla-sziget elsűllyedésekor mind eltűntek, vélhetően meghaltak.
+![[veteranok.png]]
 ### Tori Sandro
 Ezüst medálja van, harcos, ő az “alfa”, szigorú.
 ### Brentulis
@@ -26,7 +27,7 @@ Ezüst medálja van (?). A félelf varázslónő, ő írja a csapat naplót, ös
 ### Varges
 Ezüst medálja van (?). Swashbucker.
 ### Joakimus
-Ezüst medálja van (?). Azzor-pap, [[Wilder]] tanítványa.
+Ezüst medálja van (?). Azzor-pap, [[Griff-ház#Wilder]] tanítványa.
 ## Újoncok
 Akik még az újonc csapat tagjai voltak.
 ### Rogen
