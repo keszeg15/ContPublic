@@ -16,7 +16,15 @@ $gold-wash: rgba($gold, 0.06); // blockquote background
 $gold-select: rgba($gold, 0.25); // text selection
 $rule-light: #d0c5aa; // h2 rule outside article bodies
 
-$sea: #4f7a86; // Community accent, in place of the default gold
+// Per-Category accents, used in place of the default gold. All mid-tone, so
+// they hold their own against the parchment without glaring in dark mode, and
+// spread around the wheel so two categories are never mistaken for each other.
+$sea: #4f7a86; // Community
+$clay: #a4635a; // Individual
+$plum: #7d6795; // Group
+$slate: #6f757c; // Log — near-neutral, since the logs are the bulk of the vault
+$moss: #5f8767; // Terrain
+$mauve: #96617f; // Collection
 
 $link: #2563a8;
 $link-hover: #1d4f85;
@@ -72,14 +80,25 @@ $sans:
    The Category badge carries a data-category attribute, so a page can be
    recognised from its own content with no change to any note's front matter.
    Only the accent colour changes: spacing, type and layout stay identical.
-   Realm keeps the default gold. Legacy Category values render no badge and
-   so keep the default too. */
+   Realm is absent because it keeps the default gold, as do legacy Category
+   values, which render no badge and so match nothing here. */
 
-body:has(.category-badge[data-category="Community"]) {
-  --cont-accent: #{$sea};
-  --cont-accent-rule: #{rgba($sea, 0.45)};
-  --cont-accent-wash: #{rgba($sea, 0.06)};
-  --cont-accent-select: #{rgba($sea, 0.25)};
+$category-accents: (
+  "Community": $sea,
+  "Individual": $clay,
+  "Group": $plum,
+  "Log": $slate,
+  "Terrain": $moss,
+  "Collection": $mauve,
+);
+
+@each $category, $accent in $category-accents {
+  body:has(.category-badge[data-category="#{$category}"]) {
+    --cont-accent: #{$accent};
+    --cont-accent-rule: #{rgba($accent, 0.45)};
+    --cont-accent-wash: #{rgba($accent, 0.06)};
+    --cont-accent-select: #{rgba($accent, 0.25)};
+  }
 }
 
 /* ==========================================================

@@ -1,13 +1,20 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 /**
- * Categories with a designed look. The vault contains many older values
- * (Entity, Group: *, Region: *, the various List types) which are legacy
- * and deliberately render nothing until they are re-planned.
+ * Categories with a designed look. Each one also has an accent colour, keyed
+ * off the data-category attribute below in custom.scss. The vault contains
+ * many older values (Entity, Concept, Location, Group: *, Region: *, the
+ * various List types) which are legacy and deliberately render nothing until
+ * they are re-planned.
  */
 const labels: Record<string, string> = {
+  Collection: "📚 Collection",
   Community: "🏙 Community",
+  Group: "👥 Group",
+  Individual: "👤 Individual",
+  Log: "📜 Log",
   Realm: "👑 Realm",
+  Terrain: "🗺 Terrain",
 }
 
 const CategoryBadge: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
