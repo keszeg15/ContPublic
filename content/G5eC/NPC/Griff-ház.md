@@ -17,7 +17,7 @@ Ezüst medálja van, dalnok, Wilderrel együtt kocsmázik. A "Kocsma kulcslyuka"
 ### Kozma
 Bronz medálja van, negyed ork, tengerész - navigátor. Harmmal romantikus kapcsolatba került. Később a Vizsla-sziget maradványai között Harm megtalálta a nyakláncát.
 ## Zöld csapat
-A "Zöld misszióra" mentek el, azóta nem látta őket senki. Később kiderült, hogy Nartheán keresztűl Maravexbe mentek és Rultika volt a céljuk.
+A "Zöld misszióra" mentek el, azóta nem látta őket senki. Később kiderült, hogy Nartheán keresztűl Maravexbe mentek és Rultica volt a céljuk.
 [[Borges Mattus]] szerint egy összeesküvés-elmélettel jöttek hozzá, miszerint a kalózok között valamilyen együttműködés van.
 ### Wasco
 Ezüst medálja van (?). A vezető, ember harcos.
