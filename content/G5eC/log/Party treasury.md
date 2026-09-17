@@ -37,11 +37,12 @@ tags:
 | -4e kocsma lökés                               | 100g 6e           |
 | -5g Zsidó kocsmáros lefizetése                 | 95g 6e            |
 | +20g 39e 59r - ork barlang loot                | 105g 45e 59r      |
+| Hetedik versszak (2\*3g/nap) - 1 nap           | 99g 45e 59r       |
+| +40 arany Rezzenéstelen hegy kolostor loot     |                   |
 | TODO Narthea docking fee (2g/nap)              |                   |
-| TODO Hetedik versszak (2\*3g/nap)              |                   |
 
 Itemek:
-- a “Csomó” (vélhetően kulcs az Abbys-s csomóhoz), csomagolását
+- a “Csomó” (kulcs az Abbys-s csomóhoz), csomagolását
 - térkép + nehezen olvasható írás
 - ~~1 palack minőségi édes bor az Éneklő Holdból~~ - Harm megvette újra, de megittuk
 Sahuaginok
@@ -96,7 +97,7 @@ Az Abbys-i Csomó:
 - *Potion of solace*
 - *Potion of invisibility*
 - *Potion of vitality*
-- *Potion of invulnerability*
+- ~~*Potion of invulnerability*:~~ zagyváló szájhalom ellen elhasználva
 - *Bottled breath*
 - Cleric Scroll of *Remove curse*
 - Wizard Scroll of *Tongues*
@@ -104,3 +105,6 @@ Az Abbys-i Csomó:
 - Wizard Scroll of *Conjure minor elemental*
 - ~~levelezés a majordomo és a Yanney család között~~ odaadva a varázs kamarának
 - könyvek az elmúlt 200 év történelméről, legendáiról, némelyikben jegyzetek a margón, mindnek van köze a Démonháthoz
+Rezzenéstelen hegy kolostor:
+- ~~2~~ 1 healing potion - Ulrich megitta az egyiket
+- egy rövidkard

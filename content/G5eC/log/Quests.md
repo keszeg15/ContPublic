@@ -44,7 +44,7 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ▣ Csapda állítása: Jacobo a levesárus megfigyelte a házat - kettős ügynökké téve
 ▣ Torion a shareni (Razzidocról) volt az egyik betörő
 ▢ Egy “kicsit ratyi” félelf volt a másik, ki lehet ő?
-▢ Free Panorea! Orion ki akarja szabadítani a hugát a “shareni szörny” karmai közül
+▢ Free Panorea! Orion ki akarja szabadítani a húgát a “shareni szörny” karmai közül
 ▢ Megtalálni Oriont
 
 # Side quests
@@ -63,6 +63,11 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ❌ A Széljárók hoztak halott példányokat
 ▣ Élő lárvák átadása (Kalliano-szigetről)
 ▢ Elkísérni a Rezzenéstelen Hely kolostor romjaihoz (és vissza) Sera Lyth Vane-t.
+▣ Sera megvédése az óriás héjáktól
+▣ Utonálló orkok
+▣ Kőtroll támadás
+▣ Előholt monkok és orkok a kolostorban
+▣ Zagyváló szájhalom a kriptában
 ▢ Narthea vérdíj: Grimgullet - 1000 gp
 ▢ Narthea vérdíj: Vasta Molen a Fekete Tőr - 1000 gp
 ▢ Narthea vérdíj: Arveene a Szürke Vitorlás - 1000 gp
@@ -133,6 +138,6 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ▣ Elira Vane, fél-elf nő
 ❌ Brigg Hollowake, idősebb harcos - ő meghalt 🪦
 ▣ Joren Ashveil, testes bajszos harcos (Ryel meggyógyította)
-▢ Maelis Thorn, tudós / hivatalnok
+❌ Maelis Thorn, tudós / hivatalnok - ő végig bizalmatlan volt a csapattal
 ▣ Kytos, a triton
 ▣ Szörny probléma megoldása a Kaliano-szigeten (még az esős időszak, azaz ősz előtt)
