@@ -13,16 +13,17 @@ An alias on the note listed here is the whole fix.
 
 - **Fóka-sziget** — 9× — alias on `Fóka sziget`
 - **Nartheá** — 7× — alias on `Narthea`
+- **Batar** — 4× — alias on `BATAR`
 - **Corsiná** — 4× — alias on `Corsina`
-- **Batar** — 3× — alias on `BATAR`
 - **Hüvöskő** — 3× — alias on `Hűvöskő`
 - **Aradiá** — 1× — alias on `Aradia`
 - **Kozmá** — 1× — alias on `Griff-ház#Kozma (bronz)`
 
-## 269 have nothing behind them, 703 occurrences
+## 273 have nothing behind them, 738 occurrences
 
 - **Orion** — 23×
 - **Arnulf** — 22×
+- **Sera** — 22× (Será)
 - **Jingo Loba** — 20× (Jingo Lobá)
 - **Mezuppi** — 19×
 - **Kytos** — 16×
@@ -30,6 +31,7 @@ An alias on the note listed here is the whole fix.
 - **Feng** — 14×
 - **Lord Konzul** — 14×
 - **Mirren** — 14×
+- **Occam** — 14×
 - **Rebenna** — 14× (Rebenná)
 - **Csomó** — 12×
 - **Démonhát** — 12×
@@ -37,10 +39,10 @@ An alias on the note listed here is the whole fix.
 - **Obrevon** — 10×
 - **Wasco** — 10×
 - **Ellerose** — 9×
-- **Occam** — 9×
 - **Tengeri szellem** — 9× (Tengeri Szellem)
 - **Gorazon** — 8×
-- **Sera** — 8×
+- **Jacques** — 8×
+- **Lady** — 8×
 - **Elcior** — 7×
 - **Yanney** — 7×
 - **Alto Orec** — 6×
@@ -60,12 +62,12 @@ An alias on the note listed here is the whole fix.
 - **Darklan** — 4×
 - **Esmerandanna** — 4×
 - **Helgior** — 4×
-- **Lady** — 4×
 - **Lorainne** — 4×
 - **Oberigo** — 4×
 - **Panorea** — 4×
 - **Rultica** — 4× (Rulticá)
 - **Álmos Macská** — 4× (Álmos macská)
+- **Arany Hariri** — 3×
 - **Brigg Hollowake** — 3×
 - **Crosael Rasdovain** — 3×
 - **Guzman** — 3×
@@ -87,7 +89,6 @@ An alias on the note listed here is the whole fix.
 - **Vizsla** — 3×
 - **A. L. könyve** — 2×
 - **Abbysi csomó** — 2×
-- **Arany Hariri** — 2×
 - **Arnaldo** — 2×
 - **Atroxon Piredes** — 2×
 - **Charlie** — 2×
@@ -103,8 +104,8 @@ An alias on the note listed here is the whole fix.
 - **Gustovo** — 2×
 - **Hasumi-zátony** — 2×
 - **Hetedik versszak** — 2×
+- **Hit Horto** — 2×
 - **Hullamcsók** — 2× (Hullámcsók)
-- **Jacques** — 2×
 - **Jingo** — 2×
 - **Joren Ashveil** — 2×
 - **Juniper** — 2×
@@ -132,6 +133,6 @@ An alias on the note listed here is the whole fix.
 - **Viperahínár** — 2×
 - **Óvárosi út** — 2×
 
-### 159 of them turn up once
+### 162 of them turn up once
 
-A tenger szelleme, Aberian, Abrevon, Abys, Adamo, Aduran Dalibor, Aeden, Aeden Hart, Alsórákos, Alwin, Arachis & Alex, Arany Naga, Aranyzsinór, Arawa, Arawa magiszter, Arawnann, Arik Tuornos, Aruin a Szürke Vitorlás, Arvanxik, Arveene, a Szürke Vitorlás, Aunder, Az Abbys-i csomó, Barakat, Benthica, Beppo, Beppo Bolton, Bolton, Bonafir, Bonafir Omathyr, Bonafir “Bonaz” Omathyr, Bonaz, Borgus Mattus, Brenthulis, Calinda, Capelló, Christer Hennix, Claudius, Clormo, Dillmurat, Dorro, Doshku, Dou'gh, Doxiátus Fiala, Durell Varios, Dushku, Elira, Elleroset, Elrani, Erőd, Fekete plató, Fellegvár, Felopi, Felopi Rae Walter, Feng Jiang, Feng Liang, Feng mester, Figyelmes úr, Flibbidus, Florio, Florio Gordana, Félszarvú Gonzó, Fóka-szigetr, Garazon, Gazza, Glabrezu, Gonosz szél, Grater, Grulios, Guea, Hariri, Hasumi zátony, Hitero, Horhe, Hua Mei, Három delfin, Hétkarú Marazonth, Igor a rőt, Irina, Jacin, Jacques Marcell, Janice Omathyr, Jiang mester, Joakimus, Joli & Harm, Karla, Kirogi, Korall Királynő, Kuarg’se, Kétarcú Kupában, Lady Morgania Grulios, Lord konzul Aberian Arvanxi, Lord konzul Aborian Arvanxi, Lythor Vane, Lépcsős, Mantill, Mejboom, Melanie Jade, Meria, Mikulas, Morgania, Morton, Mély harang, Narthe, Nartheai, Nico, Nyitott Tenyér Rendje, Oromán, Oromán Clestéra, Orsal, Patkány Coster, Petides, Portál, Pumana, Qewick, Rainbow, Rainbow Dreamer, Rankassh, Ratimir, Rezzenéstelen Hegy Rendjé, Rezzenéstelen Hegy Rendjének Kolostorá, River, River Stardust, Romano, Sanbalet, Sarada Batoris, Sekola, Selvo Terern, Sera Lyth Vane, Shady Grove, Sir Bartolo, Soun, Syper Yanney, Szellem-sziget, Szilaj Qewick, Szárnny, Szárnnyal, Széljáró, S’sasmir, Tamsim, Tarterus, Tazkel, Tenger hősé, Tenger szellemé, Thyrin nagymester, Twigetti, Tékozló Bivaly, Törött evező, Tükör és Hold, Ulrich & Ryel, Varges, Vasta Molen a Fekete Tőr, Verack, Wasco csapata, Ysemir, Ziggy, Zöld könyv, Énelkő hold, Északi Pont vendéglő, Ötvösök céh
+A tenger szelleme, Aberian, Abrevon, Abys, Adamo, Aduran Dalibor, Aeden, Aeden Hart, Alsórákos, Alwin, Arachis & Alex, Arany Naga, Aranyzsinór, Arawa, Arawa magiszter, Arawnann, Arik Tuornos, Aruin a Szürke Vitorlás, Arvanxik, Arveene, a Szürke Vitorlás, Aunder, Az Abbys-i csomó, Barakat, Benthica, Beppo, Beppo Bolton, Bolton, Bonafir, Bonafir Omathyr, Bonafir “Bonaz” Omathyr, Bonaz, Borgus Mattus, Brenthulis, Calinda, Capelló, Christer Hennix, Claudius, Clormo, Dillmurat, Dorro, Doshku, Dou'gh, Doxiátus Fiala, Durell Varios, Dushku, Elira, Elleroset, Elrani, Erőd, Fekete plató, Fellegvár, Felopi, Felopi Rae Walter, Feng Jiang, Feng Liang, Feng mester, Figyelmes úr, Flibbidus, Florio, Florio Gordana, Félszarvú Gonzó, Fóka-szigetr, Garazon, Gazza, Glabrezu, Gonosz szél, Grater, Grulios, Guea, Hariri, Hasumi zátony, Hitero, Horhe, Hua Mei, Három delfin, Hétkarú Marazonth, Igor a rőt, Irina, Jacin, Jacques Marcell, Jacues, Janice Omathyr, Jiang mester, Joakimus, Joli & Harm, Karla, Kirogi, Korall Királynő, Kuarg’se, Kétarcú Kupában, Lady Morgania Grulios, Lord konzul Aberian Arvanxi, Lord konzul Aborian Arvanxi, Lythor Vane, Lytor Vane, Lépcsős, Mantill, Mejboom, Melanie Jade, Meria, Mikulas, Morgania, Morton, Mély harang, Narthe, Nartheai, Nico, Nyitott Tenyér Rendje, Oromán, Oromán Clestéra, Orsal, Patkány Coster, Petides, Portál, Pumana, Qewick, Rainbow, Rainbow Dreamer, Rankassh, Ratimir, Rezzenéstelen Hegy, Rezzenéstelen Hegy Rendjé, Rezzenéstelen Hegy Rendjének Kolostorá, River, River Stardust, Romano, Sanbalet, Sarada Batoris, Sekola, Selvo Terern, Sera Lyth Vane, Shady Grove, Sir Bartolo, Soun, Syper Yanney, Szellem-sziget, Szilaj Qewick, Szárnny, Szárnnyal, Széljáró, S’sasmir, Tamsim, Tarterus, Tazkel, Tenger hősé, Tenger szellemé, Thyrin nagymester, Twigetti, Tékozló Bivaly, Törött evező, Tükör és Hold, Ulrich & Ryel, Varges, Vasta Molen a Fekete Tőr, Verack, Wasco csapata, Ysemir, Ziggy, Zöld könyv, Énelkő hold, Északi Pont vendéglő, Ötvösök céh

@@ -97,7 +97,7 @@ Az Abbys-i Csomó:
 - *Potion of solace*
 - *Potion of invisibility*
 - *Potion of vitality*
-- ~~*Potion of invulnerability*:~~ zagyváló szájhalom ellen elhasználva
+- ~~*Potion of invulnerability*:~~ Rezzenéstelen Hely kolostornál a zagyváló szájhalom ellen elhasználva
 - *Bottled breath*
 - Cleric Scroll of *Remove curse*
 - Wizard Scroll of *Tongues*
@@ -107,4 +107,4 @@ Az Abbys-i Csomó:
 - könyvek az elmúlt 200 év történelméről, legendáiról, némelyikben jegyzetek a margón, mindnek van köze a Démonháthoz
 Rezzenéstelen hegy kolostor:
 - ~~2~~ 1 healing potion - Ulrich megitta az egyiket
-- egy rövidkard
+- egy ezüst rövidkard (nonmagic)

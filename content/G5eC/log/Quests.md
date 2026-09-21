@@ -15,7 +15,7 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ❌ ~~Mezuppit kihallgatni~~ (vagy ~~kihallgattatni Borges Mattus-szal~~)
 ▢ Megtalálni Jingo Lobát és kihallgatni
 ▣ Jingo Lobát Piscaro környékén látták, Soto Duranthoz közel lehet
-▣ Jingo Loba Maravex-en ismert és rettegett alak
+▣ Jingo Loba Maravexben ismert és rettegett alak
 ▢ A Vizslát előttünk meglátogató hajó, a Hullámcsók legénysége, céljai (Razzidoc)?
 ▣ A Yanney ház lehetett az, a “Fenséges úr” vezette őket, aki valószínű Jingo Loba
 ❌ Nartheai tudós, aki tudhat Alex képességéről: nem tudott semmi erről
@@ -58,16 +58,10 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ▣ Bejutni a *Wall of force* mögé a Griff-ház alagsorában
 ▣ Elmenni Borges Mattushoz
 ▣ Kalózok közötti szervezettséget nyomozzák (Piscaro?)
-▣ Maravex-el voltak áprilisban és ~~Lutika~~ Rultika romjaihoz mentek
+▣ Maravexben voltak áprilisban és ~~Lutika~~ Rultika romjaihoz mentek
 ▢ Rákos küldetés
 ❌ A Széljárók hoztak halott példányokat
 ▣ Élő lárvák átadása (Kalliano-szigetről)
-▢ Elkísérni a Rezzenéstelen Hely kolostor romjaihoz (és vissza) Sera Lyth Vane-t.
-▣ Sera megvédése az óriás héjáktól
-▣ Utonálló orkok
-▣ Kőtroll támadás
-▣ Előholt monkok és orkok a kolostorban
-▣ Zagyváló szájhalom a kriptában
 ▢ Narthea vérdíj: Grimgullet - 1000 gp
 ▢ Narthea vérdíj: Vasta Molen a Fekete Tőr - 1000 gp
 ▢ Narthea vérdíj: Arveene a Szürke Vitorlás - 1000 gp
@@ -86,7 +80,7 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ▣ Jiang mester könyvében spec. reveláció!
 ▢ Helgior baltájának megtalálása
 ▣ Bejutni az Abbys-i csomóba, de nem találtuk a baltát
-▢ Grimgullet egy mágikus baltát forgat!
+▣ Grimgullet egy mágikus baltát forgat! Ez volna az?
 ▢ Miért jelennek meg az ősök szellemei, ha Ulrichot elkapja a harci láz?
 
 ## Alex
@@ -140,4 +134,12 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ▣ Joren Ashveil, testes bajszos harcos (Ryel meggyógyította)
 ❌ Maelis Thorn, tudós / hivatalnok - ő végig bizalmatlan volt a csapattal
 ▣ Kytos, a triton
+▣ A báró kiköltöztetése különösebb attrocitás nélkül sikerült
 ▣ Szörny probléma megoldása a Kaliano-szigeten (még az esős időszak, azaz ősz előtt)
+▣ Elkísérni a Rezzenéstelen Hely kolostor romjaihoz (és vissza) Sera Lyth Vane-t.
+▣ Sera megvédése az óriás héjáktól
+▣ Utonálló orkok
+▣ Kőtroll támadás
+▣ Előholt monkok és orkok a kolostorban
+▣ Zagyváló szájhalom a kriptában
+▣ Szertartás végrehajtása
