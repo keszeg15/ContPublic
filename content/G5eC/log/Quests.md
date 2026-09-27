@@ -24,7 +24,6 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ▢ Bejutni az Abbys-i csomóba, visszaszerezni a Griff-ház eltűnt relikviáit
 ▣ Bejutottunk az Abbys-i csomóba, de relikviát nem találtunk
 ▢ Griff-ház könyveinek átolvasása
-▢ Következő reveláció: 98 / 100
 ▣ Bejutni a *Wall of force* mögé a Griff-ház alagsorában, elérni a réz szintet
 
 > ❌ Próbáltunk *Misty step*-pel bejutni, de sikertelen volt. *Fire bolt* is lepattant róla
@@ -37,6 +36,8 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 >
 > ▣ Feng Liang mester felkérése, hogy segítsen nekünk - egyelőre 3 könyvet hozott ki
 
+▣ Reveláció (100-nál):
+▢ Következő reveláció: 107 / 200
 ▢ A titokzatos “Z”, kideríteni kicsoda és mi a célja
 ▣ Bejutni az előadásra - Arachis kért és kapott három meghívót
 ❌ De ott nem sikerült megtalálni “Z”-t
