@@ -20,6 +20,7 @@ Category: Terrain
 
 ### Penango
 - A szigetet durva, gyomos növényzetcsomók és barlangokkal sűrűn átszőtt belső területek jellemzik. Úgy tartják, hogy lényegében csak denevérek és rovarok lakják. Emellett itt él Pryskin, a Zarándok.
+
 ### Roca Maldita – „Átkozott Szikla”
 - A tengerészek közt hírhedt sziklazátony-sziget, amely tisztavízű forrásával csalogató lehet az erre haladó hajóknak. Ám a sziget környéki alattomos zátonyok és a legendák szerint a szigetet sújtó átkok már sok áldozatot követeltek így.
 - Ami bizonyos, hogy a vízforrás ellenére a sziget szinte kihalt, csak aljnövényzet fordul elő.
