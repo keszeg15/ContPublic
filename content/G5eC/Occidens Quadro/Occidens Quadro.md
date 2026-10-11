@@ -37,10 +37,7 @@ Szűkebb értelemben az a szigettenger, amelynek határai nagyjából Narh, Dao 
 
 
 ##### [[Narthea]]
-##### Szent Melvio szigete
-- Szigeteki Szent Melvio 800 évvel ezelőtt Batar prófétájaként lett ismert ezen a szigeten, amikor megmentette a szigetet az aktuális veszedelemtől. Később Corsinán lett püspök, végül Maporban Pátriárka.
-- A sziget híres zarándokhely, Corsináról, a Rishemóból és a Kontinensről (Mapor, DKSZ) is érkeznek zarándokok. Emiatt a szigeten főleg corsin helyőrség van.
-- Az őslakosok többnyire Obrewon hívők. Szerintuk az eredeti Melvion a tenger újjászületettje volt, Obrewon prófétája, csak később egy szélhámos ellopta a nevét és a történetét. Ez okoz némi feszültséget az itt élők és a zarándokok között.
+##### [[Szent Melvio szigete]]
 
 ##### Sulaen
 
