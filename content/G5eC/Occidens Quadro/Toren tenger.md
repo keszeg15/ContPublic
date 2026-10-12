@@ -15,6 +15,8 @@ Category: Terrain
 - A környéken több növény és állatfaj is él ami főleg csak itt fordul elő: torenkorall, több kagyló (gyöngy!) és homár fajta. Több helyen termesztenek itt kelmefestéshes használt félig titkos alapanyagokat (növények, rovarok) és fűszereket főleg a DKSZ-i családok számára.
 
 
+![[TorenSzigetekTexts.png]]
+
 ### Koh Vireth
 - Gilbarto con Forgi, visszavonult corsin származású kalandozó szigete.
 
