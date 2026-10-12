@@ -30,10 +30,17 @@ import urllib.error
 import urllib.request
 import zipfile
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 DEFAULT_DOC_ID = "1kqRKCE7SC9ZBxYFklRfUqybh3DkJ0xFwTo11AxCJ3Lg"
 DEFAULT_SLUG = "partylog"
 EXPORT_URL = "https://docs.google.com/document/d/{doc_id}/export?format={fmt}"
+EDIT_URL = "https://docs.google.com/document/d/{doc_id}/edit"
+
+# The tab list in the model the editor page is built from: the first tab on its
+# own, then every other one with its position. A JSON string literal each.
+FIRST_TAB = re.compile(r'\{"ty":"mkch","d":\[\[1,("(?:[^"\\]|\\.)*")\]\]\}')
+OTHER_TAB = re.compile(r'\{"ty":"ac","d":\["t\.[^"]+",\[1,("(?:[^"\\]|\\.)*")\],\[(\d+)\]\]\}')
 
 # Google serves an HTML error page with a 200 status when a document is not
 # publicly readable, so the payload itself has to be validated.
@@ -155,6 +162,57 @@ def read_docx_titles(docx: Path) -> tuple[list[str], list[str]]:
     return tabs, titles
 
 
+def fetch_tab_names(doc_id: str) -> list[str]:
+    """Read the tab names off the document's public page, in tab order.
+
+    Needed when the export carries no tab titles at all, only a section break
+    where one tab ends. The page is not a documented interface, so an empty
+    list means its layout moved on, not that the document has no tabs.
+    """
+    request = urllib.request.Request(EDIT_URL.format(doc_id=doc_id), headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(request, timeout=120) as response:
+            page = response.read().decode("utf-8", errors="replace")
+    except urllib.error.URLError as exc:
+        raise SystemExit(f"Could not read the tab names off the document page: {exc}") from exc
+
+    first = FIRST_TAB.search(page)
+    if not first:
+        return []
+    others = sorted((int(position), json.loads(name)) for name, position in OTHER_TAB.findall(page))
+    return [json.loads(first.group(1))] + [name for _, name in others]
+
+
+def insert_tab_titles(docx: Path, names: list[str], dest: Path) -> None:
+    """Write a copy of the export with a `Title` paragraph opening every tab.
+
+    That is the shape the export used to have, and what the rest of the chain
+    reads: pandoc takes the first title as the document title and leaves the
+    others as bare lines for `promote_tab_titles` to find. A tab ends with the
+    paragraph that carries its section break, so the next title goes after it.
+    """
+    with zipfile.ZipFile(docx) as source:
+        xml = source.read("word/document.xml").decode("utf-8")
+        ends = [match.end() for match in WORD_PARAGRAPH.finditer(xml) if "<w:sectPr" in match.group(0)]
+        if len(ends) + 1 != len(names):
+            raise SystemExit(
+                f"The export has {len(ends) + 1} tabs by its section breaks, but the document page "
+                f"lists {len(names)}: {', '.join(names)}"
+            )
+        body = re.search(r"<w:body[^>]*>", xml).end()
+        for position, name in reversed(list(zip([body] + ends, names))):
+            title = (
+                '<w:p><w:pPr><w:pStyle w:val="Title"/></w:pPr>'
+                f'<w:r><w:t xml:space="preserve">{escape(name)}</w:t></w:r></w:p>'
+            )
+            xml = xml[:position] + title + xml[position:]
+
+        with zipfile.ZipFile(dest, "w", zipfile.ZIP_DEFLATED) as target:
+            for item in source.infolist():
+                data = xml.encode("utf-8") if item.filename == "word/document.xml" else source.read(item.filename)
+                target.writestr(item, data)
+
+
 def promote_tab_titles(markdown: str, tab_titles: list[str]) -> tuple[str, list[str]]:
     """Turn the flattened tab titles back into level 1 headings.
 
@@ -250,6 +308,7 @@ def main() -> int:
     out_dir = args.work_dir / "out"
     docx = raw_dir / f"{args.slug}.docx"
     google_md = raw_dir / f"{args.slug}.google.md"
+    names_file = raw_dir / f"{args.slug}.tabnames.json"
 
     if args.skip_download:
         if not docx.exists():
@@ -267,9 +326,26 @@ def main() -> int:
     tab_titles, all_titles = read_docx_titles(docx)
     print(f"Found {len(tab_titles)} tabs among {len(all_titles)} Title paragraphs")
 
+    source = docx
+    if not tab_titles:
+        if args.skip_download and names_file.exists():
+            tab_titles = json.loads(names_file.read_text(encoding="utf-8"))
+            print(f"The export carries no tab titles; reusing the {len(tab_titles)} names in {names_file.name}")
+        else:
+            tab_titles = fetch_tab_names(doc_id)
+            if not tab_titles:
+                raise SystemExit(
+                    "The export carries no tab titles, and none could be read off the document page either."
+                )
+            names_file.write_text(json.dumps(tab_titles, ensure_ascii=False) + "\n", encoding="utf-8")
+            print(f"The export carries no tab titles; read {len(tab_titles)} off the document page")
+        source = raw_dir / f"{args.slug}.titled.docx"
+        insert_tab_titles(docx, tab_titles, source)
+        all_titles = tab_titles + all_titles
+
     print("Converting with pandoc ...")
     media_root = args.work_dir / "media"
-    markdown = convert(docx, media_root)
+    markdown = convert(source, media_root)
     markdown, promoted = promote_tab_titles(markdown, tab_titles)
 
     pics_dir = out_dir / "pics"

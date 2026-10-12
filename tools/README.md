@@ -79,6 +79,8 @@ the meantime and the commit that does it looks like ordinary text edits.
 | artefact | contents |
 | --- | --- |
 | `build/raw/partylog.docx` | the download, kept so `--skip-download` can reuse it |
+| `build/raw/partylog.tabnames.json` | the tab names off the document page, when the export lacks them |
+| `build/raw/partylog.titled.docx` | the download with those names put back, which is what pandoc then reads |
 | `build/out/partylog.md` | the whole document, tab titles promoted to `h1` |
 | `build/out/partylog.tabs.json` | `{"tabs": [...], "titles": [...]}` |
 | `build/out/pics/` | every image, renamed after the section it appears in |
@@ -146,6 +148,16 @@ where tab titles come out as `h1`, but that promoted "Ki kicsoda a
 történetemben?" to a tab of its own when it is really a heading on the
 Szójegyzék tab. The export can still be fetched with `--google-md` for
 eyeballing a conversion, but nothing depends on it.
+
+**When the export drops the tab titles, the names come from the document page.**
+An export can carry no tab titles at all, only the section break that ends each
+tab; neither the Markdown, the HTML nor the plain text export has them either.
+The editor page does, in the model it is built from, so `fetch_gdoc.py` reads
+the names off it in tab order and writes a `Title` paragraph after every section
+break, recreating the shape the rest of the chain expects. The count is checked
+both ways — one more name than breaks, or the run stops and lists both — because
+that page is not a documented interface and a silent misalignment would put a
+tab's text under the next tab's name.
 
 **A tab restates its own name at the top of its page**, sometimes twice over, so
 any `Title` line a tab opens with is dropped rather than duplicated in the body

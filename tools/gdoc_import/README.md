@@ -110,6 +110,14 @@ section, whereas a `Title` used as a heading inside a tab has neither. Style
 alone is not enough to tell them apart, and neither is font size, since both
 vary between tabs.
 
+The export does not always carry the tab titles, though: it can leave only the
+section break that ends each tab. Then the names are read off the document's
+public `/edit` page, cached in `raw/partylog.tabnames.json` for
+`--skip-download`, and written back into a copy of the export
+(`raw/partylog.titled.docx`) after each break, which is the file pandoc then
+converts. If the page lists a different number of tabs than the breaks mark
+out, the run stops instead of guessing.
+
 Google's own Markdown export can be fetched with `--google-md`. It is not used
 for anything, but it renders the structure differently and is handy for
 double-checking the conversion by hand.

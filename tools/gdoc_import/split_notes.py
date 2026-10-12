@@ -128,6 +128,8 @@ def main() -> int:
     markdown = markdown_file.read_text(encoding="utf-8")
     recorded = json.loads(tabs_file.read_text(encoding="utf-8"))
     titles = {normalise(title) for title in recorded["titles"]}
+    if not recorded["tabs"]:
+        raise SystemExit(f"{tabs_file.name} records no tabs, so there is nothing to split on. Rerun fetch_gdoc.py.")
     sections = split_tabs(markdown, [normalise(tab) for tab in recorded["tabs"]], titles)
 
     if out_dir.exists():
