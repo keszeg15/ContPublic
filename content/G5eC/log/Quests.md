@@ -135,11 +135,11 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ▣ Joren Ashveil, testes bajszos harcos (Ryel meggyógyította)
 ❌ Maelis Thorn, tudós / hivatalnok - ő végig bizalmatlan volt a csapattal
 ▣ Kytos, a triton
-▣ A báró kiköltöztetése különösebb attrocitás nélkül sikerült
+▣ A báró kiköltöztetése különösebb atrocitás nélkül sikerült
 ▣ Szörny probléma megoldása a Kaliano-szigeten (még az esős időszak, azaz ősz előtt)
 ▣ Elkísérni a Rezzenéstelen Hely kolostor romjaihoz (és vissza) Sera Lyth Vane-t.
 ▣ Sera megvédése az óriás héjáktól
-▣ Utonálló orkok
+▣ Útonálló orkok
 ▣ Kőtroll támadás
 ▣ Előholt monkok és orkok a kolostorban
 ▣ Zagyváló szájhalom a kriptában

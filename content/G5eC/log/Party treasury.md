@@ -38,8 +38,11 @@ tags:
 | -5g Zsidó kocsmáros lefizetése                 | 95g 6e            |
 | +20g 39e 59r - ork barlang loot                | 105g 45e 59r      |
 | Hetedik versszak (2\*3g/nap) - 1 nap           | 99g 45e 59r       |
-| +40 arany Rezzenéstelen hegy kolostor loot     |                   |
-| TODO Narthea docking fee (2g/nap)              |                   |
+| +40g Rezzenéstelen hegy kolostor loot          | 139g 45e 59r      |
+| A Rezzenéstelen Hegy quest +250 arany          | 389g 45e 59r      |
+| Gorrazon & co. Narthea-n k -20 arany           | 369a 45e 59r      |
+| Törött evező ivás/evés, emberek meghívása      |                   |
+| Narthea docking fee 8 nap, -16 arany (2g/nap)  |                   |
 
 Itemek:
 - a “Csomó” (kulcs az Abbys-s csomóhoz), csomagolását
@@ -108,3 +111,8 @@ Az Abbys-i Csomó:
 Rezzenéstelen hegy kolostor:
 - ~~2~~ 1 healing potion - Ulrich megitta az egyiket
 - egy ezüst rövidkard (nonmagic)
+- 2 ékkő
+- 1 gyöngy
+- egy *scroll of lesser restoration*
+- ~~egy ring of mind shielding~~ - Arachis viseli
+- egy *wind fan*

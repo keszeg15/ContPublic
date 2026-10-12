@@ -6,7 +6,7 @@ alias:
   - session59
 Chapter: Chapter 3
 ---
-# Session \#59: Narthea felé **Orion**tálódva
+# Session \#59: Narthea felé Oriontálódva
 
 🌆 *Este*
 A két varázsló elmegy azonnal leadni a lárvákat, és meg is kapják érte az élő állatokért járó 150 aranyat. Elmondják amit megtudtak **Cretai magiszter**nek, aki van amit tudott, de a lárvák nagy száma egy védett környezetben aggódásra késztette. Valószínű ennek a következménye egy nagyobb akció lesz, amit a tengerészet fog vinni (tehát **[[Hűvöskő#Borges Mattus|Borges Mattus]]**). Lehet lesz ennek az ügynek még folytatása.
