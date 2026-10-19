@@ -24,7 +24,7 @@ Népessége eléri a közel 30,000-et.
 # Védelmek
 
 #### Hamusárkányok
-- Egykori kalandozó-zsoldos csapat, ami monopol-helyzetbe kerult... aztán az elmúlt évszázad alatt lassan városőrség-katonaság lett belőle. De alájuk tartozik a helyi kalandozócéh is.
+- Egykori kalandozó-zsoldos csapat, ami monopol-helyzetbe került... aztán az elmúlt évszázad alatt lassan városőrség-katonaság lett belőle. De alájuk tartozik a helyi kalandozócéh is.
 
 
 

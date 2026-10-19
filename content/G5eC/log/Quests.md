@@ -23,6 +23,7 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 ▣ Kytos szerint a Sahuaginok új királya
 ▢ Bejutni az Abbys-i csomóba, visszaszerezni a Griff-ház eltűnt relikviáit
 ▣ Bejutottunk az Abbys-i csomóba, de relikviát nem találtunk
+▣ A kalózoknál (Grimgullet és Arveen) lehet relikvia
 ▢ Griff-ház könyveinek átolvasása
 ▣ Bejutni a *Wall of force* mögé a Griff-ház alagsorában, elérni a réz szintet
 
@@ -36,7 +37,7 @@ A piros küldetések vélhetően magasabb szintet igényelnek.
 >
 > ▣ Feng Liang mester felkérése, hogy segítsen nekünk - egyelőre 3 könyvet hozott ki
 
-▣ Reveláció (100-nál):
+▣ Reveláció (100-nál): a Figyelmes úr
 ▢ Következő reveláció: 107 / 200
 ▢ A titokzatos “Z”, kideríteni kicsoda és mi a célja
 ▣ Bejutni az előadásra - Arachis kért és kapott három meghívót

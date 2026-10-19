@@ -66,6 +66,6 @@ Description.
 
 ### **Supplies:**
 
-Food: 25
+Food: 30
 Water: 25
 alkatrészek: keresztárbóc, nagyvitorla, kisvitorla, kötélzet (1 arbocnyi), kormánylapát + szerszám, deszka, szög, stb
